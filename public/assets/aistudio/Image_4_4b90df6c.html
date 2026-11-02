@@ -1,0 +1,850 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-low": "#f2f3ff", "surface-container-lowest": "#ffffff", "on-error": "#ffffff", "surface-container-high": "#e2e7ff", "inverse-on-surface": "#eef0ff", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "on-secondary-fixed-variant": "#004e5c", "error": "#ba1a1a", "on-surface-variant": "#454655", "primary-fixed": "#e0e0ff", "background": "#faf8ff", "surface-tint": "#3c4ae0", "tertiary-fixed": "#ffddb8", "primary-fixed-dim": "#bdc2ff", "surface-bright": "#faf8ff", "on-secondary-fixed": "#001f26", "on-tertiary-container": "#ffcf98", "on-tertiary-fixed-variant": "#653e00", "on-primary": "#ffffff", "secondary-fixed": "#acedff", "primary": "#1c2ac8", "surface-variant": "#dae2fd", "on-secondary-container": "#006172", "tertiary": "#643e00", "on-primary-container": "#d2d4ff", "secondary": "#00687a", "error-container": "#ffdad6", "on-surface": "#131b2e", "on-primary-fixed": "#000668", "secondary-fixed-dim": "#4cd7f6", "outline-variant": "#c6c5d8", "inverse-primary": "#bdc2ff", "tertiary-container": "#845300", "on-primary-fixed-variant": "#1d2cc9", "surface-container-highest": "#dae2fd", "on-tertiary-fixed": "#2a1700", "surface": "#faf8ff", "on-background": "#131b2e", "tertiary-fixed-dim": "#ffb95f", "primary-container": "#3b49df", "secondary-container": "#57dffe", "outline": "#757687", "inverse-surface": "#283044", "surface-container": "#eaedff", "surface-dim": "#d2d9f4", "on-error-container": "#93000a" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-lg": "2rem", "margin-lg": "3rem", "margin-sm": "1rem", "gutter": "1.5rem", "space-sm": "0.5rem", "margin": "1.5rem", "gutter-sm": "1rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "space-md": "1rem", "space-lg": "1.5rem" }, fontFamily: { "label-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md-mobile": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "display-hero": ["Plus Jakarta Sans"] }, fontSize: { "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "body-lg": ["17px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "title-md": ["17px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-md": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md-mobile": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;min-height:100vh;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:calc(env(safe-area-inset-bottom,0px) + 5rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}#drawer-toggle:checked ~ #drawer-backdrop{display:block;}#drawer-toggle:checked ~ #mobile-drawer{transform:translateX(0);}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-body-md text-on-surface flex flex-col min-h-screen relative"><input class="hidden peer" id="drawer-toggle" type="checkbox"><div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 hidden transition-opacity duration-300" id="drawer-backdrop" onclick="document.getElementById('drawer-toggle').checked = false;"></div><aside class="fixed top-0 right-0 h-full w-[85%] max-w-sm bg-surface-container-lowest z-50 transform translate-x-full transition-transform duration-300 ease-out flex flex-col shadow-[0_20px_35px_-8px_rgba(15,23,42,0.15)]" id="mobile-drawer"><div class="flex items-center justify-between p-space-md pt-safe"><div class="flex items-center gap-space-sm"><img alt="GS Imprim Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOS6BhVhzRLBzPG0k6MW0b5OTafrOaMQxgTb3ncXiphhYe2gOqZr_zbHKwIpJuSRKfjT6NF1jeEVPMf-w99Ksxu6CdyLGTDpSCaluK8cs09UPKE4jAN2Cg84rqiD2ITfunGOWgmufsZCxhlTKzGn0SHje7YFmLqtf-pHv8zbEQ1tWR0Jzppv3JvEetHvRPvozHD8OjTTGM7J3RvrtJY83nK1MPQNdvttpsL3iwkegqpm0vTBt2jg010g"><span class="font-headline-sm text-headline-sm text-primary font-bold">GS Imprim</span></div><button aria-label="Fermer le menu" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-high transition-colors" onclick="document.getElementById('drawer-toggle').checked = false;"><span class="material-symbols-outlined text-[24px]">close</span></button></div><div class="flex-1 overflow-y-auto px-space-md py-space-sm flex flex-col gap-space-xs"><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface hover:bg-surface-container-low font-title-md text-title-md transition-colors" data-path="accueil" href="#"><span class="material-symbols-outlined text-primary">home</span> Accueil</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface hover:bg-surface-container-low font-title-md text-title-md transition-colors" data-path="produits" href="#"><span class="material-symbols-outlined text-primary">inventory_2</span> Produits</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface hover:bg-surface-container-low font-title-md text-title-md transition-colors" data-path="services" href="#"><span class="material-symbols-outlined text-primary">layers</span> Services</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface hover:bg-surface-container-low font-title-md text-title-md transition-colors" data-path="nos-realisations" href="#"><span class="material-symbols-outlined text-primary">auto_awesome_motion</span> Nos réalisations</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface hover:bg-surface-container-low font-title-md text-title-md transition-colors" data-path="devis-express" href="#"><span class="material-symbols-outlined text-primary">calculate</span> Devis</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface hover:bg-surface-container-low font-title-md text-title-md transition-colors" data-path="a-propos" href="#"><span class="material-symbols-outlined text-primary">storefront</span> À propos</a><a class="flex items-center gap-space-sm px-space-md py-space-sm rounded-lg text-on-surface hover:bg-surface-container-low font-title-md text-title-md transition-colors" data-path="contact" href="#"><span class="material-symbols-outlined text-primary">mail</span> Contact</a><div class="my-space-md pt-space-md flex flex-col gap-space-sm"><a class="flex items-center justify-center gap-space-xs w-full py-space-md bg-primary text-on-primary rounded-xl font-label-md text-label-md transition-transform active:scale-95 shadow-[0_10px_25px_-5px_rgba(15,23,42,0.08)]" data-path="devis-express" href="#"><span class="material-symbols-outlined text-[20px]">request_quote</span> Demander un devis</a><a class="flex items-center justify-center gap-space-xs w-full py-space-md bg-secondary text-on-secondary rounded-xl font-label-md text-label-md transition-transform active:scale-95" href="https://wa.me/" target="_blank"><span class="material-symbols-outlined text-[20px]">chat</span> WhatsApp direct</a></div></div><div class="p-space-md bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="GS Imprim Logo" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjthJI4JbL-OH8sxXD1gBOjAVCQEiohCBgpKnwuV-A-LEBC11vxu1hmrLVv7ziiI2IaYrse62v8NGK0Xq8EOEofYHV_xBjTtw106dwBGQlwB_FBRMubrfbqsPaahrTaP4Ugjkd4z6FZs8IKjZThPD_1egi7IJJQ1qzx_IkDe9HpYwP8fRcYKrF26TYc6Rd9XNDIUav5VBQQ88PXkNWN0mpQAVF0cg5BSpUbAQ7TXuOjE28s4HEpUT-Eg"><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface">Mon Compte</span><span class="font-body-sm text-body-sm text-on-surface-variant">Studio Pro</span></div></div><a class="text-primary font-label-md text-label-md hover:underline" data-path="mon-compte" href="#">Accéder</a></div></aside><header class="fixed top-0 inset-x-0 z-40 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-space-md flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="GS Imprim Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOS6BhVhzRLBzPG0k6MW0b5OTafrOaMQxgTb3ncXiphhYe2gOqZr_zbHKwIpJuSRKfjT6NF1jeEVPMf-w99Ksxu6CdyLGTDpSCaluK8cs09UPKE4jAN2Cg84rqiD2ITfunGOWgmufsZCxhlTKzGn0SHje7YFmLqtf-pHv8zbEQ1tWR0Jzppv3JvEetHvRPvozHD8OjTTGM7J3RvrtJY83nK1MPQNdvttpsL3iwkegqpm0vTBt2jg010g"><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-primary tracking-tight truncate leading-tight">GS Imprim</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant truncate">Accueil</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Rechercher" class="w-11 h-11 flex items-center justify-center text-on-surface rounded-full hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[22px]">search</span></button><a aria-label="Panier" class="w-11 h-11 relative flex items-center justify-center text-on-surface rounded-full hover:bg-surface-container-high transition-colors" data-path="panier" href="#"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-1 right-1 w-5 h-5 bg-primary text-on-primary font-label-sm text-label-sm rounded-full flex items-center justify-center ring-2 ring-surface-container-lowest">2</span></a><a aria-label="Espace client" class="w-11 h-11 flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors" data-path="mon-compte" href="#"><img alt="GS Imprim Logo" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjthJI4JbL-OH8sxXD1gBOjAVCQEiohCBgpKnwuV-A-LEBC11vxu1hmrLVv7ziiI2IaYrse62v8NGK0Xq8EOEofYHV_xBjTtw106dwBGQlwB_FBRMubrfbqsPaahrTaP4Ugjkd4z6FZs8IKjZThPD_1egi7IJJQ1qzx_IkDe9HpYwP8fRcYKrF26TYc6Rd9XNDIUav5VBQQ88PXkNWN0mpQAVF0cg5BSpUbAQ7TXuOjE28s4HEpUT-Eg"></a><label aria-label="Menu principal" class="w-11 h-11 flex items-center justify-center text-on-surface rounded-full hover:bg-surface-container-high transition-colors cursor-pointer" for="drawer-toggle"><span class="material-symbols-outlined text-[24px]">menu</span></label></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-background pb-safe"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative px-margin-sm py-space-lg flex flex-col gap-space-md overflow-hidden bg-gradient-to-b from-surface-container-low to-background">
+<!-- Subtle tactile print grid watermark in background -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#1c2ac8 1px, transparent 1px); background-size: 16px 16px;"></div>
+<div class="flex flex-col gap-space-xs relative z-10">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+        Atelier d'impression N°1 en Tunisie
+      </div>
+<h1 class="font-display-hero-mobile text-display-hero-mobile text-on-surface tracking-tight">
+        Donnez vie à vos idées avec une <span class="text-primary font-extrabold">impression pro</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Cartes de visite, bâches, stickers, cachets officiels et packaging de luxe conçus avec précision pour créatifs et entreprises tunisiennes.
+      </p>
+</div>
+<!-- Hero Quick Action CTAs -->
+<div class="flex flex-col sm:flex-row gap-space-xs relative z-10">
+<a class="flex items-center justify-center gap-space-xs py-space-md px-space-lg bg-primary text-on-primary rounded-xl font-label-md text-label-md active:scale-95 transition-transform shadow-[0_10px_25px_-5px_rgba(28,42,200,0.3)]" href="#configurateur">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+        Commander maintenant
+      </a>
+<a class="flex items-center justify-center gap-space-xs py-space-md px-space-lg bg-surface-container-lowest text-on-surface rounded-xl font-label-md text-label-md active:scale-95 transition-transform shadow-[0_1px_3px_rgba(15,23,42,0.06)]" href="#devis-express">
+<span class="material-symbols-outlined text-[20px] text-primary">calculate</span>
+        Demander un devis
+      </a>
+</div>
+<!-- Visual Print Collage Card Mosaic -->
+<div class="relative mt-space-sm rounded-xl overflow-hidden shadow-[0_20px_35px_-8px_rgba(15,23,42,0.12)] bg-surface-container-lowest">
+<div class="relative h-64 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="High quality composition of stacked matte business cards with metallic copper foil edges, glossy flyers, coiled spiral notebook and precision die-cut round stickers arranged neatly on an architect drafting table in soft morning daylight with cyan and deep indigo accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhY3_mArt664sxnoMuSn4hhSRr7diFKfJ-YyTwH5QbNpMd0UmpAtwBIhmXOKgGlFkxR_ypwDTuVYva4vmO8Y9z5LJmeJTxpg5PTudHBaVUKKmYPsidWks4RsG-kRA-FQniZSO4HUvyf7V4HheEgMOOb1JkCQ5q28ybBqYkjFW9imE3h0abD2oqVxpk23rz1fEZU7n8X6zgmAewc805NVYCN5_fkEh09m87eAuPANSYM9ZcwMYnQRmzCw">
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent flex items-end p-space-md">
+<div class="flex items-center justify-between w-full text-surface-container-lowest">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold">Façonnage Artisanal &amp; Numérique</span>
+<span class="font-body-sm text-body-sm text-surface-container-highest">Contrôle BAT offert sur chaque commande</span>
+</div>
+<span class="px-space-sm py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">Certifié HD</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Trust Badges Bar -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs relative z-10">
+<div class="flex flex-col items-center text-center p-space-sm rounded-lg bg-surface-container-lowest shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+<span class="material-symbols-outlined text-primary text-[24px]">verified</span>
+<span class="font-label-sm text-label-sm mt-1 font-bold text-on-surface">Haute Qualité</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight">98% satisfaits</span>
+</div>
+<div class="flex flex-col items-center text-center p-space-sm rounded-lg bg-surface-container-lowest shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+<span class="material-symbols-outlined text-secondary text-[24px]">local_shipping</span>
+<span class="font-label-sm text-label-sm mt-1 font-bold text-on-surface">Livraison 24/48h</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight">Toute la Tunisie</span>
+</div>
+<div class="flex flex-col items-center text-center p-space-sm rounded-lg bg-surface-container-lowest shadow-[0_1px_2px_rgba(15,23,42,0.04)]">
+<span class="material-symbols-outlined text-tertiary-container text-[24px]">draw</span>
+<span class="font-label-sm text-label-sm mt-1 font-bold text-on-surface">Design &amp; BAT</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight">Assistance 100%</span>
+</div>
+</div>
+</section>
+<!-- PRODUCT CATEGORIES SECTION -->
+<section class="px-margin-sm py-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-on-surface">Nos Catégories</h2>
+<a class="text-primary font-label-md text-label-md flex items-center gap-space-xs" href="#tous-les-produits">
+          Voir tout <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tout pour votre image de marque, du support de bureau au grand format publicitaire.</p>
+</div>
+<!-- Horizontal Smooth Category Scroller -->
+<div class="flex gap-space-sm overflow-x-auto pb-space-sm snap-x -mx-margin-sm px-margin-sm">
+<!-- Cat 1: Papeterie -->
+<div class="snap-start shrink-0 w-64 p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.05)] flex flex-col justify-between gap-space-md group">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">badge</span>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">4 formats</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-bold">Papeterie Pro</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cartes de visite, blocs, papiers en-tête, enveloppes cachetées.</span>
+</div>
+<a class="flex items-center justify-between pt-space-xs text-primary font-label-md text-label-md" href="#configurateur">
+<span class="">Découvrir</span>
+<span class="material-symbols-outlined text-[18px]">east</span>
+</a>
+</div>
+<!-- Cat 2: Publicité & Signalétique -->
+<div class="snap-start shrink-0 w-64 p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.05)] flex flex-col justify-between gap-space-md group">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[28px]">campaign</span>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm">Extérieur</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-bold">Publicité &amp; Bâches</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bâches vinyle avec œillets, roll-ups salons, affiches géantes abribus.</span>
+</div>
+<a class="flex items-center justify-between pt-space-xs text-primary font-label-md text-label-md" href="#devis-express">
+<span class="">Découvrir</span>
+<span class="material-symbols-outlined text-[18px]">east</span>
+</a>
+</div>
+<!-- Cat 3: Autocollants -->
+<div class="snap-start shrink-0 w-64 p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.05)] flex flex-col justify-between gap-space-md group">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">label</span>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-container font-label-sm text-label-sm">Waterproof</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-bold">Stickers &amp; Rouleaux</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Découpe à la forme personnalisée, vinyle résistant à l'eau et aux UV.</span>
+</div>
+<a class="flex items-center justify-between pt-space-xs text-primary font-label-md text-label-md" href="#configurateur">
+<span class="">Découvrir</span>
+<span class="material-symbols-outlined text-[18px]">east</span>
+</a>
+</div>
+<!-- Cat 4: Entreprise & Cachets -->
+<div class="snap-start shrink-0 w-64 p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.05)] flex flex-col justify-between gap-space-md group">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">approval</span>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">Trodat Pro</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-bold">Entreprise &amp; Cachets</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tampons auto-encreurs, badges PVC magnétiques et chemises de devis.</span>
+</div>
+<a class="flex items-center justify-between pt-space-xs text-primary font-label-md text-label-md" href="#devis-express">
+<span class="">Découvrir</span>
+<span class="material-symbols-outlined text-[18px]">east</span>
+</a>
+</div>
+</div>
+</section>
+<!-- FEATURED PRODUCTS MATRIX WITH FILTER PILLS -->
+<section class="px-margin-sm py-space-lg flex flex-col gap-space-md bg-surface-container-low" id="tous-les-produits">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Best-sellers de l'Atelier</span>
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-on-surface">Produits Vedettes</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Commandez directement aux tarifs d'usine tunisiens les plus compétitifs.</p>
+</div>
+<!-- Filter Category Pills (Interactive JS Switcher) -->
+<div class="flex gap-space-xs overflow-x-auto pb-1" id="product-filter-container">
+<button class="product-filter-btn shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all" data-target="all" onclick="filterProducts('all')">Tous</button>
+<button class="product-filter-btn shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant transition-all" data-target="papeterie" onclick="filterProducts('papeterie')">Papeterie</button>
+<button class="product-filter-btn shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant transition-all" data-target="publicite" onclick="filterProducts('publicite')">Publicité</button>
+<button class="product-filter-btn shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant transition-all" data-target="stickers" onclick="filterProducts('stickers')">Stickers</button>
+<button class="product-filter-btn shrink-0 px-space-md py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant transition-all" data-target="entreprise" onclick="filterProducts('entreprise')">Entreprise</button>
+</div>
+<!-- Products Vertical Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm" id="product-list">
+<!-- Product 1: Carte de Visite -->
+<div class="product-item rounded-xl bg-surface-container-lowest p-space-sm flex flex-col gap-space-sm shadow-[0_1px_3px_rgba(15,23,42,0.05)]" data-category="papeterie">
+<div class="relative h-44 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Stacked thick 350g luxury business cards with dark blue print, tactile embossed debossed gold foil logo, resting on an angled wooden presentation dock" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVMJKC4bm1VnoHfblf0Rl8BpE0AD6OMQVTiyawupTtdlaqytVBOKtHFnLkY2o5tp35RaDuor4LJPHVELiyoyE6tSVXNN2_MshessPaOCuWk-Mnh3Elynu-Y3ByC0BbVzfPBz1GLfad6w25LVckf_lXdUerTIleoH_No18P29Xsj3xBteuG6qknqt9FccY7z-r-10YZ5PhktvhOnL5y4JQ8JDxenmWIc9O8V1FveDBIE_FlUc8JICbrMQ">
+<span class="absolute top-2 left-2 px-space-sm py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">Bestseller</span>
+<span class="absolute top-2 right-2 px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container" style="font-variation-settings: 'FILL' 1;">star</span> 5.0
+          </span>
+</div>
+<div class="flex flex-col gap-space-xs px-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-bold">Carte de visite Premium</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">350g couché mat, coins droits ou arrondis.</span>
+<div class="flex items-baseline justify-between mt-space-xs pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">À partir de</span>
+<span class="font-title-md text-title-md font-bold text-primary">35 DT <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">/ 100 ex</span></span>
+</div>
+<a class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-primary font-label-md text-label-md active:bg-primary active:text-on-primary transition-colors" href="#configurateur">
+              Configurer
+            </a>
+</div>
+</div>
+</div>
+<!-- Product 2: Bâche Publicitaire -->
+<div class="product-item rounded-xl bg-surface-container-lowest p-space-sm flex flex-col gap-space-sm shadow-[0_1px_3px_rgba(15,23,42,0.05)]" data-category="publicite">
+<div class="relative h-44 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Vibrant large outdoor vinyl advertising banner hanging with brass grommets on modern building facade under sunny bright sky, razor sharp CMYK color print" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA0svwNS65toHe97NM98IHY-F1cnTu2617brq6UMlNzOmMKr519V1rNmh6wxoMOUAO_rQuvytmUj9P4BUU2HxwgjwXr-7biigFeHT2Cgp6OBDQYGZuPFQkidznVaEx9BEY6t2_ZGNpvElyFmSLr6ZKgDxeO6BwKNfMPcypu2_xVZ2ZtMNIRaTJga2trfyNWy_s2-2mTu2iuuBGe8Ex6VNyBjXobZ8jZjptf2EgWlTIXfurzequ5fiXmQ">
+<span class="absolute top-2 left-2 px-space-sm py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">Extérieur UV</span>
+<span class="absolute top-2 right-2 px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container" style="font-variation-settings: 'FILL' 1;">star</span> 4.9
+          </span>
+</div>
+<div class="flex flex-col gap-space-xs px-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-bold">Bâche publicitaire 510g</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Œillets renforcés tous les 50cm, anti-vent.</span>
+<div class="flex items-baseline justify-between mt-space-xs pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">À partir de</span>
+<span class="font-title-md text-title-md font-bold text-primary">18 DT <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">/ m²</span></span>
+</div>
+<a class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-primary font-label-md text-label-md active:bg-primary active:text-on-primary transition-colors" href="#devis-express">
+              Devis rapide
+            </a>
+</div>
+</div>
+</div>
+<!-- Product 3: Stickers Waterproof -->
+<div class="product-item rounded-xl bg-surface-container-lowest p-space-sm flex flex-col gap-space-sm shadow-[0_1px_3px_rgba(15,23,42,0.05)]" data-category="stickers">
+<div class="relative h-44 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="High precision vinyl die cut logo stickers with smooth peel backing, glossy waterproof laminate reflecting subtle studio softbox lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIPu_XYevW0hZU8gNs4b7s2T_phbRsFFD7deXzgcDNF502nIsaBHS0El147M98seUkO2oXl5_jel18ybL5Ta77OSVG7It4Rn0QJkj9Qt1LJ9lx-onA9ssMKJezzc2dl_lSaSP9OsloYnfj1yjkwP8c2R1cyYxZcsRAYsunzyvunUQReJwlsNCd6fN0SlQCEuegvEmC42gJelyUP_t1O-W9v9k7OUFMEyND8qxPv4E8B94G9gV1u99ckg">
+<span class="absolute top-2 left-2 px-space-sm py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-sm text-label-sm">Waterproof</span>
+<span class="absolute top-2 right-2 px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container" style="font-variation-settings: 'FILL' 1;">star</span> 4.9
+          </span>
+</div>
+<div class="flex flex-col gap-space-xs px-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-bold">Stickers personnalisés découpés</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Découpe vectorielle précise mi-chair ou pleine.</span>
+<div class="flex items-baseline justify-between mt-space-xs pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">À partir de</span>
+<span class="font-title-md text-title-md font-bold text-primary">20 DT <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">/ planche</span></span>
+</div>
+<a class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-primary font-label-md text-label-md active:bg-primary active:text-on-primary transition-colors" href="#configurateur">
+              Configurer
+            </a>
+</div>
+</div>
+</div>
+<!-- Product 4: Cachet Trodat -->
+<div class="product-item rounded-xl bg-surface-container-lowest p-space-sm flex flex-col gap-space-sm shadow-[0_1px_3px_rgba(15,23,42,0.05)]" data-category="entreprise">
+<div class="relative h-44 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Official commercial self inking rubber stamp mechanical Trodat unit next to crisp dark blue imprint on white cotton parchment paper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFtVaMCTAMEP-JhZKh4-64VrMFDi6Bk2AxS85bseVRLn6nWPogkl13CfgeAGBNfY9PEgxZrdvS2bu-9N_CPkVgxbnK23woQHApV4hI_DEqwIc1p4fU89H0sQR6rFxgb3-jGnj_NOD3TJdcELW453dM0SW_3lVes44vsP4OJhmnom44pk3U2zWoTQPvkFytnJJrX1j12FRtwQEhLOPR2r9_6_7jYzu1byLCJezZzwxdeLBYkKM_6PWHBg">
+<span class="absolute top-2 left-2 px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">Prêt en 2h</span>
+<span class="absolute top-2 right-2 px-space-sm py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container" style="font-variation-settings: 'FILL' 1;">star</span> 5.0
+          </span>
+</div>
+<div class="flex flex-col gap-space-xs px-space-xs">
+<span class="font-title-md text-title-md text-on-surface font-bold">Cachet Encreur Automatique</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gravure laser haute netteté, encre bleue ou noire.</span>
+<div class="flex items-baseline justify-between mt-space-xs pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">À partir de</span>
+<span class="font-title-md text-title-md font-bold text-primary">25 DT <span class="font-body-sm text-body-sm text-on-surface-variant font-normal">/ unité</span></span>
+</div>
+<a class="px-space-md py-space-xs rounded-lg bg-surface-container-high text-primary font-label-md text-label-md active:bg-primary active:text-on-primary transition-colors" href="#devis-express">
+              Commander
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- HOW IT WORKS SECTION (PROCESS TIMELINE) -->
+<section class="px-margin-sm py-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs text-center">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Simple, Rapide, Garanti</span>
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-on-surface">Comment ça marche ?</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">De votre maquette à votre porte en 4 étapes faciles.</p>
+</div>
+<div class="grid grid-cols-1 gap-space-sm">
+<!-- Step 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.05)] flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center font-display-hero-mobile text-[20px] font-black shrink-0">
+          01
+        </div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-title-md text-title-md font-bold text-on-surface">Choisissez votre produit &amp; format</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Sélectionnez parmi plus de 50 supports de communication et dimensions standards.</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.05)] flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-secondary text-on-secondary flex items-center justify-center font-display-hero-mobile text-[20px] font-black shrink-0">
+          02
+        </div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-title-md text-title-md font-bold text-on-surface">Personnalisez vos finitions</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ajustez grammage, pelliculage soyeux, vernis sélectif UV ou dorure à chaud.</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.05)] flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-tertiary-container text-on-tertiary flex items-center justify-center font-display-hero-mobile text-[20px] font-black shrink-0">
+          03
+        </div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-title-md text-title-md font-bold text-on-surface">Téléversez ou confiez le design</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Uploadez votre fichier vectoriel ou faites appel à nos graphistes dédiés pour concevoir votre visuel.</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.05)] flex items-start gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-tint text-on-primary flex items-center justify-center font-display-hero-mobile text-[20px] font-black shrink-0">
+          04
+        </div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-title-md text-title-md font-bold text-on-surface">Livraison express à votre porte</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Impression soignée, emballage antichoc et expédition sécurisée partout en Tunisie en 24/48h.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE BUSINESS CARD CONFIGURATOR PREVIEW -->
+<section class="px-margin-sm py-space-lg flex flex-col gap-space-md bg-surface-container-low" id="configurateur">
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="material-symbols-outlined text-[16px]">tune</span> Configurateur Interactif
+      </div>
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-on-surface">Simulez Votre Carte de Visite</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ajustez vos spécifications en temps réel et visualisez instantanément le devis unitaire et total.</p>
+</div>
+<!-- Live Card Mockup Dynamic Preview -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-[0_10px_25px_-5px_rgba(15,23,42,0.08)] flex flex-col gap-space-md">
+<!-- Dynamic Visual Surface -->
+<div class="relative w-full h-44 rounded-xl flex flex-col justify-between p-space-md transition-all duration-300 shadow-[0_8px_20px_-4px_rgba(28,42,200,0.15)] bg-gradient-to-tr from-surface-container-high to-surface-container-lowest" id="card-preview-stage">
+<!-- Orientation & Badge watermark -->
+<div class="flex justify-between items-start">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center font-bold font-headline-sm text-[16px]">
+              G
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface tracking-tight" id="preview-brand-title">GEOPRINT STUDIO</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="preview-spec-badge">85x55 mm • 350g</span>
+</div>
+</div>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-sm" id="preview-finish-tag">Pelliculage Mat</span>
+</div>
+<div class="flex justify-between items-end">
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold text-on-surface">Directeur de Création</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">+216 71 000 000 • Tunis</span>
+</div>
+<div class="w-8 h-8 rounded-full bg-secondary-container/60 flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+</div>
+</div>
+<!-- Config Controls -->
+<div class="flex flex-col gap-space-sm">
+<!-- 1. Format -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">1. Format du support</label>
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="cfg-btn cfg-format active-cfg-btn py-space-sm px-space-xs text-center rounded-lg font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all" onclick="selectConfigOption('format', 'standard', this)" type="button">
+              85 × 55 mm (Standard)
+            </button>
+<button class="cfg-btn cfg-format py-space-sm px-space-xs text-center rounded-lg font-label-md text-label-md bg-surface-container text-on-surface transition-all" onclick="selectConfigOption('format', 'etroit', this)" type="button">
+              90 × 50 mm (Étroit)
+            </button>
+</div>
+</div>
+<!-- 2. Papier & Grammage -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">2. Grammage du papier</label>
+<div class="grid grid-cols-3 gap-space-xs">
+<button class="cfg-btn cfg-weight py-space-sm text-center rounded-lg font-label-md text-label-md bg-surface-container text-on-surface transition-all" onclick="selectConfigOption('weight', 250, this)" type="button">
+              250g Souple
+            </button>
+<button class="cfg-btn cfg-weight py-space-sm text-center rounded-lg font-label-md text-label-md bg-surface-container text-on-surface transition-all" onclick="selectConfigOption('weight', 300, this)" type="button">
+              300g Éco
+            </button>
+<button class="cfg-btn cfg-weight active-cfg-btn py-space-sm text-center rounded-lg font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all" onclick="selectConfigOption('weight', 350, this)" type="button">
+              350g Rigide
+            </button>
+</div>
+</div>
+<!-- 3. Finition -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">3. Finition &amp; Toucher</label>
+<div class="grid grid-cols-3 gap-space-xs">
+<button class="cfg-btn cfg-finish py-space-sm text-center rounded-lg font-label-md text-label-md bg-surface-container text-on-surface transition-all" onclick="selectConfigOption('finish', 'standard', this)" type="button">
+              Standard
+            </button>
+<button class="cfg-btn cfg-finish active-cfg-btn py-space-sm text-center rounded-lg font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all" onclick="selectConfigOption('finish', 'mat', this)" type="button">
+              Pelliculé Mat
+            </button>
+<button class="cfg-btn cfg-finish py-space-sm text-center rounded-lg font-label-md text-label-md bg-surface-container text-on-surface transition-all" onclick="selectConfigOption('finish', 'vernis', this)" type="button">
+              Vernis Sélectif
+            </button>
+</div>
+</div>
+<!-- 4. Quantité -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">4. Tirage &amp; Volume</label>
+<div class="grid grid-cols-4 gap-space-xs">
+<button class="cfg-btn cfg-qty py-space-sm text-center rounded-lg font-label-md text-label-md bg-surface-container text-on-surface transition-all" onclick="selectConfigOption('qty', 100, this)" type="button">100 ex</button>
+<button class="cfg-btn cfg-qty active-cfg-btn py-space-sm text-center rounded-lg font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all" onclick="selectConfigOption('qty', 250, this)" type="button">250 ex</button>
+<button class="cfg-btn cfg-qty py-space-sm text-center rounded-lg font-label-md text-label-md bg-surface-container text-on-surface transition-all" onclick="selectConfigOption('qty', 500, this)" type="button">500 ex</button>
+<button class="cfg-btn cfg-qty py-space-sm text-center rounded-lg font-label-md text-label-md bg-surface-container text-on-surface transition-all" onclick="selectConfigOption('qty', 1000, this)" type="button">1000 ex</button>
+</div>
+</div>
+</div>
+<!-- Live Dynamic Price Display Box -->
+<div class="p-space-md rounded-xl bg-surface-container-high flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Estimation Instantanée</span>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-primary font-black" id="simulator-total-price">75 DT</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">TTC (contrôle BAT inclus)</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span> 24h chrono
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">Livraison Tunisie</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<button class="w-full py-space-md rounded-xl bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-space-xs active:scale-95 transition-transform shadow-[0_10px_25px_-5px_rgba(28,42,200,0.3)]" onclick="alert('Configuration de carte de visite ajoutée à votre panier !')" type="button">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+          Ajouter au panier avec ces options
+        </button>
+<a class="w-full py-space-sm text-center font-label-md text-label-md text-on-surface hover:text-primary transition-colors" href="#devis-express">
+          Besoin d'un format sur mesure ? Demander un devis
+        </a>
+</div>
+</div>
+</section>
+<!-- DESIGN UPLOAD & STUDIO CREATIF SECTION -->
+<section class="px-margin-sm py-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Pré-Presse &amp; Fichiers</span>
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-on-surface">Envoyez Votre Design</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Que vous ayez déjà vos maquettes prêtes à l'impression ou que vous partiez d'une feuille blanche.</p>
+</div>
+<!-- Toggle Tabs -->
+<div class="grid grid-cols-2 p-1 rounded-xl bg-surface-container-high">
+<button class="py-space-sm rounded-lg font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm transition-all" id="tab-upload-btn" onclick="switchDesignTab('upload')">
+        J'ai déjà mon fichier
+      </button>
+<button class="py-space-sm rounded-lg font-label-md text-label-md text-on-surface-variant transition-all" id="tab-studio-btn" onclick="switchDesignTab('studio')">
+        Création sur mesure
+      </button>
+</div>
+<!-- Tab 1: Upload Zone Content -->
+<div class="flex flex-col gap-space-sm" id="tab-content-upload">
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col items-center justify-center text-center gap-space-sm" style="border: 2px dashed #757687; border-image: none;">
+<div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[32px]">cloud_upload</span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-title-md text-title-md font-bold text-on-surface">Glissez vos fichiers d'impression</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Formats acceptés : PDF, AI, EPS, PSD, TIFF, JPG haute définition</span>
+</div>
+<label class="px-space-md py-space-xs rounded-lg bg-primary text-on-primary font-label-md text-label-md cursor-pointer active:scale-95 transition-transform shadow-sm">
+<span class="">Parcourir mes documents</span>
+<input class="hidden" onchange="alert('Fichier reçu ! Notre équipe pré-presse effectue le contrôle technique de résolution (300 DPI) et des fonds perdus (3mm).')" type="file">
+</label>
+<div class="flex items-center gap-space-sm pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span> Mode CMJN</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span> 300 DPI</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span> Fond perdu 3mm</span>
+</div>
+</div>
+</div>
+<!-- Tab 2: Studio Creatif Content (Hidden initially) -->
+<div class="hidden flex-col gap-space-sm" id="tab-content-studio">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.05)] flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed-variant flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">palette</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold text-on-surface">Notre Studio Graphique à votre service</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Vous n'avez pas de maquette ? Nos directeurs artistiques conçoivent votre identité visuelle complète (logo, carte, flyer).</span>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<span class="font-body-sm text-body-sm font-semibold text-on-surface">Forfait Création Graphique Pro</span>
+<span class="font-label-md text-label-md text-primary font-bold">Dès 50 DT</span>
+</div>
+<a class="py-space-sm px-space-md rounded-lg bg-secondary text-on-secondary text-center font-label-md text-label-md active:scale-95 transition-transform" href="#devis-express">
+          Demander une création graphique
+        </a>
+</div>
+</div>
+</section>
+<!-- REALISATIONS & PORTFOLIO GALLERY -->
+<section class="px-margin-sm py-space-lg flex flex-col gap-space-md bg-surface-container-low">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Savoir-faire Atelier</span>
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-on-surface">Nos Réalisations</h2>
+</div>
+<span class="material-symbols-outlined text-primary text-[28px]">photo_camera</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Quelques créations récentes imprimées avec fierté pour nos clients partout en Tunisie.</p>
+</div>
+<!-- Gallery Grid Mobile -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Item 1 -->
+<div class="flex flex-col gap-space-xs rounded-xl overflow-hidden bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.04)]">
+<div class="relative h-32 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up shot of dark matte business cards with gleaming warm gold foil stamping for historic hotel Dar El Bey, sharp edges and textured cotton paper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjHEQ78Pps3mgyFfkDmd_aG61rTpjJWNfSJDOtQQpRovuk9zOC67tY33jfbWEqNvZxFcf9OQaBwz24xLrh0AvPhlbQH-jeXXu8MDlj-yK7o9SuCu_qWf0yGFt9PX91NJiL69Srn9Ulja3d79Bi6el6xLkYaMQzfVSLAaUgAogSfcwMEs3K7tNHFQJ3FKUPM_bj5zGmqL5zW8Fg67_YQQSH7c1mxPB4ghLpqaGcSodAj6UEfAtzzhkzvA">
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-inverse-surface/80 text-surface-container-lowest font-label-sm text-[10px]">Dorure à chaud</span>
+</div>
+<div class="p-space-xs flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Dar El Bey Tunis</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Papeterie &amp; Dorure</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col gap-space-xs rounded-xl overflow-hidden bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.04)]">
+<div class="relative h-32 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Laminated water resistant cafe and restaurant food menu booklet with elegant minimal typography on matte black substrate resting on marble counter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDYcIfk4WpH8HInN0JvJkWykgucUSctzvfynwMBbGkviksB00whmY-uNK4yb2oNT4wAlgjo9KUILyAzpjV-dPO5NsXsiRpX5-nCzAA2rwg0iqezdWW2482TgbwQGg9KTHGrx7O7JANX1uFbPeVB1L1JgySXtmRMH5Bd8unwGUOGQhYmYAW8QQLt8GoOp52bHLMdxGWsmxAJ5DDJwRXgytQufoIInCWT500pd3Hz-OGLjeUNdHBMlYxmg">
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-inverse-surface/80 text-surface-container-lowest font-label-sm text-[10px]">Pelliculé Soft</span>
+</div>
+<div class="p-space-xs flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Le Gourmet La Marsa</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Menus Restaurant</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col gap-space-xs rounded-xl overflow-hidden bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.04)]">
+<div class="relative h-32 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Grand exhibition event backdrop vinyl banner with vibrant saturated magenta and deep indigo graphics displayed at international business convention center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkUyfy6kT1GNbx-9DIFJQ1w77M5jDubpjvteQa55XyjCttyI8u1p6K6ECNkmYhJu85fk_Tw_cnE7oFSPEGA9bshz5iUA7LqGtdC_rFbcBPqqdi5elHaKDeAbK69252MiO6ermppDhIOK_WXpsrm5yfa0pTfs-mo4rnEOQRnsgp9hKyLXDB6oPNKTHsDFgfI1BaasQkpsJL-jgz9vleT3iPpfSKSdMDfRyyXOYdyAO9f6rvJ9ycygfoTg">
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-inverse-surface/80 text-surface-container-lowest font-label-sm text-[10px]">Grand Format</span>
+</div>
+<div class="p-space-xs flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Salon Tech Sfax</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Bâche 4x3m &amp; Stand</span>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="flex flex-col gap-space-xs rounded-xl overflow-hidden bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.04)]">
+<div class="relative h-32 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Artisanal glass olive oil bottles wearing textured kraft adhesive label roll with embossed green foil olive leaf emblem on luxury cardboard box" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB53Q9YE9uTxT6AsFWynDcJ2yxAD7iWye3eyDt6LJr0OWIEJfkh9HtH4rOxZ5HZUbvg-et-UtzQA0C9M1gPLl4y24UecLxyYYtcsj8kZClPXj53wnjeNHPvIwFLUWJO7m8P0SflBIlfaygNNYQca64eBTdoVTAzQsbzBU5m4fGhlRPdZ2M37XHE2AJJLUxGvkOrtgvGyd7KBNZlDXunA0YrSokBJMTG4pq-8Ix7LwyrzPaNnx8C7hEGPQ">
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-inverse-surface/80 text-surface-container-lowest font-label-sm text-[10px]">Étiquettes kraft</span>
+</div>
+<div class="p-space-xs flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Huile de Carthage</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Packaging Artisanal</span>
+</div>
+</div>
+</div>
+</section>
+<!-- WHY CHOOSE US -->
+<section class="px-margin-sm py-space-lg flex flex-col gap-space-md">
+<div class="flex flex-col gap-space-xs text-center">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">L'Excellence Atelier</span>
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-on-surface">Pourquoi Nous Choisir ?</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">L'alliance de la technologie numérique industrielle et du soin artisanal.</p>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.05)] flex flex-col gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[28px]">high_quality</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">Qualité HD</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Calibrage colorimétrique CMJN certifié et encres anti-décoloration.</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.05)] flex flex-col gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[28px]">bolt</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">Délais Express</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Production le jour même &amp; expédition express sous 24h ouvrées.</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.05)] flex flex-col gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-container text-[28px]">payments</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">Prix d'Usine</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Directement du producteur au client sans marge d'intermédiaire.</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.05)] flex flex-col gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[28px]">support_agent</span>
+<span class="font-title-md text-title-md font-bold text-on-surface">WhatsApp 7j/7</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Échange direct avec nos techniciens de 8h à 20h sans attente.</span>
+</div>
+</div>
+</section>
+<!-- CUSTOMER REVIEWS (AVIS CLIENTS TUNISIE) -->
+<section class="px-margin-sm py-space-lg flex flex-col gap-space-md bg-surface-container-low">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Confiance &amp; Fidélité</span>
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-on-surface">Ce que disent nos clients</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Plus de 3 500 entreprises et créateurs nous font confiance chaque année.</p>
+</div>
+<!-- Review Card 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.05)] flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary/20 text-primary font-bold flex items-center justify-center font-label-md text-label-md">
+            MB
+          </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold text-on-surface">Mehdi Ben Salem</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fondateur, Horizon Com • Tunis</span>
+</div>
+</div>
+<div class="flex text-tertiary-container">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+        "Impression des cartes 350g pelliculées mat impeccable. Le respect des couleurs CMJN était parfait par rapport à nos fichiers Illustrator. Livraison reçue au Lac 2 en 24h."
+      </p>
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span> Achat vérifié • Cartes de visite
+      </div>
+</div>
+<!-- Review Card 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-[0_1px_3px_rgba(15,23,42,0.05)] flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed font-bold flex items-center justify-center font-label-md text-label-md">
+            YT
+          </div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md font-bold text-on-surface">Yasmine Trabelsi</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gérante, Café &amp; Co • La Marsa</span>
+</div>
+</div>
+<div class="flex text-tertiary-container">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">
+        "Leur service de contrôle BAT gratuit nous a évité une grosse erreur de coupe sur les menus. Très pro et réactif sur WhatsApp. On recommande à 100%."
+      </p>
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span> Achat vérifié • Menus Plastifiés
+      </div>
+</div>
+</section>
+<!-- EXPRESS QUOTE REQUEST FORM SECTION -->
+<section class="px-margin-sm py-space-lg flex flex-col gap-space-md" id="devis-express">
+<div class="flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-space-xs text-secondary font-label-sm text-label-sm uppercase tracking-wider font-bold">
+<span class="material-symbols-outlined text-[16px]">timer</span> Réponse sous 2h ouvrées
+      </div>
+<h2 class="font-headline-md-mobile text-headline-md-mobile text-on-surface">Demande de Devis Express</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Remplissez les détails de votre projet. Devis officiel transmis par email et sur WhatsApp.</p>
+</div>
+<form class="p-space-md rounded-xl bg-surface-container-lowest shadow-[0_10px_25px_-5px_rgba(15,23,42,0.08)] flex flex-col gap-space-sm" onsubmit="event.preventDefault(); alert('Votre demande de devis express a bien été transmise ! Un conseiller GS Imprim prendra contact sous 2h.');">
+<!-- Full Name -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Nom complet *</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md outline-none focus:ring-2 focus:ring-primary/20" placeholder="Ex. Karim Ben Mahmoud" required="" type="text">
+</div>
+<!-- Phone Number Tunisia -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Téléphone / WhatsApp (+216) *</label>
+<div class="flex gap-space-xs">
+<span class="h-11 px-space-md rounded-lg bg-surface-container-high flex items-center font-label-md text-label-md text-on-surface-variant shrink-0">+216</span>
+<input class="flex-1 h-11 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md outline-none focus:ring-2 focus:ring-primary/20" placeholder="XX XXX XXX" required="" type="tel">
+</div>
+</div>
+<!-- Product Type Select -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Type de support souhaité *</label>
+<select class="w-full h-11 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md outline-none focus:ring-2 focus:ring-primary/20">
+<option value="cartes">Cartes de visite &amp; Papeterie</option>
+<option value="bache">Bâche publicitaire extérieure</option>
+<option value="stickers">Stickers &amp; Étiquettes en rouleau</option>
+<option value="roll-up">Roll-up &amp; Stand d'exposition</option>
+<option value="cachet">Cachet commercial automatique</option>
+<option value="packaging">Boîtes &amp; Packaging sur mesure</option>
+<option value="autre">Autre projet personnalisé</option>
+</select>
+</div>
+<!-- Quantité & Dimensions -->
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Quantité estimée</label>
+<input class="w-full h-11 px-space-md rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md outline-none focus:ring-2 focus:ring-primary/20" placeholder="Ex. 500 ex ou 2 m²" type="text">
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Gouvernorat</label>
+<select class="w-full h-11 px-space-sm rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md outline-none focus:ring-2 focus:ring-primary/20">
+<option value="tunis">Tunis / Grand Tunis</option>
+<option value="sousse">Sousse / Sahel</option>
+<option value="sfax">Sfax</option>
+<option value="nabeul">Nabeul / Cap Bon</option>
+<option value="bizerte">Bizerte</option>
+<option value="autre">Autre région</option>
+</select>
+</div>
+</div>
+<!-- Description -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Détails ou exigences particulières</label>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md outline-none focus:ring-2 focus:ring-primary/20" placeholder="Finitions dorure, vernis sélectif, date limite d'événement..." rows="3"></textarea>
+</div>
+<!-- CTA Submit -->
+<button class="mt-space-xs w-full py-space-md rounded-xl bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center gap-space-xs active:scale-95 transition-transform shadow-[0_10px_25px_-5px_rgba(28,42,200,0.3)]" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+        Recevoir mon devis gratuit sous 2h
+      </button>
+</form>
+</section>
+<!-- DIRECT WHATSAPP BANNER INLINE CTA -->
+<section class="px-margin-sm py-space-md">
+<div class="p-space-md rounded-xl bg-secondary text-on-secondary flex flex-col gap-space-sm shadow-[0_10px_25px_-5px_rgba(0,104,122,0.3)]">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-lowest/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px] text-surface-container-lowest">chat</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold">Une question urgente ?</span>
+<span class="font-body-sm text-body-sm opacity-90">Nos techniciens vous répondent en direct sur WhatsApp.</span>
+</div>
+</div>
+<a class="w-full py-space-sm rounded-lg bg-surface-container-lowest text-secondary font-label-md text-label-md flex items-center justify-center gap-space-xs active:scale-95 transition-transform font-bold" href="https://wa.me/21600000000" target="_blank">
+        Ouvrir la discussion WhatsApp
+      </a>
+</div>
+</section>
+<!-- FLOATING WHATSAPP BUTTON (TACTILE DELIGHT) -->
+<div class="fixed bottom-20 right-4 z-40 flex items-center gap-space-xs">
+<div class="hidden sm:flex px-space-sm py-1 rounded-full bg-surface-container-lowest shadow-md text-on-surface font-label-sm text-label-sm">
+      Besoin d'un conseil ? 💬
+    </div>
+<a aria-label="Support WhatsApp Instantané" class="w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-[0_10px_25px_rgba(37,211,102,0.4)] hover:scale-105 active:scale-95 transition-transform" href="https://wa.me/21600000000" target="_blank">
+<span class="material-symbols-outlined text-[32px]">chat</span>
+</a>
+</div>
+</div>
+<script>
+  // Filter products interactive pills
+  function filterProducts(category) {
+    const buttons = document.querySelectorAll('.product-filter-btn');
+    buttons.forEach(btn => {
+      if (btn.getAttribute('data-target') === category) {
+        btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+        btn.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+      } else {
+        btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        btn.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+      }
+    });
+
+    const items = document.querySelectorAll('.product-item');
+    items.forEach(item => {
+      if (category === 'all' || item.getAttribute('data-category') === category) {
+        item.style.display = 'flex';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+
+  // Configurator state logic & reactive calculator
+  const configState = {
+    format: 'standard',
+    weight: 350,
+    finish: 'mat',
+    qty: 250
+  };
+
+  const priceMatrix = {
+    standard: {
+      100: { 250: 30, 300: 35, 350: 40 },
+      250: { 250: 55, 300: 65, 350: 75 },
+      500: { 250: 90, 300: 105, 350: 120 },
+      1000: { 250: 150, 300: 175, 350: 195 }
+    },
+    etroit: {
+      100: { 250: 32, 300: 37, 350: 42 },
+      250: { 250: 58, 300: 68, 350: 78 },
+      500: { 250: 95, 300: 110, 350: 125 },
+      1000: { 250: 160, 300: 185, 350: 205 }
+    }
+  };
+
+  const finishExtra = {
+    standard: 0,
+    mat: 10,
+    vernis: 25
+  };
+
+  function selectConfigOption(type, value, element) {
+    configState[type] = value;
+    
+    // Style toggle
+    const siblings = document.querySelectorAll('.cfg-' + type);
+    siblings.forEach(btn => {
+      btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+      btn.classList.add('bg-surface-container', 'text-on-surface');
+    });
+    element.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+    element.classList.remove('bg-surface-container', 'text-on-surface');
+
+    // Update dynamic preview
+    const specBadge = document.getElementById('preview-spec-badge');
+    const finishTag = document.getElementById('preview-finish-tag');
+    const cardStage = document.getElementById('card-preview-stage');
+
+    const formatLabel = configState.format === 'standard' ? '85x55 mm' : '90x50 mm';
+    specBadge.innerText = formatLabel + ' • ' + configState.weight + 'g';
+
+    if (configState.finish === 'standard') {
+      finishTag.innerText = 'Sans Finition';
+      cardStage.style.filter = 'none';
+    } else if (configState.finish === 'mat') {
+      finishTag.innerText = 'Pelliculage Mat';
+      cardStage.style.filter = 'contrast(0.95) saturate(1.05)';
+    } else {
+      finishTag.innerText = 'Vernis Sélectif';
+      cardStage.style.filter = 'drop-shadow(0 4px 6px rgba(28,42,200,0.25))';
+    }
+
+    // Calculate price
+    const basePrice = priceMatrix[configState.format][configState.qty][configState.weight];
+    const total = basePrice + finishExtra[configState.finish];
+    document.getElementById('simulator-total-price').innerText = total + ' DT';
+  }
+
+  // Pre-press tabs switcher
+  function switchDesignTab(tab) {
+    const uploadBtn = document.getElementById('tab-upload-btn');
+    const studioBtn = document.getElementById('tab-studio-btn');
+    const uploadContent = document.getElementById('tab-content-upload');
+    const studioContent = document.getElementById('tab-content-studio');
+
+    if (tab === 'upload') {
+      uploadBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      uploadBtn.classList.remove('text-on-surface-variant');
+      studioBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      studioBtn.classList.add('text-on-surface-variant');
+      uploadContent.classList.remove('hidden');
+      studioContent.classList.add('hidden');
+    } else {
+      studioBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      studioBtn.classList.remove('text-on-surface-variant');
+      uploadBtn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      uploadBtn.classList.add('text-on-surface-variant');
+      studioContent.classList.remove('hidden');
+      uploadContent.classList.add('hidden');
+    }
+  }
+</script><footer class="mt-space-xl bg-surface-container-low px-space-md pt-space-xl pb-space-lg flex flex-col gap-space-lg"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="GS Imprim Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOS6BhVhzRLBzPG0k6MW0b5OTafrOaMQxgTb3ncXiphhYe2gOqZr_zbHKwIpJuSRKfjT6NF1jeEVPMf-w99Ksxu6CdyLGTDpSCaluK8cs09UPKE4jAN2Cg84rqiD2ITfunGOWgmufsZCxhlTKzGn0SHje7YFmLqtf-pHv8zbEQ1tWR0Jzppv3JvEetHvRPvozHD8OjTTGM7J3RvrtJY83nK1MPQNdvttpsL3iwkegqpm0vTBt2jg010g"><span class="font-headline-sm text-headline-sm text-primary">GS Imprim</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Studio d'impression haut de gamme, façonnage d'art et solutions de packaging écoresponsables.</p></div><div class="grid grid-cols-2 gap-space-md"><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase text-primary tracking-wider">Catalogue</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary" data-path="produits" href="#">Papeterie Pro</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary" data-path="produits" href="#">Packaging</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary" data-path="produits" href="#">Grands Formats</a></div><div class="flex flex-col gap-space-xs"><span class="font-label-md text-label-md uppercase text-primary tracking-wider">Atelier</span><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary" data-path="services" href="#">Finitions &amp; Dorure</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary" data-path="nos-realisations" href="#">Portfolio</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary" data-path="a-propos" href="#">Nos Papiers</a></div></div><div class="flex flex-col gap-space-sm pt-space-sm"><a class="flex items-center justify-center gap-space-xs py-space-sm px-space-md bg-secondary text-on-secondary rounded-lg font-label-md text-label-md shadow-[0_1px_3px_rgba(15,23,42,0.05)]" href="https://wa.me/" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span> Support WhatsApp Direct</a><div class="flex items-center justify-between text-on-surface-variant pt-space-xs"><span class="font-label-sm text-label-sm">© 2024 GS Imprim Studio</span><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm hover:text-primary">Conditions</span><span class="font-label-sm text-label-sm hover:text-primary">Pre-flight Guide</span></div></div></div></footer></main><nav class="fixed bottom-0 inset-x-0 z-40 bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_10px_25px_-5px_rgba(15,23,42,0.08)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center flex-1 h-14 transition-colors gap-space-xs text-primary font-bold" data-path="accueil" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm">Accueil</span></a><a class="flex flex-col items-center justify-center flex-1 h-14 text-on-surface-variant hover:text-primary transition-colors gap-space-xs" data-path="produits" href="#"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-sm text-label-sm">Produits</span></a><a class="flex flex-col items-center justify-center flex-1 h-14 text-on-surface-variant hover:text-primary transition-colors gap-space-xs" data-path="devis-express" href="#"><span class="material-symbols-outlined text-[22px]">calculate</span><span class="font-label-sm text-label-sm">Devis</span></a><a class="flex flex-col items-center justify-center flex-1 h-14 text-on-surface-variant hover:text-primary transition-colors gap-space-xs" data-path="nos-realisations" href="#"><span class="material-symbols-outlined text-[22px]">photo_library</span><span class="font-label-sm text-label-sm">Galerie</span></a><a class="flex flex-col items-center justify-center flex-1 h-14 text-on-surface-variant hover:text-primary transition-colors gap-space-xs" data-path="mon-compte" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm">Compte</span></a></div></nav>
+
+</body></html>

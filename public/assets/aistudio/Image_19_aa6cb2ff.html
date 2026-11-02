@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary-fixed-variant": "#004e5c",
+          "on-error-container": "#93000a",
+          "primary-container": "#3b49df",
+          "surface": "#faf8ff",
+          "inverse-surface": "#283044",
+          "surface-tint": "#3c4ae0",
+          "surface-container-highest": "#dae2fd",
+          "secondary-fixed-dim": "#4cd7f6",
+          "surface-container-low": "#f2f3ff",
+          "inverse-primary": "#bdc2ff",
+          "on-tertiary": "#ffffff",
+          "on-primary-container": "#d2d4ff",
+          "on-tertiary-fixed": "#2a1700",
+          "tertiary-fixed-dim": "#ffb95f",
+          "on-secondary-fixed": "#001f26",
+          "tertiary-fixed": "#ffddb8",
+          "surface-bright": "#faf8ff",
+          "surface-container-lowest": "#ffffff",
+          "on-tertiary-container": "#ffcf98",
+          "error-container": "#ffdad6",
+          "surface-variant": "#dae2fd",
+          "error": "#ba1a1a",
+          "surface-dim": "#d2d9f4",
+          "on-secondary": "#ffffff",
+          "tertiary-container": "#845300",
+          "secondary-fixed": "#acedff",
+          "outline": "#757687",
+          "on-surface": "#131b2e",
+          "on-background": "#131b2e",
+          "surface-container-high": "#e2e7ff",
+          "on-primary-fixed-variant": "#1d2cc9",
+          "inverse-on-surface": "#eef0ff",
+          "secondary-container": "#57dffe",
+          "primary-fixed": "#e0e0ff",
+          "outline-variant": "#c6c5d8",
+          "surface-container": "#eaedff",
+          "tertiary": "#643e00",
+          "on-primary-fixed": "#000668",
+          "on-secondary-container": "#006172",
+          "primary-fixed-dim": "#bdc2ff",
+          "secondary": "#00687a",
+          "on-error": "#ffffff",
+          "on-primary": "#ffffff",
+          "primary": "#1c2ac8",
+          "on-tertiary-fixed-variant": "#653e00",
+          "background": "#faf8ff",
+          "on-surface-variant": "#454655"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "1.5rem",
+          "space-sm": "0.5rem",
+          "space-xl": "2.5rem",
+          "space-xs": "0.25rem",
+          "gutter-sm": "1rem",
+          "margin-sm": "1rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "gutter-lg": "2rem",
+          "margin": "1.5rem",
+          "margin-lg": "3rem"
+        },
+        "fontFamily": {
+          "display-hero-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "display-hero-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "800"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "title-md": [
+            "17px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "17px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-hero": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-md-mobile": [
+            "22px",
+            {
+              "lineHeight": "30px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(15,23,42,0.06)]"><div class="h-20 max-w-[1440px] mx-auto px-margin lg:px-margin-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="accueil" href="#"><img alt="Modern luxury geometric print shop logo icon, minimalist overlapping cyan, magenta, and deep navy printing color layers or folded stylized letter P with precise geometric lines, vector style on clean background. Design context: - Primary color: #3b49df
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+. The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vpv6nsr3_nsS7COjiZYvsfnWDi4AyCLAAL3qdfnTnCXx6L36narV3WIHcWzy_hUeS7BosaBz1FFWoMPYHZluffaCgdx36nuEBqSX4-S_lGfDTFRGdG_IMhIaK2bASbS3M58zdVBSLFJbvD6NBPaXvGXdYIOepvV-r4-J_a6uW8nMZ6M1V0VWlkLuX04cPAVct8ktskKJqGod4gU2MVcJGRoNWo15oJhfugypHUcMBXYmLFgVbIvAcmW7dG"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">GS Imprim</span><span class="font-label-sm text-label-sm text-outline tracking-wider uppercase leading-none mt-1">Atelier Print Studio</span></div></a></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-title-md"><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="accueil" href="#">Accueil</a><a aria-current="page" class="transition-colors py-space-xs text-primary font-title-md" data-path="catalogue-produits" href="#">Catalogue Produits</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="services-finitions" href="#">Services &amp; Finitions</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="realisations" href="#">Réalisations</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="devis-express" href="#">Devis Express</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><div class="relative hidden lg:flex items-center w-64 h-10 px-space-sm bg-surface-container-low rounded-lg"><span class="material-symbols-outlined text-outline mr-2 text-[20px]">search</span><input class="w-full bg-transparent border-none outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline" placeholder="Flyer, packaging, dorure..." type="text"/></div><a class="hidden sm:inline-flex items-center justify-center h-10 px-space-md rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-all shadow-[0_1px_3px_rgba(15,23,42,0.08)]" data-path="devis-express" href="#"><span class="material-symbols-outlined text-[18px] mr-1.5">calculate</span>Devis Instantané</a><div class="flex items-center gap-space-xs"><button aria-label="Panier" class="relative flex items-center justify-center w-10 h-10 rounded-lg hover:bg-surface-container-high transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined">shopping_bag</span><span class="absolute top-1.5 right-1.5 flex items-center justify-center w-4 h-4 rounded-full bg-primary text-on-primary font-label-sm text-[10px]">3</span></button><button aria-label="Espace Client" class="flex items-center justify-center p-1 rounded-full hover:ring-2 hover:ring-primary-container transition-all" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UgPDHvQ6tB0nAqJwKlB3Xq3mot0sifC0s7on-IJk0J-i9XPz7LEpm7L5Ia4-jQR06lov-Y-HMQAdSby32C3IlyskiWVdhmfmZvbeYllABoLQkxVmErxb7Ll1MtnR4k-F4da3u6XIAS9PT49NfqgkAfFz-29MKZ1GZkBU1XrMxkhAH_kCc-MEBidKFmeZAyFIFW9zN_2K8acgKvEXPCn9Y6nUSNRgQIPqtRCnvvEdiODZml-puN6tZU-4jT"/></button></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Fil d'Ariane & Bandeau de réassurance rapide -->
+<section class="w-full bg-surface-container-low py-space-sm">
+<div class="max-w-[1440px] mx-auto px-margin lg:px-margin-lg flex flex-wrap items-center justify-between gap-space-sm">
+<nav aria-label="Fil d'ariane" class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Accueil</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Catalogue</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Papeterie &amp; Impression Offset</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="font-title-md text-body-sm text-on-surface">Flyers &amp; Dépliants Publicitaires</span>
+</nav>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant">
+<span class="inline-flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+          Calibrage Fogra 39 certifié
+        </span>
+<span class="hidden sm:inline-block text-outline-variant">•</span>
+<span class="inline-flex items-center gap-1.5 text-tertiary">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+          Atelier Tunis : Expédition 24/48h
+        </span>
+</div>
+</div>
+</section>
+<!-- En-tête éditorial condensé -->
+<section class="w-full py-space-md">
+<div class="max-w-[1440px] mx-auto px-margin lg:px-margin-lg">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-sm">
+<div>
+<div class="inline-flex items-center gap-2 px-space-sm py-0.5 rounded-full bg-surface-container-highest text-primary font-label-sm text-label-sm uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-[14px]">auto_stories</span>
+            Impression Offset &amp; Numérique Grand Débit
+          </div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            Flyers &amp; Dépliants Publicitaires Haute Précision
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-2xl">
+            Du tract événementiel au dépliant institutionnel 3 volets avec rainage net anti-craquelure. Façonnage d’atelier rigoureux pour une tenue irréprochable sous presse Heidelberg.
+          </p>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-outline block">À partir de</span>
+<span class="font-headline-md text-headline-md text-primary font-extrabold">40,000 <span class="font-label-md text-label-md">TND HT</span></span>
+</div>
+<div class="px-space-sm py-1 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+            Dispo 24H
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Grille Principale Configurateur & Médias Techniques -->
+<section class="w-full pb-space-xl">
+<div class="max-w-[1440px] mx-auto px-margin lg:px-margin-lg grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg">
+<!-- ================= COLONNE DE GAUCHE : GALERIE, SUBSTRATS & PAO (5 COLONNES) ================= -->
+<div class="lg:col-span-5 space-y-space-lg">
+<!-- Galerie HD avec Sélecteur dynamique -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-md space-y-space-sm">
+<div class="relative w-full aspect-[4/3] rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-opacity duration-300" data-alt="High precision stack of A5 premium satin flyers on a clean workshop oak bench with precise cut edges and subtle Heidelberg ink sheen, studio lighting with soft shadows, corporate navy and cyan branding accents." id="mainProductImage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBonRf0CI7Xl5jhqUzNZloqnQ3kAPJhNS16zRbrdMIgCQ1t-KvsADDYxkW96pF0ruMDi-SsT4WWWacux5jOtjRiAwc-J-aMRdDQL4Vu48FQITYkSFS3OkZU1-y9GpHu1nj7qJc5DgVC0vPz_fxvnQ2Q98JNBbPPfd0jmWY484-QzqpnhAclFo8cfpn6bPDAAajg22LJ-DuVs6Eiz82igibneXooDDQif78LJn4hNTqwOGU_PNM6woQMog"/>
+<div class="absolute bottom-3 left-3 bg-inverse-surface/85 backdrop-blur-md px- space-sm py-1 rounded-md text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-secondary-fixed-dim">zoom_in</span>
+              Rendu atelier réel 100% vectoriel
+            </div>
+<div class="absolute top-3 right-3 bg-surface-container-lowest/90 backdrop-blur-md px-2 py-1 rounded font-label-sm text-label-sm text-primary font-bold shadow-sm">
+              Rainage anti-craquelure
+            </div>
+</div>
+<!-- Thumbnails interactifs -->
+<div class="grid grid-cols-4 gap-2">
+<button class="thumb-btn ring-2 ring-primary rounded-md overflow-hidden aspect-[4/3] bg-surface-container" onclick="changePreview(0)" type="button">
+<img class="w-full h-full object-cover" data-alt="Stack of A5 printed flyers showing sharp edges and vibrant color fidelity under studio light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtlOrf4DSysNrLxijNgymVXY0JW19ufXMqH9RF1jdoKOwtaLBLK9ZOEBysjseaS78ZOWeTMPZD03y9HyjqVYNfaEJ6Nzwx2dFsSB1cIO3TpxtGdK1pg1Q9FiUiI6FrW_dkVmebgVER7HdzLpfWtmD5__EUBCMdBh9RDfzSslyxTJ8596mW38aLfyue6SK5P9UVJE6k1_I6ZUb1QAKcn1lHA98xyq1II_eljWm05Q8XNO0gAL031xSdeg"/>
+</button>
+<button class="thumb-btn rounded-md overflow-hidden aspect-[4/3] bg-surface-container" onclick="changePreview(1)" type="button">
+<img class="w-full h-full object-cover" data-alt="Tri-fold 3 volet corporate brochure standing accordion fold style on dark textured drafting table showing crease crispness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6_SZvzLSkqB9Xa9mUjsRi0xTlBovP11B4KWs0OvDYxCz_X-jCaTXhLQy-6t9mo2UBGsRKIhDxH_RnwdWFeImVWag4quyiM44TdzAUaGH2hEwk6KF1-2d06gunxU_DLD2ONi7CFSW-W5Ub4LJDub6LQnBR7hkv6tur1rFKPpe6qRWV5SjpjWbki4Nut2AKnafUAvfQKO1UmvdNhckI4_Q90tW7gkxJl-JICSILug4BT6X9Y21X37FDOA"/>
+</button>
+<button class="thumb-btn rounded-md overflow-hidden aspect-[4/3] bg-surface-container" onclick="changePreview(2)" type="button">
+<img class="w-full h-full object-cover" data-alt="Macro close-up shot of paper scoring line crease fold showing no paper crack fiber damage on 250gsm card stock." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgxN73tkIGJFeDmkY84TxCIF9r5r-EMQ4IR3kKJphkMRmENNS6YoXqIMSeqKXdBDugtBkI8T9DQQAQNTq9BLIHup3osS7SiSgQqRs9-9WjEsxH1TWkd2vUsTnfHSsZ2EbBHJ-QxTy_xcTe4Pe15zdu72kPDcl5xBaJtW_L7WT3qhZVqc70Nwthzrxhw1JBnXR-LKt2Qlz2UhIw5sH1r_T_uePWsSgP3nUyZQRWleFQKX1EgVCILrK71g"/>
+</button>
+<button class="thumb-btn rounded-md overflow-hidden aspect-[4/3] bg-surface-container" onclick="changePreview(3)" type="button">
+<img class="w-full h-full object-cover" data-alt="Corporate elegant flyer with selective UV varnish gloss accents catching light reflections against matte paper lamination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcwfON4Cqc-h_PAcoP3Zw57c5iXa08yO_CMVGMzPehqZ8EKKIDZ13sHsiuJm_ShlX7QM_i8Jhk-jQdMLjxiz8puQGme-rjIfcG-FfJb7kIVoory9I5IcS6d_NrgR41vPnAsUM-EO5TQ1yl-rl-2dbB0LS8870ZbVE3xjdiJrYGifylYQ-pMWddswse2YXrDZxDC6gIiA6_xRJeLSAdhhRKx34yrntiopLdn-Q8ZnoIE9RTq6Vlov8TGg"/>
+</button>
+</div>
+</div>
+<!-- Matériaux & Toucher Papier Visuel -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">layers</span>
+              Finitions de Surface &amp; Tenue en Main
+            </h3>
+<span class="font-label-sm text-label-sm text-outline">Papier certifié FSC®</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm pt-1">
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Couché Brillant</span>
+<span class="material-symbols-outlined text-primary text-[18px]">flare</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lissage miroir, accentue le contraste et la vivacité des visuels photos.</p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Demi-mat Satiné</span>
+<span class="material-symbols-outlined text-primary text-[18px]">texture</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Rendu soyeux anti-reflet, élégant pour la lecture de textes institutionnels.</p>
+</div>
+</div>
+</div>
+<!-- Fiche Technique PAO Prépresse -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">square_foot</span>
+<h3 class="font-title-md text-title-md text-on-surface">Spécifications &amp; Conformité PAO</h3>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant">Contrôle Fichier Gratuit</span>
+</div>
+<!-- Schéma SVG Visuel Repères Coupe & Plis -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col items-center justify-center">
+<svg class="w-full max-w-[360px] h-36" fill="none" viewbox="0 0 360 140" xmlns="http://www.w3.org/2000/svg">
+<!-- Fond perdu -->
+<rect fill="#E2E7FF" height="120" rx="4" stroke="none" width="340" x="10" y="10"></rect>
+<text class="font-label-sm" fill="#1C2AC8" font-size="9" x="20" y="24">Fonds perdus (+2 mm de débord)</text>
+<!-- Ligne de coupe -->
+<rect fill="#FFFFFF" height="96" rx="2" stroke="none" width="316" x="22" y="22"></rect>
+<text class="font-label-sm" fill="#757687" font-size="9" x="30" y="36">Ligne de coupe finale (Format fini)</text>
+<!-- Zone tranquille -->
+<rect fill="#FAF8FF" height="72" rx="2" stroke="none" width="292" x="34" y="34"></rect>
+<text class="font-label-sm" fill="#00687A" font-size="9" x="42" y="48">Zone tranquille de sécurité (3 mm)</text>
+<!-- Pli 1 -->
+<line stroke="#3B49DF" stroke-dasharray="3 3" stroke-width="1.5" x1="131" x2="131" y1="22" y2="118"></line>
+<text class="font-label-sm" fill="#3B49DF" font-size="8" x="135" y="80">Rainage / Pli A</text>
+<!-- Pli 2 -->
+<line stroke="#3B49DF" stroke-dasharray="3 3" stroke-width="1.5" x1="239" x2="239" y1="22" y2="118"></line>
+<text class="font-label-sm" fill="#3B49DF" font-size="8" x="243" y="80">Rainage / Pli B</text>
+</svg>
+<p class="font-label-sm text-label-sm text-outline mt-1 text-center">Gardez vos textes et logos à 3 mm minimum des lignes de coupe et des rainages.</p>
+</div>
+<!-- Matrice Normes PAO -->
+<div class="grid grid-cols-2 gap-2 text-left">
+<div class="p-2 rounded bg-surface-container flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Fonds perdus</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">2 mm par côté</span>
+</div>
+<div class="p-2 rounded bg-surface-container flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Zone tranquille</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">3 mm interne</span>
+</div>
+<div class="p-2 rounded bg-surface-container flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Espace Couleur</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">CMJN Fogra39</span>
+</div>
+<div class="p-2 rounded bg-surface-container flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Résolution min.</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">300 DPI natif</span>
+</div>
+</div>
+<!-- Gabarits Téléchargeables -->
+<div class="pt-2">
+<p class="font-label-sm text-label-sm text-outline uppercase tracking-wider mb-2">Télécharger les gabarits pré-calibrés</p>
+<div class="grid grid-cols-3 gap-2">
+<a class="flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary transition-all font-label-sm text-label-sm text-on-surface font-semibold shadow-sm" href="#">
+<span class="material-symbols-outlined text-[16px]">picture_as_pdf</span>
+                PDF Vector
+              </a>
+<a class="flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary transition-all font-label-sm text-label-sm text-on-surface font-semibold shadow-sm" href="#">
+<span class="material-symbols-outlined text-[16px]">brush</span>
+                Illustrator (.ai)
+              </a>
+<a class="flex items-center justify-center gap-1.5 py-2 px-2 rounded-lg bg-surface-container-high hover:bg-primary hover:text-on-primary transition-all font-label-sm text-label-sm text-on-surface font-semibold shadow-sm" href="#">
+<span class="material-symbols-outlined text-[16px]">menu_book</span>
+                InDesign (.idml)
+              </a>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= COLONNE DE DROITE : LE CONFIGURATEUR DÉTAILLÉ (7 COLONNES) ================= -->
+<div class="lg:col-span-7 space-y-space-md">
+<!-- Boîte de configuration interactive -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md space-y-space-lg">
+<!-- ÉTAPE 1 : FORMAT & VOLETS -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">1</span>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Format &amp; Volets</h2>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-primary font-medium" id="selectedFormatBadge">A5 Simple sélectionné</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-space-sm" id="formatSelector">
+<!-- Flyer A5 -->
+<button class="format-card active text-left p-space-sm rounded-lg bg-surface-container-low transition-all" data-format="a5" data-type="flyer" type="button">
+<div class="flex items-center justify-between mb-1">
+<span class="font-title-md text-body-md text-on-surface font-bold">Flyer Simple A5</span>
+<span class="material-symbols-outlined check-icon text-primary text-[20px]">check_circle</span>
+</div>
+<p class="font-label-sm text-label-sm text-secondary font-semibold">14,8 x 21 cm</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Le format roi pour événements, street marketing &amp; salons.</p>
+</button>
+<!-- Flyer A6 -->
+<button class="format-card text-left p-space-sm rounded-lg bg-surface-container transition-all" data-format="a6" data-type="flyer" type="button">
+<div class="flex items-center justify-between mb-1">
+<span class="font-title-md text-body-md text-on-surface font-bold">Flyer Compact A6</span>
+<span class="material-symbols-outlined check-icon text-outline text-[20px]">radio_button_unchecked</span>
+</div>
+<p class="font-label-sm text-label-sm text-secondary font-semibold">10,5 x 14,8 cm</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Format carte postale maniable, économique en grande série.</p>
+</button>
+<!-- Flyer DL -->
+<button class="format-card text-left p-space-sm rounded-lg bg-surface-container transition-all" data-format="dl" data-type="flyer" type="button">
+<div class="flex items-center justify-between mb-1">
+<span class="font-title-md text-body-md text-on-surface font-bold">Flyer Élancé DL</span>
+<span class="material-symbols-outlined check-icon text-outline text-[20px]">radio_button_unchecked</span>
+</div>
+<p class="font-label-sm text-label-sm text-secondary font-semibold">10 x 21 cm</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Format enveloppe idéal pour boîtes aux lettres et présentoirs.</p>
+</button>
+<!-- Dépliant 2 volets -->
+<button class="format-card text-left p-space-sm rounded-lg bg-surface-container transition-all" data-format="fold2" data-type="fold" type="button">
+<div class="flex items-center justify-between mb-1">
+<span class="font-title-md text-body-md text-on-surface font-bold">Dépliant 2 Volets</span>
+<span class="material-symbols-outlined check-icon text-outline text-[20px]">radio_button_unchecked</span>
+</div>
+<p class="font-label-sm text-label-sm text-secondary font-semibold">4 Pages (A4 fermé en A5)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">1 pli central net. Parfait pour menus de restaurant &amp; programmes.</p>
+</button>
+<!-- Dépliant 3 volets -->
+<button class="format-card text-left p-space-sm rounded-lg bg-surface-container transition-all sm:col-span-2" data-format="fold3" data-type="fold" type="button">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-body-md text-on-surface font-bold">Dépliant 3 Volets / 6 Faces</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Populaire B2B</span>
+</div>
+<span class="material-symbols-outlined check-icon text-outline text-[20px]">radio_button_unchecked</span>
+</div>
+<p class="font-label-sm text-label-sm text-secondary font-semibold">Format fermé DL 10 x 21 cm (Ouvert 29,7 x 21 cm)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Présentation complète de votre gamme commerciale avec 2 plis mécaniques de haute régularité.</p>
+</button>
+</div>
+</div>
+<!-- ÉTAPE 2 : GRAMMAGE & SUPPORT DE PAPIER -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">2</span>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Grammage &amp; Finition Papier</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Rainage mécanique inclus dès 250g</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm" id="paperSelector">
+<!-- 135g Couché Brillant -->
+<button class="paper-card p-space-sm rounded-lg bg-surface-container text-left transition-all" data-paper="135" type="button">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">135g Couché Brillant</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Éco Volume</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">Léger et très souple, optimal pour boîtage massif et distribution urbaine à coût maîtrisé.</p>
+</button>
+<!-- 170g Demi-mat Satiné -->
+<button class="paper-card active p-space-sm rounded-lg bg-surface-container-low text-left transition-all" data-paper="170" type="button">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">170g Demi-mat Satiné</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">Recommandé</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">Équilibre parfait entre tenue manuelle, opacité et douceur tactile satinée sans reflet parasite.</p>
+</button>
+<!-- 250g Semi-rigide Premium -->
+<button class="paper-card p-space-sm rounded-lg bg-surface-container text-left transition-all" data-paper="250" type="button">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">250g Semi-rigide Premium</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Prestige</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">Excellente rigidité pour dépliants corporatifs haut de gamme. Rainage d’atelier pré-écrasé.</p>
+</button>
+<!-- 350g Carte Rigide -->
+<button class="paper-card p-space-sm rounded-lg bg-surface-container text-left transition-all" data-paper="350" type="button">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">350g Carte Rigide</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Ultra Robuste</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5">Toucher carte postale épaisse et dense. Équipé d'un rainage lourd assurant zéro effilochage.</p>
+</button>
+</div>
+</div>
+<!-- ÉTAPE 3 : TYPE DE PLIAGE (Conditionnel pour dépliants) -->
+<div class="space-y-space-sm transition-all duration-300" id="foldingSection">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">3</span>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Type de Pliage (Pour Dépliants)</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline" id="foldNotice">Actif pour 2 et 3 volets</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm" id="foldingSelector">
+<!-- Pli Roulé -->
+<button class="fold-card active p-space-sm rounded-lg bg-surface-container-low text-left transition-all flex items-start gap-space-sm" data-foldtype="roule" type="button">
+<div class="p-2 rounded bg-surface-container-high text-primary">
+<span class="material-symbols-outlined text-[24px]">input</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">Pli Roulé</span>
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Les volets se rabattent l'un sur l'autre vers l'intérieur. Idéal pour découverte pas-à-pas.</p>
+</div>
+</button>
+<!-- Pli Accordéon -->
+<button class="fold-card p-space-sm rounded-lg bg-surface-container text-left transition-all flex items-start gap-space-sm" data-foldtype="accordeon" type="button">
+<div class="p-2 rounded bg-surface-container-high text-outline">
+<span class="material-symbols-outlined text-[24px]">view_timeline</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">Pli Accordéon (En Z)</span>
+<span class="material-symbols-outlined text-[16px] text-outline">radio_button_unchecked</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Déploiement en zigzag dynamique de gauche à droite. Lecture fluide type panorama.</p>
+</div>
+</button>
+</div>
+</div>
+<!-- ÉTAPE 4 : IMPRESSION & CHROMIE -->
+<div class="space-y-space-sm">
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">4</span>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Impression &amp; Faces</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<label class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-sm">
+<input class="w-4 h-4 text-primary focus:ring-0" name="print_side" type="radio" value="recto"/>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block">Recto Seul Quadri HD</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Face verso vierge blanche</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-outline">-10%</span>
+</label>
+<label class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="w-4 h-4 text-primary focus:ring-0" name="print_side" type="radio" value="rectoverso"/>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block">Recto / Verso Quadri HD</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Plein format double face</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">Recommandé</span>
+</label>
+</div>
+</div>
+<!-- ÉTAPE 5 : PELLICULAGE & FINITION HAUT DE GAMME -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">5</span>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Pelliculage &amp; Effets Spéciaux</h2>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">Protection anti-rayures</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm" id="laminationSelector">
+<!-- Sans Pelliculage -->
+<button class="lami-card active p-space-sm rounded-lg bg-surface-container-low text-left transition-all" data-cost="0" data-lamination="none" type="button">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">Sans Pelliculage</span>
+<span class="font-label-sm text-label-sm text-outline">Inclus</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Aspect brut et direct du papier sélectionné.</p>
+</button>
+<!-- Pelliculage Mat -->
+<button class="lami-card p-space-sm rounded-lg bg-surface-container text-left transition-all" data-cost="15" data-lamination="mat" type="button">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">Pelliculage Mat R/V</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">+15 TND</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Finition veloutée soft touch, supprime tous reflets.</p>
+</button>
+<!-- Vernis Sélectif Brillant -->
+<button class="lami-card p-space-sm rounded-lg bg-surface-container text-left transition-all" data-cost="25" data-lamination="uv" type="button">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">Vernis UV Sélectif</span>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">+25 TND</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Brillance intense en relief sur logos &amp; titrages clés.</p>
+</button>
+</div>
+</div>
+<!-- ÉTAPE 6 : QUANTITÉ ET MATRICE DE PRIX DÉGRESSIFS -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">6</span>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Tirage &amp; Tarifs Dégressifs</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Économisez jusqu'à 65% par ex.</span>
+</div>
+<!-- Grille de sélection de quantités -->
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-2" id="quantitySelector">
+<!-- 250 ex -->
+<button class="qty-btn p-space-sm rounded-lg bg-surface-container text-center transition-all flex flex-col items-center" data-base="40" data-qty="250" type="button">
+<span class="font-label-md text-body-md text-on-surface font-bold">250 ex</span>
+<span class="font-title-md text-headline-sm text-primary mt-1">40 <span class="font-label-sm text-label-sm">DT</span></span>
+<span class="font-label-sm text-[11px] text-outline mt-0.5">0.160 DT/ex</span>
+</button>
+<!-- 500 ex -->
+<button class="qty-btn p-space-sm rounded-lg bg-surface-container text-center transition-all flex flex-col items-center" data-base="65" data-qty="500" type="button">
+<span class="font-label-md text-body-md text-on-surface font-bold">500 ex</span>
+<span class="font-title-md text-headline-sm text-primary mt-1">65 <span class="font-label-sm text-label-sm">DT</span></span>
+<span class="font-label-sm text-[11px] text-outline mt-0.5">0.130 DT/ex</span>
+</button>
+<!-- 1000 ex (Highlight) -->
+<button class="qty-btn active p-space-sm rounded-lg bg-surface-container-low text-center transition-all flex flex-col items-center relative overflow-hidden" data-base="95" data-qty="1000" type="button">
+<div class="absolute top-0 right-0 bg-primary text-on-primary px-1.5 py-0.2 text-[9px] font-bold rounded-bl">MEILLEURE VENTE</div>
+<span class="font-label-md text-body-md text-on-surface font-bold mt-1">1 000 ex</span>
+<span class="font-title-md text-headline-sm text-primary mt-1">95 <span class="font-label-sm text-label-sm">DT</span></span>
+<span class="font-label-sm text-[11px] text-secondary font-bold mt-0.5">0.095 DT/ex</span>
+</button>
+<!-- 2500 ex -->
+<button class="qty-btn p-space-sm rounded-lg bg-surface-container text-center transition-all flex flex-col items-center" data-base="160" data-qty="2500" type="button">
+<span class="font-label-md text-body-md text-on-surface font-bold">2 500 ex</span>
+<span class="font-title-md text-headline-sm text-primary mt-1">160 <span class="font-label-sm text-label-sm">DT</span></span>
+<span class="font-label-sm text-[11px] text-outline mt-0.5">0.064 DT/ex</span>
+</button>
+<!-- 5000 ex -->
+<button class="qty-btn p-space-sm rounded-lg bg-surface-container text-center transition-all flex flex-col items-center" data-base="260" data-qty="5000" type="button">
+<span class="font-label-md text-body-md text-on-surface font-bold">5 000 ex</span>
+<span class="font-title-md text-headline-sm text-primary mt-1">260 <span class="font-label-sm text-label-sm">DT</span></span>
+<span class="font-label-sm text-[11px] text-outline mt-0.5">0.052 DT/ex</span>
+</button>
+</div>
+</div>
+<!-- ÉTAPE 7 : DÉPÔT DU FICHIER & CONTRÔLE PAO -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-on-primary font-label-sm text-label-sm">7</span>
+<h2 class="font-title-md text-title-md text-on-surface font-bold">Fichiers Graphiques &amp; Pre-Flight</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Formats acceptés : PDF/X-1a, AI, TIFF</span>
+</div>
+<!-- Pre-flight Dropzone avec validation instantanée -->
+<div class="rounded-xl p-space-md bg-surface-container-low flex flex-col items-center justify-center text-center group cursor-pointer hover:bg-surface-container transition-colors">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[28px]">cloud_upload</span>
+</div>
+<p class="font-title-md text-body-md text-on-surface font-semibold">Glissez-déposez vos fichiers d'impression ici</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">ou <span class="text-primary underline font-medium">parcourez vos dossiers locaux</span> (Max. 300 Mo)</p>
+<div class="mt-3 flex flex-wrap items-center justify-center gap-2">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-lowest px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span> 300 DPI natif
+                </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-lowest px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span> Débords 2 mm
+                </span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant bg-surface-container-lowest px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span> Vectorisé / Polices incorporées
+                </span>
+</div>
+</div>
+<!-- Option vérification humaine PAO -->
+<label class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<input class="w-4 h-4 text-primary focus:ring-0 rounded" id="paoProof" type="checkbox"/>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-bold block">Assistance &amp; Contrôle Expert PAO approfondi</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Validation humaine par notre métreur atelier + Bon À Tirer (BAT) numérique par e-mail</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">+10 TND</span>
+</label>
+</div>
+<!-- ================= BLOC DE COMMANDE INSTANTANÉ & PANIER ================= -->
+<div class="rounded-xl p-space-md bg-surface-container-high space-y-space-md mt-space-md">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md items-center">
+<!-- Choix Délai de fabrication -->
+<div>
+<label class="font-label-md text-label-md text-on-surface font-bold block mb-1">Délai d'exécution atelier</label>
+<div class="grid grid-cols-2 gap-2">
+<button class="speed-btn active p-2 rounded bg-surface-container-lowest text-left text-on-surface font-label-md text-label-md" data-speed="standard" type="button">
+<span class="font-semibold block text-[13px]">Standard (3-4 j)</span>
+<span class="font-body-sm text-label-sm text-secondary">Inclus</span>
+</button>
+<button class="speed-btn p-2 rounded bg-surface-container text-left text-on-surface font-label-md text-label-md" data-speed="express" type="button">
+<span class="font-semibold block text-[13px] flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary">bolt</span>
+                      Express 24h
+                    </span>
+<span class="font-body-sm text-label-sm text-tertiary">+20 TND</span>
+</button>
+</div>
+</div>
+<!-- Synthèse de prix -->
+<div class="text-right">
+<span class="font-label-sm text-label-sm text-outline block">Total Estimé (Hors Taxes)</span>
+<div class="flex items-baseline justify-end gap-1.5">
+<span class="font-headline-lg text-headline-lg text-primary font-extrabold" id="finalPriceDisplay">95,000</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">TND</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="unitPriceDisplay">Soit 0,095 TND HT l'unité</p>
+</div>
+</div>
+<!-- Boutons d'Action & Panier -->
+<div class="flex flex-col sm:flex-row items-center gap-space-sm pt-2">
+<button class="w-full sm:flex-1 h-12 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-title-md font-bold flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all" type="button">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+                Valider &amp; Ajouter au Panier
+              </button>
+<button class="w-full sm:w-auto h-12 px-space-md rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">request_quote</span>
+                Devis PDF Pro
+              </button>
+</div>
+<!-- Réassurance Transport & Paiement Tunisie -->
+<div class="pt-2 flex flex-wrap items-center justify-between gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">local_shipping</span>
+                Livraison express Grand Tunis &amp; Toutes Gouvernorats
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">verified_user</span>
+                Contrôle prépresse avant mise sous presse
+              </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">payments</span>
+                Paiement sécurisé ou à la livraison
+              </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section interactive de comparaison et détails de pliages -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="max-w-[1440px] mx-auto px-margin lg:px-margin-lg space-y-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold">Savoir-faire Façonnage GS Imprim</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold mt-1">L'Anatomie d'un Dépliage Sans Craquelure</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Sur papier couché de 170g à 350g, un pliage mécanique direct fend la fibre du papier. Nos modules de rainage à contre-partie acier garantissent un pli souple et durable.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Carte 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm space-y-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-2">
+<span class="material-symbols-outlined text-[24px]">architecture</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Rainage Profilé</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Une gorge d'écrasement calibrée guide la cassure du papier sans endommager l'encre offset imprimée en surface.</p>
+</div>
+<!-- Carte 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm space-y-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary mb-2">
+<span class="material-symbols-outlined text-[24px]">color_lens</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Sens du Fil Maîtrisé</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Toutes les feuilles offset sont débitées parallèlement au fil de la pâte à papier pour éviter tout gondolage à l'ouverture.</p>
+</div>
+<!-- Carte 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm space-y-space-xs">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-tertiary mb-2">
+<span class="material-symbols-outlined text-[24px]">high_quality</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Égalité des Volets</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pour les plis roulés, le volet intérieur est raboté automatiquement de 2 mm afin d'obtenir une fermeture parfaitement plane.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Script interactif de recalcul en direct et de prévisualisation -->
+<script>
+    (function() {
+      // Données de tarification
+      const basePrices = {
+        '250': 40,
+        '500': 65,
+        '1000': 95,
+        '2500': 160,
+        '5000': 260
+      };
+
+      const formatMultipliers = {
+        'a5': 1.0,
+        'a6': 0.75,
+        'dl': 0.85,
+        'fold2': 1.45,
+        'fold3': 1.85
+      };
+
+      let currentFormat = 'a5';
+      let currentPaper = '170';
+      let currentQty = 1000;
+      let currentLaminationCost = 0;
+      let currentSpeedCost = 0;
+      let isPaoSelected = false;
+
+      // Éléments DOM
+      const finalPriceDisplay = document.getElementById('finalPriceDisplay');
+      const unitPriceDisplay = document.getElementById('unitPriceDisplay');
+      const selectedFormatBadge = document.getElementById('selectedFormatBadge');
+      const foldingSection = document.getElementById('foldingSection');
+      const paoCheckbox = document.getElementById('paoProof');
+
+      // Fonction de calcul de prix global
+      function recalculate() {
+        const base = basePrices[currentQty] || 95;
+        const multiplier = formatMultipliers[currentFormat] || 1.0;
+        
+        let subtotal = base * multiplier;
+
+        // Supplément grammage
+        if (currentPaper === '250') subtotal += (currentQty * 0.015);
+        if (currentPaper === '350') subtotal += (currentQty * 0.025);
+
+        // Options finitions
+        subtotal += currentLaminationCost;
+        subtotal += currentSpeedCost;
+        if (isPaoSelected) subtotal += 10;
+
+        const totalFormatted = subtotal.toFixed(3);
+        const unitFormatted = (subtotal / currentQty).toFixed(3);
+
+        if (finalPriceDisplay) finalPriceDisplay.textContent = totalFormatted;
+        if (unitPriceDisplay) unitPriceDisplay.textContent = `Soit ${unitFormatted} TND HT l'unité`;
+      }
+
+      // Gestion Formats
+      const formatCards = document.querySelectorAll('.format-card');
+      formatCards.forEach(card => {
+        card.addEventListener('click', () => {
+          formatCards.forEach(c => {
+            c.classList.remove('active', 'bg-surface-container-low');
+            c.classList.add('bg-surface-container');
+            const icon = c.querySelector('.check-icon');
+            if (icon) {
+              icon.textContent = 'radio_button_unchecked';
+              icon.classList.remove('text-primary');
+              icon.classList.add('text-outline');
+            }
+          });
+
+          card.classList.add('active', 'bg-surface-container-low');
+          card.classList.remove('bg-surface-container');
+          const icon = card.querySelector('.check-icon');
+          if (icon) {
+            icon.textContent = 'check_circle';
+            icon.classList.remove('text-outline');
+            icon.classList.add('text-primary');
+          }
+
+          currentFormat = card.getAttribute('data-format');
+          const isFold = card.getAttribute('data-type') === 'fold';
+
+          if (selectedFormatBadge) {
+            selectedFormatBadge.textContent = card.querySelector('span.font-title-md').textContent + ' sélectionné';
+          }
+
+          // Mise à jour visibilité du pliage
+          if (foldingSection) {
+            if (isFold) {
+              foldingSection.classList.remove('opacity-40');
+            } else {
+              foldingSection.classList.add('opacity-40');
+            }
+          }
+
+          recalculate();
+        });
+      });
+
+      // Gestion Papiers
+      const paperCards = document.querySelectorAll('.paper-card');
+      paperCards.forEach(card => {
+        card.addEventListener('click', () => {
+          paperCards.forEach(c => {
+            c.classList.remove('active', 'bg-surface-container-low');
+            c.classList.add('bg-surface-container');
+          });
+          card.classList.add('active', 'bg-surface-container-low');
+          card.classList.remove('bg-surface-container');
+          currentPaper = card.getAttribute('data-paper');
+          recalculate();
+        });
+      });
+
+      // Gestion Type de Pliage
+      const foldCards = document.querySelectorAll('.fold-card');
+      foldCards.forEach(card => {
+        card.addEventListener('click', () => {
+          foldCards.forEach(c => {
+            c.classList.remove('active', 'bg-surface-container-low');
+            c.classList.add('bg-surface-container');
+            const ic = c.querySelector('.material-symbols-outlined.text-[16px]');
+            if (ic) {
+              ic.textContent = 'radio_button_unchecked';
+              ic.classList.replace('text-primary', 'text-outline');
+            }
+          });
+          card.classList.add('active', 'bg-surface-container-low');
+          card.classList.remove('bg-surface-container');
+          const ic = card.querySelector('.material-symbols-outlined.text-[16px]');
+          if (ic) {
+            ic.textContent = 'check_circle';
+            ic.classList.replace('text-outline', 'text-primary');
+          }
+        });
+      });
+
+      // Gestion Pelliculage
+      const lamiCards = document.querySelectorAll('.lami-card');
+      lamiCards.forEach(card => {
+        card.addEventListener('click', () => {
+          lamiCards.forEach(c => {
+            c.classList.remove('active', 'bg-surface-container-low');
+            c.classList.add('bg-surface-container');
+          });
+          card.classList.add('active', 'bg-surface-container-low');
+          card.classList.remove('bg-surface-container');
+          currentLaminationCost = parseFloat(card.getAttribute('data-cost')) || 0;
+          recalculate();
+        });
+      });
+
+      // Gestion Quantités
+      const qtyButtons = document.querySelectorAll('.qty-btn');
+      qtyButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          qtyButtons.forEach(b => {
+            b.classList.remove('active', 'bg-surface-container-low');
+            b.classList.add('bg-surface-container');
+          });
+          btn.classList.add('active', 'bg-surface-container-low');
+          btn.classList.remove('bg-surface-container');
+          currentQty = parseInt(btn.getAttribute('data-qty'), 10) || 1000;
+          recalculate();
+        });
+      });
+
+      // Gestion Délais
+      const speedButtons = document.querySelectorAll('.speed-btn');
+      speedButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          speedButtons.forEach(b => {
+            b.classList.remove('active', 'bg-surface-container-lowest');
+            b.classList.add('bg-surface-container');
+          });
+          btn.classList.add('active', 'bg-surface-container-lowest');
+          btn.classList.remove('bg-surface-container');
+          currentSpeedCost = btn.getAttribute('data-speed') === 'express' ? 20 : 0;
+          recalculate();
+        });
+      });
+
+      // Option PAO
+      if (paoCheckbox) {
+        paoCheckbox.addEventListener('change', (e) => {
+          isPaoSelected = e.target.checked;
+          recalculate();
+        });
+      }
+
+      // Initialiser le calcul
+      recalculate();
+    })();
+
+    // Changement de visuel d'aperçu
+    function changePreview(index) {
+      const thumbs = document.querySelectorAll('.thumb-btn');
+      thumbs.forEach((t, idx) => {
+        if (idx === index) {
+          t.classList.add('ring-2', 'ring-primary');
+        } else {
+          t.classList.remove('ring-2', 'ring-primary');
+        }
+      });
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_6px_rgba(15,23,42,0.03)] mt-space-xl"><div class="w-full bg-surface-container-low py-space-lg"><div class="max-w-[1440px] mx-auto px-margin lg:px-margin-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg items-center"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-primary text-[32px]">precision_manufacturing</span><div><p class="font-title-md text-title-md text-on-surface">Atelier Haute Précision</p><p class="font-body-sm text-body-sm text-on-surface-variant">Parc offset Heidelberg &amp; numérique HP Indigo</p></div></div><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-primary text-[32px]">verified</span><div><p class="font-title-md text-title-md text-on-surface">Normes ISO &amp; FSC®</p><p class="font-body-sm text-body-sm text-on-surface-variant">Papiers écoresponsables tracés &amp; encres végétales</p></div></div><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-primary text-[32px]">local_shipping</span><div><p class="font-title-md text-title-md text-on-surface">Livraison Express</p><p class="font-body-sm text-body-sm text-on-surface-variant">Partout en Tunisie sous 24h à 48h</p></div></div><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-primary text-[32px]">support_agent</span><div><p class="font-title-md text-title-md text-on-surface">Support PAO Dédié</p><p class="font-body-sm text-body-sm text-on-surface-variant">Contrôle prépresse &amp; vérification de fichiers</p></div></div></div></div><div class="max-w-[1440px] mx-auto px-margin lg:px-margin-lg py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-lg"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="GS Imprim Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vpv6nsr3_nsS7COjiZYvsfnWDi4AyCLAAL3qdfnTnCXx6L36narV3WIHcWzy_hUeS7BosaBz1FFWoMPYHZluffaCgdx36nuEBqSX4-S_lGfDTFRGdG_IMhIaK2bASbS3M58zdVBSLFJbvD6NBPaXvGXdYIOepvV-r4-J_a6uW8nMZ6M1V0VWlkLuX04cPAVct8ktskKJqGod4gU2MVcJGRoNWo15oJhfugypHUcMBXYmLFgVbIvAcmW7dG"/><span class="font-headline-sm text-headline-sm text-primary">GS Imprim</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Référence de l'impression haut de gamme en Tunisie (ex Atelier Print). Spécialiste du façonnage minutieux, de la dorure à chaud galbée, du gaufrage et des finitions d'exception pour professionnels et créatifs exigeants.</p><div class="pt-space-xs"><p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">location_on</span>Zone Industrielle La Charguia II, Tunis, Tunisie</p><p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2 mt-1"><span class="material-symbols-outlined text-primary text-[18px]">call</span>+216 71 800 000 | +216 29 000 000</p><p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2 mt-1"><span class="material-symbols-outlined text-primary text-[18px]">mail</span>contact@gsimprim.com.tn</p></div></div><div><p class="font-title-md text-title-md text-on-surface mb-space-md">Catalogue Print</p><ul class="space-y-space-sm"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Cartes de visite de prestige</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Packaging &amp; Boîtes sur-mesure</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Catalogues, Dépliants &amp; Brochures</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Étiquettes adhésives en rouleaux</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Signalétique &amp; Grand Format</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Goodies &amp; Objets publicitaires</li></ul></div><div><p class="font-title-md text-title-md text-on-surface mb-space-md">Ressources PAO</p><ul class="space-y-space-sm"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Guides techniques &amp; Fonds perdus</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Profils colorimétriques Fogra39</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Gabarits InDesign &amp; Illustrator</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Nuancier papiers &amp; Échantillons</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Validation Bon à Tirer (BAT)</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">FAQ &amp; Assistance technique</li></ul></div><div><p class="font-title-md text-title-md text-on-surface mb-space-md">Certifications &amp; Engagements</p><div class="space-y-space-sm"><div class="p-space-sm rounded-lg bg-surface-container-low"><p class="font-label-md text-label-md text-on-surface">ISO 9001 &amp; ISO 14001</p><p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Management qualité &amp; respect de l'environnement certifié.</p></div><div class="p-space-sm rounded-lg bg-surface-container-low"><p class="font-label-md text-label-md text-on-surface">FSC® Mixte &amp; Recyclé</p><p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Gestion forestière durable et traçabilité matière.</p></div></div></div></div><div class="mt-space-xl pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><p>© 2024 GS Imprim (ex Atelier Print Tunisie). Tous droits réservés.</p><div class="flex items-center gap-space-lg"><a class="hover:text-primary transition-colors" href="#">Mentions Légales</a><a class="hover:text-primary transition-colors" href="#">Conditions Générales de Vente</a><a class="hover:text-primary transition-colors" href="#">Politique de Confidentialité</a></div></div></div></footer></body></html>

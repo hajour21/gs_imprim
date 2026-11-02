@@ -1,0 +1,6 @@
+{
+  "name": "GS Imprim — Studio d'impression & façonnage de prestige",
+  "description": "Imprimerie & studio d'impression et façonnage de prestige en Tunisie. Cartes de visite soft-touch, bâches PVC, stickers découpés sur-mesure, cachets Trodat, et flyers avec devis en direct.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

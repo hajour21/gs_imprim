@@ -1,0 +1,269 @@
+---
+name: Atelier Print
+colors:
+  surface: '#faf8ff'
+  surface-dim: '#d2d9f4'
+  surface-bright: '#faf8ff'
+  surface-container-lowest: '#ffffff'
+  surface-container-low: '#f2f3ff'
+  surface-container: '#eaedff'
+  surface-container-high: '#e2e7ff'
+  surface-container-highest: '#dae2fd'
+  on-surface: '#131b2e'
+  on-surface-variant: '#454655'
+  inverse-surface: '#283044'
+  inverse-on-surface: '#eef0ff'
+  outline: '#757687'
+  outline-variant: '#c6c5d8'
+  surface-tint: '#3c4ae0'
+  primary: '#1c2ac8'
+  on-primary: '#ffffff'
+  primary-container: '#3b49df'
+  on-primary-container: '#d2d4ff'
+  inverse-primary: '#bdc2ff'
+  secondary: '#00687a'
+  on-secondary: '#ffffff'
+  secondary-container: '#57dffe'
+  on-secondary-container: '#006172'
+  tertiary: '#643e00'
+  on-tertiary: '#ffffff'
+  tertiary-container: '#845300'
+  on-tertiary-container: '#ffcf98'
+  error: '#ba1a1a'
+  on-error: '#ffffff'
+  error-container: '#ffdad6'
+  on-error-container: '#93000a'
+  primary-fixed: '#e0e0ff'
+  primary-fixed-dim: '#bdc2ff'
+  on-primary-fixed: '#000668'
+  on-primary-fixed-variant: '#1d2cc9'
+  secondary-fixed: '#acedff'
+  secondary-fixed-dim: '#4cd7f6'
+  on-secondary-fixed: '#001f26'
+  on-secondary-fixed-variant: '#004e5c'
+  tertiary-fixed: '#ffddb8'
+  tertiary-fixed-dim: '#ffb95f'
+  on-tertiary-fixed: '#2a1700'
+  on-tertiary-fixed-variant: '#653e00'
+  background: '#faf8ff'
+  on-background: '#131b2e'
+  surface-variant: '#dae2fd'
+typography:
+  display-hero:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 56px
+    fontWeight: '800'
+    lineHeight: 64px
+    letterSpacing: -0.03em
+  display-hero-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 36px
+    fontWeight: '800'
+    lineHeight: 44px
+    letterSpacing: -0.025em
+  headline-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 40px
+    fontWeight: '700'
+    lineHeight: 48px
+    letterSpacing: -0.025em
+  headline-lg-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 36px
+    letterSpacing: -0.02em
+  headline-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 28px
+    fontWeight: '700'
+    lineHeight: 36px
+    letterSpacing: -0.02em
+  headline-md-mobile:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 22px
+    fontWeight: '600'
+    lineHeight: 30px
+    letterSpacing: -0.015em
+  headline-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 20px
+    fontWeight: '600'
+    lineHeight: 28px
+    letterSpacing: -0.015em
+  title-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 17px
+    fontWeight: '600'
+    lineHeight: 24px
+    letterSpacing: -0.01em
+  body-lg:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 17px
+    fontWeight: '400'
+    lineHeight: 26px
+    letterSpacing: -0.005em
+  body-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 15px
+    fontWeight: '400'
+    lineHeight: 22px
+    letterSpacing: 0em
+  body-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 13px
+    fontWeight: '400'
+    lineHeight: 18px
+    letterSpacing: 0em
+  label-md:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 13px
+    fontWeight: '600'
+    lineHeight: 16px
+    letterSpacing: 0.01em
+  label-sm:
+    fontFamily: Plus Jakarta Sans
+    fontSize: 11px
+    fontWeight: '700'
+    lineHeight: 14px
+    letterSpacing: 0.04em
+rounded:
+  sm: 0.25rem
+  DEFAULT: 0.5rem
+  md: 0.75rem
+  lg: 1rem
+  xl: 1.5rem
+  full: 9999px
+spacing:
+  gutter: 1.5rem
+  gutter-sm: 1rem
+  gutter-lg: 2rem
+  margin: 1.5rem
+  margin-sm: 1rem
+  margin-lg: 3rem
+  space-xs: 0.25rem
+  space-sm: 0.5rem
+  space-md: 1rem
+  space-lg: 1.5rem
+  space-xl: 2.5rem
+---
+
+## Brand & Style
+
+This design system expresses the precision of high-end commercial print production paired with the frictionless efficiency of modern e-commerce. Tailored for creative directors, small business owners, brand managers, and corporate procurement teams, the interface evokes confidence, craftsmanship, tactile material appreciation, and technical mastery.
+
+The visual style blends **Corporate Modernism** with **Tactile Precision**:
+- Razor-sharp structural alignment mirrors pre-press layout grids and mechanical guillotine trims.
+- Cool architectural slate surfaces contrast with high-energy electric indigo and print-process-inspired accents (cyan and warm paper-amber).
+- Generous micro-whitespace, high-density spec sheets, and crisp card modules convey authority without clutter.
+- Tactile affordances (paper stock pickers, weight toggles, finishing swatches) replicate physical material interactions in a digital medium.
+
+## Colors
+
+The palette draws inspiration from the CMYK print spectrum transformed into high-gamut digital screen primaries:
+
+- **Primary (`#3B49DF` - Electric Royal Indigo):** The core action driver. Used for primary CTAs, active selection states, price summaries, and critical workflow triggers.
+- **Secondary (`#06B6D4` - Process Cyan):** Evokes print formulation, technical measurements, proofing tags, and secondary action highlights.
+- **Tertiary (`#F59E0B` - Amber Foil / Kraft):** Reserved for luxury finishes (hot foil stamping, special coatings), turnaround alerts, and VIP/express badges.
+- **Neutral (`#0F172A` - Deep Charcoal Slate):** The primary typographic anchor. Delivers high contrast without the harshness of pure black, nodding to carbon black offset ink.
+
+### Surface System
+- **Canvas Base:** `#FFFFFF` (Pure Bright White) for main product viewing cards and editorial features.
+- **Substrate Slate:** `#F8FAFC` to `#F1F5F9` for page backgrounds, sheet selectors, and table headers.
+- **Borders & Dividers:** `#E2E8F0` for subtle structural delineation; `#CBD5E1` for interactive borders and focused states.
+
+## Typography
+
+Plus Jakarta Sans is utilized across all display, body, and label roles. Its clean geometric underpinning gives headings an architectural presence, while its balanced apertures guarantee crisp readability across dense technical specifications (e.g., paper weight `350 g/m²`, bleed dimensions, lamination finishes).
+
+- **Headlines & Display:** Tightly tracked with negative letter-spacing to emphasize solidity and contemporary editorial confidence.
+- **Body:** Neutral tracking and comfortable line heights allow effortless scanning of shipping matrices and product descriptions.
+- **Labels & Micro-data:** Uppercase variants of `label-sm` use expanded letter spacing (`0.04em`) to establish clear section dividers in configurators and specification summaries.
+- **Numeric Data:** Tabular figures (`tnum`) should be enabled across pricing breakdowns, GSM counters, and quantity selectors.
+
+## Layout & Spacing
+
+The layout is built on an **8-point baseline rhythm** structured within an adaptable 12-column fluid grid system on desktop and tablet, converting to a 4-column layout on mobile devices.
+
+### Breakpoints & Layout Adapters
+- **Mobile (< 768px):** 4 columns, `margin-sm` (16px), `gutter-sm` (16px). Configurators collapse into vertical sticky-bottom summary sheets.
+- **Tablet (768px – 1024px):** 8 columns, `margin` (24px), `gutter` (24px). Split view between 3D paper preview and configuration panels.
+- **Desktop (L�
+N���L���[[��X^�۝Z[�\��YM�[�\�Y�]X\��[�[�
+
+H�Y�H\�X\�[��]\�[�
+̜
+K��ۙ�Y�\�][ۈX]�X�\�[�]�H][�H�[�\�]ܜ��][�H΍H�][�ܚY�������]X[�]B�H��\X�[�\��[�\��X�[���[Y\���X�Hۈ�X�K^�
+
+K�X�K\�X
+
+K[��X�K[Y
+M�
+H�XZ[�Z[�[��K��X�[ۋ]��][]K��HXXܛ��\\�][ۜ��]�Y[�XZ�܈KX��[Y\��H�X�[ۜ�
+�][������\�K�X���]H�ZYK\��ܚ�\�Y
+H][^�H�X�K^
+
+H\�]XY�\H[�ܙ[Y[��
+8�$�L�
+H�܈H��X][��Y�Y[��][���Y[�����[]�][ۈ	�\���\�X[Y\�\��H��X�[�\�
+��[X�Y[�Y��\�Y���Y��ʊ��]
+���X�HZXܛ�X�ܙ\�ʊ�X��[���X[�X�]\\��Y]��\�[��ۈH�Y[��Y�[��X�K������[]�][ۈ]�[H
+��]�[
+�]��[��\�N����\��X�H��܈ю�Q�����Y�ˈ\�Y�܈Y�H�X��ܛ�[���Y�Y[�Y�۝���[�[�[�]�X��[��˂�H
+��]�[H
+�\���X���]JN����\��X�Hё������ܙ\�\��Y�L�N��Y�Έ\��ؘJMK����JK\��ؘJMK�����X�Y�][�]H�܈��X��[ۈ�\���X������[�][H\�[��˂�H
+��]�[�
+ݙ\����][���۝���N����\��X�Hё������ܙ\�\��Y�БQLX�Y�ΈL�\M\�ؘJMK����
+KLM��ؘJMK����
+X�\YY�X�]�Hݙ\��]\����ۈY[�\�[�X�]�H�����[X�[ۜ˂�H
+��]�[�
+[�[��X��H�\��\�N����\��X�Hё������ܙ\�\��Y�ؘJ����̋��
+X�Y�Έ��\N�ؘJMK����L�KLM\M\�ؘJMK�����X�\YY��[H\�Y�]�\��[��[��KY�Y���Y�X�][ۜ�[��X��H[ؚ[H\��\�H���˂������Y���\�X�\��[�Y���\�H[�Y\�[��H�\���[�]]�[
+��M̐X
+H�]\�[�\�H]��X��[��\�[���ٝ�[��][ۜ�]�\�\��HH�\�[�H]X[]HوH�]H�\��X�\˂�����\\�H�\�[H\�\�H�[[��Y
+����[�Y
+�
+J���[�Y]�K��YZH\�H[�Y�]���HXX�[�Y�[��X�\�[ۈ�]\�[�\\�\�ٝ�ۜ�[Y\�\΂��H
+���\�H�Y]\�
+�\�[X�
+N����[�\��]ۜ��[��H[�]�Y[�\\���]�[\�]X[�]H[�[��]\�Y�˂�H
+��\��H�Y]\�
+��[�Y[�H\�[X�M�
+N���KX��[Y\��H��X��\���ۙ�Y�\�][ۈ[�[�\��ܚ�\�Y���ۙ\�[�[�[X[��˂�H
+��^�H\��H�Y]\�
+��[�Y^HK�\�[X��
+N���\����[�[ۘ[�۝Z[�\���X��H���H�ۙ�Y�\�][ۈ�]�\��[��\�]YY]ܚX[Y�Y���\˂�H
+���[[
+NNN\
+N����]\��Y�\�
+K�ˋ�����\�Y�YY���ٝ�X�X]H�KZXܛ�X�\�[��\Z[�X�]܈X\��\�˂������\ۙ[������]ۜH
+���[X\�N����X��ܛ�[��ЍQ�^ё������۝X�[[Y��X�H[��]Y�Y���\�Y�Έ[��]\�ؘJ�MK�MK�MK�MJX�ݙ\��Y���̑�P��]Hܚ\�]�[��Y�ˈX�]�H�]H��\�\��\��Y�H
+�[�ٛܛN���[J�N
+X
+K��H
+���X�ۙ\�H��][�N����X��ܛ�[�ё�����^��M̐X�ܙ\�\��Y�L�N��ݙ\��Y��\���X��ܛ�[�ю�Q��[��ܙ\��БQLX��H
+��������^��M̐X�[��\�[��\�K�ݙ\��Y��\���X��ܛ�[�ьQ�Q�X�������\�	��Y�\H
+��X]\�X[	������\Ί���[X�X�H�\�\�^Z[��\\�ܘZ[�X�ۙ\��[���][��ˈY�][��ܙ\�\��Y�L�N��X��ܛ�[�ё�������[X�Y��ܙ\����Y�ЍQ��X��ܛ�[�ю�Q���]H�X[�X���Y�H[�H�ܛ�\���H
+���X�Y�X�][ۈ�Y�\Ί��[\�\Y\�[��X�[\�X\\��\�K��H
+��[�\����X��ܛ�[�ьQ�Q�X^��M̐X��H
+�X����\�Y�YY���X��ܛ�[��ؘJ�N��L��L�X^�LP����H
+�^�\��\��\��[��^\�H�[�\����X��ܛ�[��ؘJ�KMNLK�L�X^ЍL�X�������ܛH[�]�	��[X�ܜH
+��^[�]�	����ۜΊ��ZY�
+[ؚ[N�X�[H\��]
+K��ܙ\�\��Y�L�N��X��ܛ�[�ё�����^��M̐X�۝��K[Y����\��]H[���X�\�H��]\��[��[��ؘJNK�������JX[��ܙ\��ЍQ���H
+���X�؛�\�	��Y[�Ί����]X\�\���\��\ˈ[�X�]�N��ܙ\�K�\��Y�БQLX�X�]�N���Y�ЍQ��[�][��X�[�]H�\�������\�H
+����X�	��ܛX]�\�Ί���X[�]�[H�\���]ё������X��ܛ�[�[�M��Y]\�
+��[�Y[�
+K�[��\��۝[�\�\��X�K[YY[�ˈ[XY�H�۝Z[�\�\�\�[�ٙ�]�]Hю�Q���X��[���X��[�X]H�[���[�\�Y\�[��[�\�YKX�]ˈݙ\���X�\�H�[���\��[��][ۈ�]�[�[]�][ۈ�]H�X�H�ܙ\�X��܎��БQLX�������XZ[�T�X�Y�X���\ۙ[�H
+��\��ܚ��KY�Y����ۙN���\��H\�Y�۝Z[�\�
+�\�Y�БQLX
+K�X��ܛ�[�ю�Q����X]\�\�H��Z[�[�\�Y�\�\ܝY�X�܈^[��[ۜ�
+���RX�Q��
+K[�[�[ZX��[Y][ۈ[�X�]ܜ��܈�YY
+�[JH[��\��][ۈ
+�JK��H
+��]X[�]H	��X�HX]�^���Y�Y[��]K[ؚ[K\�ܛ�X�HX�H�]X�[\��[Y\�[�[[�ˈ�\�]�[YH]X[�]H�[�Y�Y�Y[�Y�Y[�\��H[�Y���X��ܛ�[�[�
+�ؘJNK�������X
+K��H
+��X�[H\\�X�ۙ\���Y\�����۝[�[�\��Y��\��]ۘ\�[��[�X�][���[�\���H�[��X\���
+L�L�Y��L��L�L�KZ\�Y�]X�[H\X��YY�X���Y\�ۈ�X�Y[�X�Y]�X�\�

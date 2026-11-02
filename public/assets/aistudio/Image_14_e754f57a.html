@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary-fixed-variant": "#004e5c",
+          "on-error-container": "#93000a",
+          "primary-container": "#3b49df",
+          "surface": "#faf8ff",
+          "inverse-surface": "#283044",
+          "surface-tint": "#3c4ae0",
+          "surface-container-highest": "#dae2fd",
+          "secondary-fixed-dim": "#4cd7f6",
+          "surface-container-low": "#f2f3ff",
+          "inverse-primary": "#bdc2ff",
+          "on-tertiary": "#ffffff",
+          "on-primary-container": "#d2d4ff",
+          "on-tertiary-fixed": "#2a1700",
+          "tertiary-fixed-dim": "#ffb95f",
+          "on-secondary-fixed": "#001f26",
+          "tertiary-fixed": "#ffddb8",
+          "surface-bright": "#faf8ff",
+          "surface-container-lowest": "#ffffff",
+          "on-tertiary-container": "#ffcf98",
+          "error-container": "#ffdad6",
+          "surface-variant": "#dae2fd",
+          "error": "#ba1a1a",
+          "surface-dim": "#d2d9f4",
+          "on-secondary": "#ffffff",
+          "tertiary-container": "#845300",
+          "secondary-fixed": "#acedff",
+          "outline": "#757687",
+          "on-surface": "#131b2e",
+          "on-background": "#131b2e",
+          "surface-container-high": "#e2e7ff",
+          "on-primary-fixed-variant": "#1d2cc9",
+          "inverse-on-surface": "#eef0ff",
+          "secondary-container": "#57dffe",
+          "primary-fixed": "#e0e0ff",
+          "outline-variant": "#c6c5d8",
+          "surface-container": "#eaedff",
+          "tertiary": "#643e00",
+          "on-primary-fixed": "#000668",
+          "on-secondary-container": "#006172",
+          "primary-fixed-dim": "#bdc2ff",
+          "secondary": "#00687a",
+          "on-error": "#ffffff",
+          "on-primary": "#ffffff",
+          "primary": "#1c2ac8",
+          "on-tertiary-fixed-variant": "#653e00",
+          "background": "#faf8ff",
+          "on-surface-variant": "#454655"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "1.5rem",
+          "space-sm": "0.5rem",
+          "space-xl": "2.5rem",
+          "space-xs": "0.25rem",
+          "gutter-sm": "1rem",
+          "margin-sm": "1rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "gutter-lg": "2rem",
+          "margin": "1.5rem",
+          "margin-lg": "3rem"
+        },
+        "fontFamily": {
+          "display-hero-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "display-hero-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "800"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "title-md": [
+            "17px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "17px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-hero": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-md-mobile": [
+            "22px",
+            {
+              "lineHeight": "30px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(15,23,42,0.06)]"><div class="h-20 max-w-[1440px] mx-auto px-margin lg:px-margin-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="accueil" href="#"><img alt="Modern luxury geometric print shop logo icon, minimalist overlapping cyan, magenta, and deep navy printing color layers or folded stylized letter P with precise geometric lines, vector style on clean background. Design context: - Primary color: #3b49df
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+. The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vpv6nsr3_nsS7COjiZYvsfnWDi4AyCLAAL3qdfnTnCXx6L36narV3WIHcWzy_hUeS7BosaBz1FFWoMPYHZluffaCgdx36nuEBqSX4-S_lGfDTFRGdG_IMhIaK2bASbS3M58zdVBSLFJbvD6NBPaXvGXdYIOepvV-r4-J_a6uW8nMZ6M1V0VWlkLuX04cPAVct8ktskKJqGod4gU2MVcJGRoNWo15oJhfugypHUcMBXYmLFgVbIvAcmW7dG"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">GS Imprim</span><span class="font-label-sm text-label-sm text-outline tracking-wider uppercase leading-none mt-1">Atelier Print Studio</span></div></a></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-title-md"><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="accueil" href="#">Accueil</a><a aria-current="page" class="transition-colors py-space-xs text-primary font-title-md" data-path="catalogue-produits" href="#">Catalogue Produits</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="services-finitions" href="#">Services &amp; Finitions</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="realisations" href="#">Réalisations</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="devis-express" href="#">Devis Express</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><div class="relative hidden lg:flex items-center w-64 h-10 px-space-sm bg-surface-container-low rounded-lg"><span class="material-symbols-outlined text-outline mr-2 text-[20px]">search</span><input class="w-full bg-transparent border-none outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline" placeholder="Flyer, packaging, dorure..." type="text"/></div><a class="hidden sm:inline-flex items-center justify-center h-10 px-space-md rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-all shadow-[0_1px_3px_rgba(15,23,42,0.08)]" data-path="devis-express" href="#"><span class="material-symbols-outlined text-[18px] mr-1.5">calculate</span>Devis Instantané</a><div class="flex items-center gap-space-xs"><button aria-label="Panier" class="relative flex items-center justify-center w-10 h-10 rounded-lg hover:bg-surface-container-high transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined">shopping_bag</span><span class="absolute top-1.5 right-1.5 flex items-center justify-center w-4 h-4 rounded-full bg-primary text-on-primary font-label-sm text-[10px]">3</span></button><button aria-label="Espace Client" class="flex items-center justify-center p-1 rounded-full hover:ring-2 hover:ring-primary-container transition-all" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UgPDHvQ6tB0nAqJwKlB3Xq3mot0sifC0s7on-IJk0J-i9XPz7LEpm7L5Ia4-jQR06lov-Y-HMQAdSby32C3IlyskiWVdhmfmZvbeYllABoLQkxVmErxb7Ll1MtnR4k-F4da3u6XIAS9PT49NfqgkAfFz-29MKZ1GZkBU1XrMxkhAH_kCc-MEBidKFmeZAyFIFW9zN_2K8acgKvEXPCn9Y6nUSNRgQIPqtRCnvvEdiODZml-puN6tZU-4jT"/></button></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Fil d'Ariane & Barre Métadonnées Haute Précision -->
+<div class="w-full bg-surface-container-low/70 py-space-sm">
+<div class="max-w-[1440px] mx-auto px-margin lg:px-margin-lg flex flex-wrap items-center justify-between gap-space-sm text-label-sm font-label-sm">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 text-on-surface-variant">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+          Accueil
+        </a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#">Catalogue</a>
+<span class="text-outline-variant">/</span>
+<a class="hover:text-primary transition-colors" href="#">Grand Format &amp; Signalétique</a>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-semibold">Bâche Publicitaire PVC &amp; Micro-perforée</span>
+</nav>
+<div class="flex items-center gap-space-md text-on-surface-variant">
+<span class="inline-flex items-center gap-1 bg-surface-container-highest text-primary px-2.5 py-0.5 rounded-full font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          Atelier Impression La Charguia II
+        </span>
+<span class="hidden sm:inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+          Norme ISO 12647-2
+        </span>
+<span class="hidden md:inline-flex items-center gap-1 text-on-secondary-container bg-secondary-container/20 px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+          Tirage Express 24h disponible
+        </span>
+</div>
+</div>
+</div>
+<!-- Contenu Principal : Grid 12 Colonnes (Asymétrique 7:5) -->
+<section class="max-w-[1440px] mx-auto px-margin lg:px-margin-lg py-space-lg w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start">
+<!-- COLONNE GAUCHE (7 cols) : Showroom Visuel & Spécifications Industrielles -->
+<div class="lg:col-span-7 flex flex-col gap-space-xl min-w-0">
+<!-- En-tête Titre & Tags Techniques -->
+<div class="space-y-space-xs">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="bg-primary/10 text-primary font-label-sm text-label-sm px-2.5 py-1 rounded">GRAND FORMAT ÉVÉNEMENTIEL &amp; BÂTIMENT</span>
+<span class="bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm px-2.5 py-1 rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">shield</span> Résistance UV 3 ans
+            </span>
+<span class="bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm px-2.5 py-1 rounded flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">air</span> Micro-mesh coupe-vent
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+            Bâche Publicitaire Haute Résistance &amp; Calibrage Sur-Mesure
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Impression numérique grand format très haute définition sur encres HP Latex écologiques sans solvant. Conçue pour façades d'immeubles, habillages d'échafaudages, stands d'exposition et enseignes suspendues.
+          </p>
+</div>
+<!-- Galerie Principale avec Switch Dynamique -->
+<div class="flex flex-col gap-space-sm">
+<!-- Vue Principale -->
+<div class="relative w-full aspect-[16/10] bg-surface-container-high rounded-xl overflow-hidden shadow-lg group">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Bâche publicitaire grand format tendue sur la façade en verre et métal d'un immeuble d'affaires corporate à Tunis, reproduction chromatique cyan et bleu profond avec coutures et œillets apparents sous lumière solaire nette." id="mainGalleryImage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIlTeWBk_aBatBkO_mpSZkjlAN5wZhG_OkQcfbeSG08oEPmJejzVKuSnNCIKXvkhZg0FoFIu808MwE3gDj_xPZXJbnt1jxtDCyydp51HFq3DXH8c8ShQe4BGQfu5knR_f4u84C5i-lVy3atwsJK2GBU5oTNgrVFbgeZBlkFGiwEVCNFa2MzZNDX8ZXNUcXGrl_H1yJ2Xb--4Fjby44xjXioCwL0MsFUHJc31qcfPq0m3O7VcW6PFNUCw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent opacity-80 pointer-events-none"></div>
+<div class="absolute bottom-space-md left-space-md right-space-md flex items-end justify-between text-on-primary pointer-events-none">
+<div class="space-y-0.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-container" id="galleryCaptionCategory">Installation Extérieure</span>
+<p class="font-title-md text-title-md font-bold" id="galleryCaptionTitle">Façade Siège Société Technologique - Tunis Lac II</p>
+<p class="font-body-sm text-body-sm text-on-primary/80">Toile Frontlit 510g satinée avec œillets tous les 25cm et sandows 8mm</p>
+</div>
+<div class="hidden sm:flex items-center gap-1.5 bg-inverse-surface/80 backdrop-blur-md px-3 py-1.5 rounded-lg text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary-fixed">zoom_in</span>
+                100% Fidélité Colorimétrique
+              </div>
+</div>
+<!-- Badge Type Matière Overlay -->
+<div class="absolute top-space-md left-space-md bg-surface-container-lowest/90 backdrop-blur px-3 py-1.5 rounded-lg shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="font-label-md text-label-md text-on-surface">Encres Anti-UV Certifiées</span>
+</div>
+</div>
+<!-- Vignettes Réalisations & Macro-détails Techniques -->
+<div class="grid grid-cols-4 gap-space-sm">
+<button class="gallery-thumb relative aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-high ring-2 ring-primary transition-all" onclick="changeGalleryImage('https://placeholder', 'Façade Siège Société - Tunis Lac II', 'Installation Extérieure', 'Bâche publicitaire grand format tendue sur la façade moderne d un bâtiment vitré d entreprise corporate sous un ciel azur.')" type="button">
+<img class="w-full h-full object-cover" data-alt="Grand visuel de bâche tendue sur un immeuble de bureaux vitré, détails nets des sandows de tension aux angles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoBwjc9QoBElU8KqaNm6VWCIFawLcoUkGpMp4WvPK2iZjOwCOHVzNm-SIFsO1GNUGNb0hPvPWOKeCIRmoMeZb3PdGmIukiJtSgtcDGVzjFOrUGYf9fv56JXc4rzN-_BkFBlNlvMpTPc-b41wcWKQ54dfFmxYJ1YY35DCX74M7tspVxhKjWVYxjxImgqRdjZ3bQgUF5ZN8Z43Vcat8fbHpD9Q5yqM_R0xiIDFjmEqWOpAqlTcK9oRg0ig"/>
+<div class="absolute inset-0 bg-inverse-surface/20 hover:bg-transparent transition-colors"></div>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-[10px] text-on-primary drop-shadow font-semibold">Façade Bâtiment</span>
+</button>
+<button class="gallery-thumb relative aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-high ring-0 hover:ring-2 hover:ring-outline transition-all" onclick="changeGalleryImage('https://placeholder', 'Salon International E-Expo Tunis', 'Stands Événementiels', 'Bâche suspendue à une structure modulaire en aluminium lors d un salon d exposition professionnel avec éclairage spot précis.')" type="button">
+<img class="w-full h-full object-cover" data-alt="Bâche grand format suspendue au-dessus d un stand design lors d un salon professionnel au palais des congrès de Tunis." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVxllUilxqfqqkYrunLl_fXQLVoMikxq1iyelnaVs78PqkZ3caSll-tuJniB3xFzD47gIL-3cjcF2PzxHPMpdO5w3im1WMd6qpeGVmnSA7bra4pjytfv8YeJL8vwefUSmB8f5jlKxLlWgC4vM547UDfhvi7VbjuUcedsO-ONagQqFLmH2R6KCuNhgwXcvEwqZ0y8wL_U9i4mDgpN0u6k1tJQASnYghtHxL6Aip4YHKpkgWpwFZnvOT7A"/>
+<div class="absolute inset-0 bg-inverse-surface/20 hover:bg-transparent transition-colors"></div>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-[10px] text-on-primary drop-shadow font-semibold">Salon &amp; Stand</span>
+</button>
+<button class="gallery-thumb relative aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-high ring-0 hover:ring-2 hover:ring-outline transition-all" onclick="changeGalleryImage('https://placeholder', 'Zoom Finition : Œillet Nickel &amp; Ourlet Soudé', 'Macro Façonnage', 'Gros plan macro sur un œillet métallique en laiton nickelé anti-corrosion serti sur un ourlet épais renforcé thermo-soudé à chaud.')" type="button">
+<img class="w-full h-full object-cover" data-alt="Macro très nette sur un œillet métallique serti sur toile vinyle avec bord replié thermo-soudé haute fréquence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHquNdvUYPDxjuNCxMK5mrL9W3vw7xjScFCJE-DDBz0vrST2Fk0m55fNYGuG0JJ6EbDQMyBHclZ5X-3GYunVAfANoIhf54WpCfYAV23qAyJELTPifGLrCW3vrVNnuZSrm3W856n5RDPOdIXMrov-dDaZfmOLmWfsuzpKC2wSAZs_5vtspj8nunW2xdG7ais3ny30_9Mwa1tjQLpaydrlQ1LHuJp7bO39-Yd9F_qZQrozB5OVVFTsA6sA"/>
+<div class="absolute inset-0 bg-inverse-surface/20 hover:bg-transparent transition-colors"></div>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-[10px] text-on-primary drop-shadow font-semibold">Œillet &amp; Ourlet</span>
+</button>
+<button class="gallery-thumb relative aspect-[4/3] rounded-lg overflow-hidden bg-surface-container-high ring-0 hover:ring-2 hover:ring-outline transition-all" onclick="changeGalleryImage('https://placeholder', 'Toile Mesh Échafaudage Anti-Vent', 'Macro Aération', 'Gros plan sur le tissu micro-perforé PVC blanc d une bâche de chantier laissant passer la lumière et les flux d air.')" type="button">
+<img class="w-full h-full object-cover" data-alt="Texture détaillée de toile micro-perforée blanche mesh 300g avec grille hexagonale transparente laissant filtrer le vent." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSgcYl1XBgVGVkZeGOGf_g7NQjVYBcsz0HxHnIrIsFcTc8svRckwZH33Bvl6Usp8UjLiRZA67AdZmig9S0aok4Fh-IbzyXKCEL5MNFnEtbibCAWo7UH8TJDhmG2-TCFI_f46Y2T-bIxgJ2dwzq4Bpy3ZhX3c_SBtnik2rVkGbgDriNNU7sn9Ab2BwkkNF3aNzBWc5QlWCq30TdZjSbHcBeepgEOI42m9R1zYSzjQEzawShtiZW6kik4w"/>
+<div class="absolute inset-0 bg-inverse-surface/20 hover:bg-transparent transition-colors"></div>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-[10px] text-on-primary drop-shadow font-semibold">Maille Mesh</span>
+</button>
+</div>
+</div>
+<!-- Fiche Technique PAO & Guide de Pose (Bento 3 Cartes) -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-primary-fixed flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">architecture</span>
+</div>
+<div>
+<h2 class="font-title-md text-title-md font-bold text-on-surface">Normes PAO &amp; Guide Atelier Graphique</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Spécifications requises pour garantir une netteté optique sans pixellisation</p>
+</div>
+</div>
+<a class="inline-flex items-center gap-1.5 text-primary hover:text-primary-container font-label-md text-label-md transition-colors" href="#gabarit">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+              Gabarit .AI &amp; .PDF
+            </a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-md rounded-lg bg-surface-container-low space-y-1">
+<div class="flex items-center gap-2 text-primary font-title-md text-title-md">
+<span class="material-symbols-outlined text-[20px]">aspect_ratio</span>
+<span>Résolution &amp; Échelle</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold">150 DPI</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">À taille 100% réelle (ou 300 DPI à l'échelle 1:10 pour les formats &gt; 5 mètres). Profil CMJN Fogra39.</p>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low space-y-1">
+<div class="flex items-center gap-2 text-primary font-title-md text-title-md">
+<span class="material-symbols-outlined text-[20px]">crop_free</span>
+<span>Débords &amp; Ourlets</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold">+30 mm</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Prévoir 3 cm de fond perdu périphérique pour repliement thermosoudé sans rogner vos textes cruciaux.</p>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low space-y-1">
+<div class="flex items-center gap-2 text-primary font-title-md text-title-md">
+<span class="material-symbols-outlined text-[20px]">radio_button_checked</span>
+<span>Zone de Sécurité</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface font-bold">50 mm bord</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Éloignez logos et typographies à 5 cm minimum des arêtes pour éviter le perçage des œillets.</p>
+</div>
+</div>
+<!-- Section Recommandations d'installation -->
+<div class="bg-surface-container-high/60 p-space-md rounded-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px] mt-0.5">construction</span>
+<div>
+<p class="font-title-md text-title-md text-on-surface">Conseils de Fixation Professionnelle</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Utilisez impérativement des sandows élastiques pro avec crochet pour absorber les rafales de vent et préserver la longévité de vos soudures.</p>
+</div>
+</div>
+<button class="shrink-0 px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface shadow-sm transition-all flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">menu_book</span>
+              Guide Technique PDF (2.4 Mo)
+            </button>
+</div>
+</div>
+<!-- Comparatif des Toiles Graphiques Synthétique -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm space-y-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tableau Synthétique des Toiles Disponibles</h3>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-low text-on-surface font-semibold">
+<th class="py-2.5 px-3 rounded-l">Substrat</th>
+<th class="py-2.5 px-3">Poids (g/m²)</th>
+<th class="py-2.5 px-3">Prise au vent</th>
+<th class="py-2.5 px-3">Finition d'aspect</th>
+<th class="py-2.5 px-3 rounded-r">Usage Recommandé</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low text-on-surface-variant">
+<tr class="hover:bg-surface-container-low/40">
+<td class="py-3 px-3 font-semibold text-on-surface">Frontlit PVC 510g</td>
+<td class="py-3 px-3">510 g/m²</td>
+<td class="py-3 px-3"><span class="text-tertiary font-semibold">Pleine (haute)</span></td>
+<td class="py-3 px-3">Satiné / Mat antireflet</td>
+<td class="py-3 px-3">Enseignes, façades protégées, salons</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40">
+<td class="py-3 px-3 font-semibold text-on-surface">Mesh Grillagée 300g</td>
+<td class="py-3 px-3">300 g/m²</td>
+<td class="py-3 px-3"><span class="text-secondary font-semibold">Très faible (-45%)</span></td>
+<td class="py-3 px-3">Micro-aérée microperforée</td>
+<td class="py-3 px-3">Échafaudages chantiers, ponts, hauteurs</td>
+</tr>
+<tr class="hover:bg-surface-container-low/40">
+<td class="py-3 px-3 font-semibold text-on-surface">Blockout Anti-curling 650g</td>
+<td class="py-3 px-3">650 g/m²</td>
+<td class="py-3 px-3">Pleine opaque</td>
+<td class="py-3 px-3">Lisse extrême opaque</td>
+<td class="py-3 px-3">Kakémonos, double-face, éclairage arrière</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- COLONNE DROITE (5 cols) : Configurateur Industriel Interactif au m² -->
+<div class="lg:col-span-5 w-full flex flex-col gap-space-md sticky top-24">
+<form class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md space-y-space-lg" id="configuratorForm">
+<!-- Étape 1 : Choix de la Toile -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md font-bold text-on-surface flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-on-primary text-label-sm font-label-sm">1</span>
+                Matière &amp; Substrat Vinyle
+              </label>
+<span class="text-label-sm font-label-sm text-primary font-semibold" id="selectedSubstrateBadge">510g Frontlit</span>
+</div>
+<div class="grid grid-cols-1 gap-2">
+<!-- Option 1 -->
+<label class="substrate-card relative flex items-start gap-3 p-3 rounded-lg bg-surface-container-low cursor-pointer transition-all border-2 border-primary bg-primary-fixed/20">
+<input checked="" class="mt-1 text-primary focus:ring-primary" data-price-m2="18" name="substrate" type="radio" value="frontlit"/>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">Toile Frontlit PVC Renforcée 510g</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">18 DT / m²</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Toile pleine haute densité. Couleurs ultra-vives, opacité parfaite et longévité extérieure.</p>
+</div>
+</label>
+<!-- Option 2 -->
+<label class="substrate-card relative flex items-start gap-3 p-3 rounded-lg bg-surface-container-low cursor-pointer transition-all border-2 border-transparent hover:bg-surface-container">
+<input class="mt-1 text-primary focus:ring-primary" data-price-m2="21" name="substrate" type="radio" value="mesh"/>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">Toile Micro-perforée Mesh 300g</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">21 DT / m²</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Perméable au vent. Réduit drastiquement l'effet voile pour échafaudages &amp; tempêtes.</p>
+</div>
+</label>
+<!-- Option 3 -->
+<label class="substrate-card relative flex items-start gap-3 p-3 rounded-lg bg-surface-container-low cursor-pointer transition-all border-2 border-transparent hover:bg-surface-container">
+<input class="mt-1 text-primary focus:ring-primary" data-price-m2="26" name="substrate" type="radio" value="blockout"/>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">Bâche Blockout Anti-curling 650g</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">26 DT / m²</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Âme noire opaque à 100%. Bords rigides sans ondulation, suspension prestige.</p>
+</div>
+</label>
+</div>
+</div>
+<!-- Étape 2 : Dimensions Sur-Mesure & Raccourcis -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md font-bold text-on-surface flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-on-primary text-label-sm font-label-sm">2</span>
+                Dimensions &amp; Surface Totale
+              </label>
+<div class="bg-primary/10 text-primary font-label-md text-label-md px-2.5 py-0.5 rounded-full font-bold">
+<span id="surfaceCalculated">4.50</span> m²
+              </div>
+</div>
+<!-- Formats Standards Raccourcis -->
+<div class="grid grid-cols-4 gap-1.5">
+<button class="preset-btn px-2 py-1.5 rounded bg-surface-container-low hover:bg-surface-container-high text-label-sm font-label-sm text-on-surface text-center transition-colors" onclick="setPresetDimensions(200, 100)" type="button">
+                2x1 m <span class="block text-[10px] text-on-surface-variant">2 m²</span>
+</button>
+<button class="preset-btn px-2 py-1.5 rounded bg-primary text-on-primary text-label-sm font-label-sm text-center shadow-sm transition-colors" onclick="setPresetDimensions(300, 150)" type="button">
+                3x1.5 m <span class="block text-[10px] text-on-primary/80">4.5 m²</span>
+</button>
+<button class="preset-btn px-2 py-1.5 rounded bg-surface-container-low hover:bg-surface-container-high text-label-sm font-label-sm text-on-surface text-center transition-colors" onclick="setPresetDimensions(400, 200)" type="button">
+                4x2 m <span class="block text-[10px] text-on-surface-variant">8 m²</span>
+</button>
+<button class="preset-btn px-2 py-1.5 rounded bg-surface-container-low hover:bg-surface-container-high text-label-sm font-label-sm text-on-surface text-center transition-colors" onclick="setPresetDimensions(600, 300)" type="button">
+                6x3 m <span class="block text-[10px] text-on-surface-variant">18 m²</span>
+</button>
+</div>
+<!-- Entrée cm personnalisée -->
+<div class="grid grid-cols-2 gap-space-sm pt-1">
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Largeur (cm)</span>
+<div class="relative flex items-center">
+<input class="w-full h-11 px-3 bg-surface-container-low rounded-lg font-title-md text-title-md text-on-surface font-semibold focus:outline-none focus:ring-2 focus:ring-primary/40" id="inputWidth" max="5000" min="20" type="number" value="300"/>
+<span class="absolute right-3 font-label-sm text-label-sm text-outline">cm</span>
+</div>
+</div>
+<div>
+<span class="block font-label-sm text-label-sm text-on-surface-variant mb-1">Hauteur (cm)</span>
+<div class="relative flex items-center">
+<input class="w-full h-11 px-3 bg-surface-container-low rounded-lg font-title-md text-title-md text-on-surface font-semibold focus:outline-none focus:ring-2 focus:ring-primary/40" id="inputHeight" max="5000" min="20" type="number" value="150"/>
+<span class="absolute right-3 font-label-sm text-label-sm text-outline">cm</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Étape 3 : Façonnage des Bords -->
+<div class="space-y-space-sm">
+<label class="font-title-md text-title-md font-bold text-on-surface flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-on-primary text-label-sm font-label-sm">3</span>
+              Finition des Bords &amp; Ourlets
+            </label>
+<div class="space-y-1.5">
+<label class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<div class="flex items-center gap-2">
+<input checked="" class="text-primary focus:ring-primary" name="hemming" type="radio" value="reinforced"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Ourlet renforcé thermocollé 4 côtés</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Recommandé</span>
+</label>
+<label class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<div class="flex items-center gap-2">
+<input class="text-primary focus:ring-primary" name="hemming" type="radio" value="cut"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Coupe franche nette sans ourlet</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Événement court</span>
+</label>
+<label class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<div class="flex items-center gap-2">
+<input class="text-primary focus:ring-primary" name="hemming" type="radio" value="pole"/>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Fourreau haut &amp; bas (potence tube 30/50mm)</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">+6 DT/m</span>
+</label>
+</div>
+</div>
+<!-- Étape 4 : Fixation & Œillets + Accessoires -->
+<div class="space-y-space-sm">
+<label class="font-title-md text-title-md font-bold text-on-surface flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-on-primary text-label-sm font-label-sm">4</span>
+              Disposition des Œillets Inox
+            </label>
+<div class="grid grid-cols-2 gap-2">
+<label class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input checked="" class="text-primary focus:ring-primary" name="grommets" type="radio" value="50cm"/>
+<span class="font-body-sm text-body-sm text-on-surface">Tous les 50 cm</span>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input class="text-primary focus:ring-primary" name="grommets" type="radio" value="25cm"/>
+<span class="font-body-sm text-body-sm text-on-surface">Tous les 25 cm (vent)</span>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input class="text-primary focus:ring-primary" name="grommets" type="radio" value="corners"/>
+<span class="font-body-sm text-body-sm text-on-surface">4 Coins uniquement</span>
+</label>
+<label class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input class="text-primary focus:ring-primary" name="grommets" type="radio" value="none"/>
+<span class="font-body-sm text-body-sm text-on-surface">Sans œillets</span>
+</label>
+</div>
+<!-- Option Sandows -->
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low/70 cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-center gap-2.5">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary" id="sandowsOption" type="checkbox"/>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Kit Tendeurs Sandows Élastiques Professionnels</span>
+<span class="block font-body-sm text-[12px] text-on-surface-variant">Sandows 20cm avec embout crochet haute traction</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">+15.00 DT</span>
+</label>
+</div>
+<!-- Étape 5 : Quantité & Remises Progressives -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<label class="font-title-md text-title-md font-bold text-on-surface flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-on-primary text-label-sm font-label-sm">5</span>
+                Volume d'Exemplaires Identiques
+              </label>
+<span class="font-label-sm text-label-sm text-tertiary font-bold" id="discountTag">Tarif unitaire</span>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<button class="qty-btn py-2 rounded-lg bg-primary text-on-primary font-title-md text-title-md text-center shadow-sm" onclick="setQuantity(1, 0)" type="button">
+                1 ex
+                <span class="block font-label-sm text-[11px] text-on-primary/80">Standard</span>
+</button>
+<button class="qty-btn py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-title-md text-title-md text-center transition-colors" onclick="setQuantity(2, 0.10)" type="button">
+                2 ex
+                <span class="block font-label-sm text-[11px] text-secondary font-bold">-10%</span>
+</button>
+<button class="qty-btn py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-title-md text-title-md text-center transition-colors" onclick="setQuantity(5, 0.20)" type="button">
+                5 ex
+                <span class="block font-label-sm text-[11px] text-secondary font-bold">-20%</span>
+</button>
+<button class="qty-btn py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-title-md text-title-md text-center transition-colors" onclick="setQuantity(10, 0.30)" type="button">
+                10 ex
+                <span class="block font-label-sm text-[11px] text-secondary font-bold">-30%</span>
+</button>
+</div>
+</div>
+<!-- Étape 6 : Dépôt de Maquette & Option Studio PAO -->
+<div class="space-y-space-sm">
+<label class="font-title-md text-title-md font-bold text-on-surface flex items-center gap-2">
+<span class="flex items-center justify-center w-6 h-6 rounded-full bg-primary text-on-primary text-label-sm font-label-sm">6</span>
+              Transmission du Fichier Graphique
+            </label>
+<!-- Dropzone Pro -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col items-center justify-center text-center group cursor-pointer hover:bg-surface-container transition-all">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">cloud_upload</span>
+</div>
+<p class="font-label-md text-label-md text-on-surface mt-2 font-semibold">Glissez votre fichier ici ou <span class="text-primary underline">parcourez</span></p>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">Formats acceptés : PDF certifié HD, TIFF, AI, EPS (Max 500 Mo)</p>
+<div class="flex items-center gap-2 mt-2 text-label-sm font-label-sm text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+                Vérification Prépresse &amp; BAT Numérique Inclus
+              </div>
+</div>
+<!-- Option Studio PAO -->
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low/70 cursor-pointer hover:bg-surface-container transition-all">
+<div class="flex items-center gap-2.5">
+<input class="w-4 h-4 rounded text-primary focus:ring-primary" id="studioOption" type="checkbox"/>
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Assistance Création &amp; PAO GS Imprim</span>
+<span class="block font-body-sm text-[12px] text-on-surface-variant">Mise en conformité vectorielle, retouche et montage par un graphiste</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">+35.00 DT</span>
+</label>
+</div>
+<!-- RECAPITULATIF FINANCIER & CALL TO ACTION -->
+<div class="pt-space-md border-t border-surface-container-high space-y-space-md">
+<!-- Tableau de décomposition tarifaire -->
+<div class="space-y-1 text-body-sm font-body-sm">
+<div class="flex justify-between text-on-surface-variant">
+<span>Surface totale commandée :</span>
+<span class="font-semibold text-on-surface" id="summarySurfaceText">4.50 m²</span>
+</div>
+<div class="flex justify-between text-on-surface-variant">
+<span>Taux unitaire matière :</span>
+<span class="font-semibold text-on-surface" id="summaryRateText">18.00 DT / m²</span>
+</div>
+<div class="hidden flex justify-between text-secondary" id="summaryOptionsRow">
+<span>Options sélectionnées :</span>
+<span class="font-semibold" id="summaryOptionsCost">+0.00 DT</span>
+</div>
+<div class="hidden flex justify-between text-tertiary font-medium" id="summaryDiscountRow">
+<span>Remise dégressive volume :</span>
+<span id="summaryDiscountCost">-0.00 DT</span>
+</div>
+</div>
+<!-- Prix Total en Dinars Tunisiens -->
+<div class="flex items-baseline justify-between pt-1">
+<div>
+<span class="block font-label-sm text-label-sm uppercase text-outline font-semibold">Total Net HT</span>
+<p class="font-headline-lg text-headline-lg text-primary font-extrabold leading-none" id="totalPriceHT">81.00 DT</p>
+<span class="font-body-sm text-[12px] text-on-surface-variant">96.39 DT TTC (TVA 19%)</span>
+</div>
+<div class="text-right">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-secondary/10 px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+                  Livraison Tunis &amp; Régions 48h
+                </span>
+</div>
+</div>
+<!-- Boutons d'Action Primaires -->
+<div class="space-y-2 pt-1">
+<button class="w-full h-12 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md font-bold flex items-center justify-center gap-2 shadow-md hover:shadow-lg transition-all active:scale-[0.98]" type="button">
+<span class="material-symbols-outlined text-[20px]">add_shopping_cart</span>
+                Ajouter au Panier &amp; Valider Fichier
+              </button>
+<button class="w-full h-11 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md flex items-center justify-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">picture_as_pdf</span>
+                Télécharger Devis Pro Officiel (.PDF)
+              </button>
+</div>
+<!-- Réassurance Qualité Atelier GS Imprim -->
+<div class="grid grid-cols-3 gap-2 pt-2 border-t border-surface-container-high text-center">
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[20px]">fact_check</span>
+<span class="font-label-sm text-[11px] text-on-surface font-medium mt-0.5">Contrôle BAT 100% Inclus</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[20px]">eco</span>
+<span class="font-label-sm text-[11px] text-on-surface font-medium mt-0.5">Encres Écologiques Sans Odeur</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-primary text-[20px]">workspace_premium</span>
+<span class="font-label-sm text-[11px] text-on-surface font-medium mt-0.5">Garantie Extérieure 3 Ans</span>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Script d'Interaction et Calculateur Direct en Dinars Tunisiens -->
+<script>
+    let currentQuantity = 1;
+    let currentDiscount = 0;
+
+    function calculateTotal() {
+      const width = parseFloat(document.getElementById('inputWidth').value) || 0;
+      const height = parseFloat(document.getElementById('inputHeight').value) || 0;
+      const surface = (width * height) / 10000; // en m²
+
+      document.getElementById('surfaceCalculated').innerText = surface.toFixed(2);
+      document.getElementById('summarySurfaceText').innerText = surface.toFixed(2) + ' m² (' + width + ' x ' + height + ' cm)';
+
+      // Prix unitaire du substrat
+      const substrateRadio = document.querySelector('input[name="substrate"]:checked');
+      const priceM2 = parseFloat(substrateRadio.getAttribute('data-price-m2')) || 18;
+      document.getElementById('summaryRateText').innerText = priceM2.toFixed(2) + ' DT / m²';
+
+      let basePrice = surface * priceM2;
+
+      // Ourlet fourreau option
+      const hemmingVal = document.querySelector('input[name="hemming"]:checked').value;
+      let hemmingCost = 0;
+      if (hemmingVal === 'pole') {
+        const perimeterMeters = (2 * width) / 100;
+        hemmingCost = perimeterMeters * 6; // 6 DT par mètre linéaire
+      }
+
+      // Option sandows
+      const hasSandows = document.getElementById('sandowsOption').checked;
+      const sandowsCost = hasSandows ? 15.00 : 0;
+
+      // Option Studio PAO
+      const hasStudio = document.getElementById('studioOption').checked;
+      const studioCost = hasStudio ? 35.00 : 0;
+
+      const totalOptions = hemmingCost + sandowsCost + studioCost;
+
+      const optionsRow = document.getElementById('summaryOptionsRow');
+      if (totalOptions > 0) {
+        optionsRow.classList.remove('hidden');
+        document.getElementById('summaryOptionsCost').innerText = '+' + totalOptions.toFixed(2) + ' DT';
+      } else {
+        optionsRow.classList.add('hidden');
+      }
+
+      // Calcul total avec volume et remise
+      let subtotalRaw = (basePrice * currentQuantity);
+      let discountAmount = subtotalRaw * currentDiscount;
+
+      const discountRow = document.getElementById('summaryDiscountRow');
+      if (discountAmount > 0) {
+        discountRow.classList.remove('hidden');
+        document.getElementById('summaryDiscountCost').innerText = '-' + discountAmount.toFixed(2) + ' DT (' + (currentDiscount * 100) + '%)';
+      } else {
+        discountRow.classList.add('hidden');
+      }
+
+      let grandTotalHT = (subtotalRaw - discountAmount) + totalOptions;
+      if (grandTotalHT < 15) grandTotalHT = 15; // Minimum forfaitaire de calage
+
+      document.getElementById('totalPriceHT').innerText = grandTotalHT.toFixed(2) + ' DT';
+    }
+
+    function setPresetDimensions(w, h) {
+      document.getElementById('inputWidth').value = w;
+      document.getElementById('inputHeight').value = h;
+      calculateTotal();
+    }
+
+    function setQuantity(qty, discount) {
+      currentQuantity = qty;
+      currentDiscount = discount;
+      
+      const buttons = document.querySelectorAll('.qty-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        btn.classList.add('bg-surface-container-low', 'text-on-surface');
+      });
+
+      event.currentTarget.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+      event.currentTarget.classList.remove('bg-surface-container-low', 'text-on-surface');
+
+      const discountTag = document.getElementById('discountTag');
+      if (discount > 0) {
+        discountTag.innerText = 'Remise volume active: -' + (discount * 100) + '%';
+        discountTag.classList.remove('text-tertiary');
+        discountTag.classList.add('text-secondary');
+      } else {
+        discountTag.innerText = 'Tarif unitaire standard';
+        discountTag.classList.add('text-tertiary');
+        discountTag.classList.remove('text-secondary');
+      }
+
+      calculateTotal();
+    }
+
+    function changeGalleryImage(src, title, category, altText) {
+      const mainImg = document.getElementById('mainGalleryImage');
+      mainImg.src = src;
+      mainImg.setAttribute('data-alt', altText);
+      document.getElementById('galleryCaptionTitle').innerText = title;
+      document.getElementById('galleryCaptionCategory').innerText = category;
+    }
+
+    // Écouteurs d'événements
+    document.getElementById('inputWidth').addEventListener('input', calculateTotal);
+    document.getElementById('inputHeight').addEventListener('input', calculateTotal);
+    document.getElementById('sandowsOption').addEventListener('change', calculateTotal);
+    document.getElementById('studioOption').addEventListener('change', calculateTotal);
+
+    document.querySelectorAll('input[name="substrate"]').forEach(elem => {
+      elem.addEventListener('change', (e) => {
+        document.querySelectorAll('.substrate-card').forEach(c => {
+          c.classList.remove('border-primary', 'bg-primary-fixed/20');
+          c.classList.add('border-transparent');
+        });
+        e.target.closest('.substrate-card').classList.add('border-primary', 'bg-primary-fixed/20');
+        e.target.closest('.substrate-card').classList.remove('border-transparent');
+        
+        let labelName = '510g Frontlit';
+        if (e.target.value === 'mesh') labelName = 'Mesh 300g Grillagé';
+        if (e.target.value === 'blockout') labelName = 'Blockout 650g Opaque';
+        document.getElementById('selectedSubstrateBadge').innerText = labelName;
+
+        calculateTotal();
+      });
+    });
+
+    document.querySelectorAll('input[name="hemming"]').forEach(elem => {
+      elem.addEventListener('change', calculateTotal);
+    });
+
+    document.querySelectorAll('input[name="grommets"]').forEach(elem => {
+      elem.addEventListener('change', calculateTotal);
+    });
+
+    // Initialisation du calcul
+    calculateTotal();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_6px_rgba(15,23,42,0.03)] mt-space-xl"><div class="w-full bg-surface-container-low py-space-lg"><div class="max-w-[1440px] mx-auto px-margin lg:px-margin-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg items-center"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-primary text-[32px]">precision_manufacturing</span><div><p class="font-title-md text-title-md text-on-surface">Atelier Haute Précision</p><p class="font-body-sm text-body-sm text-on-surface-variant">Parc offset Heidelberg &amp; numérique HP Indigo</p></div></div><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-primary text-[32px]">verified</span><div><p class="font-title-md text-title-md text-on-surface">Normes ISO &amp; FSC®</p><p class="font-body-sm text-body-sm text-on-surface-variant">Papiers écoresponsables tracés &amp; encres végétales</p></div></div><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-primary text-[32px]">local_shipping</span><div><p class="font-title-md text-title-md text-on-surface">Livraison Express</p><p class="font-body-sm text-body-sm text-on-surface-variant">Partout en Tunisie sous 24h à 48h</p></div></div><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-primary text-[32px]">support_agent</span><div><p class="font-title-md text-title-md text-on-surface">Support PAO Dédié</p><p class="font-body-sm text-body-sm text-on-surface-variant">Contrôle prépresse &amp; vérification de fichiers</p></div></div></div></div><div class="max-w-[1440px] mx-auto px-margin lg:px-margin-lg py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-lg"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="GS Imprim Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vpv6nsr3_nsS7COjiZYvsfnWDi4AyCLAAL3qdfnTnCXx6L36narV3WIHcWzy_hUeS7BosaBz1FFWoMPYHZluffaCgdx36nuEBqSX4-S_lGfDTFRGdG_IMhIaK2bASbS3M58zdVBSLFJbvD6NBPaXvGXdYIOepvV-r4-J_a6uW8nMZ6M1V0VWlkLuX04cPAVct8ktskKJqGod4gU2MVcJGRoNWo15oJhfugypHUcMBXYmLFgVbIvAcmW7dG"/><span class="font-headline-sm text-headline-sm text-primary">GS Imprim</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Référence de l'impression haut de gamme en Tunisie (ex Atelier Print). Spécialiste du façonnage minutieux, de la dorure à chaud galbée, du gaufrage et des finitions d'exception pour professionnels et créatifs exigeants.</p><div class="pt-space-xs"><p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">location_on</span>Zone Industrielle La Charguia II, Tunis, Tunisie</p><p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2 mt-1"><span class="material-symbols-outlined text-primary text-[18px]">call</span>+216 71 800 000 | +216 29 000 000</p><p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2 mt-1"><span class="material-symbols-outlined text-primary text-[18px]">mail</span>contact@gsimprim.com.tn</p></div></div><div><p class="font-title-md text-title-md text-on-surface mb-space-md">Catalogue Print</p><ul class="space-y-space-sm"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Cartes de visite de prestige</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Packaging &amp; Boîtes sur-mesure</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Catalogues, Dépliants &amp; Brochures</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Étiquettes adhésives en rouleaux</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Signalétique &amp; Grand Format</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Goodies &amp; Objets publicitaires</li></ul></div><div><p class="font-title-md text-title-md text-on-surface mb-space-md">Ressources PAO</p><ul class="space-y-space-sm"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Guides techniques &amp; Fonds perdus</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Profils colorimétriques Fogra39</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Gabarits InDesign &amp; Illustrator</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Nuancier papiers &amp; Échantillons</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Validation Bon à Tirer (BAT)</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">FAQ &amp; Assistance technique</li></ul></div><div><p class="font-title-md text-title-md text-on-surface mb-space-md">Certifications &amp; Engagements</p><div class="space-y-space-sm"><div class="p-space-sm rounded-lg bg-surface-container-low"><p class="font-label-md text-label-md text-on-surface">ISO 9001 &amp; ISO 14001</p><p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Management qualité &amp; respect de l'environnement certifié.</p></div><div class="p-space-sm rounded-lg bg-surface-container-low"><p class="font-label-md text-label-md text-on-surface">FSC® Mixte &amp; Recyclé</p><p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Gestion forestière durable et traçabilité matière.</p></div></div></div></div><div class="mt-space-xl pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><p>© 2024 GS Imprim (ex Atelier Print Tunisie). Tous droits réservés.</p><div class="flex items-center gap-space-lg"><a class="hover:text-primary transition-colors" href="#">Mentions Légales</a><a class="hover:text-primary transition-colors" href="#">Conditions Générales de Vente</a><a class="hover:text-primary transition-colors" href="#">Politique de Confidentialité</a></div></div></div></footer></body></html>

@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+
+<html lang="fr"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary-fixed-variant": "#004e5c",
+          "on-error-container": "#93000a",
+          "primary-container": "#3b49df",
+          "surface": "#faf8ff",
+          "inverse-surface": "#283044",
+          "surface-tint": "#3c4ae0",
+          "surface-container-highest": "#dae2fd",
+          "secondary-fixed-dim": "#4cd7f6",
+          "surface-container-low": "#f2f3ff",
+          "inverse-primary": "#bdc2ff",
+          "on-tertiary": "#ffffff",
+          "on-primary-container": "#d2d4ff",
+          "on-tertiary-fixed": "#2a1700",
+          "tertiary-fixed-dim": "#ffb95f",
+          "on-secondary-fixed": "#001f26",
+          "tertiary-fixed": "#ffddb8",
+          "surface-bright": "#faf8ff",
+          "surface-container-lowest": "#ffffff",
+          "on-tertiary-container": "#ffcf98",
+          "error-container": "#ffdad6",
+          "surface-variant": "#dae2fd",
+          "error": "#ba1a1a",
+          "surface-dim": "#d2d9f4",
+          "on-secondary": "#ffffff",
+          "tertiary-container": "#845300",
+          "secondary-fixed": "#acedff",
+          "outline": "#757687",
+          "on-surface": "#131b2e",
+          "on-background": "#131b2e",
+          "surface-container-high": "#e2e7ff",
+          "on-primary-fixed-variant": "#1d2cc9",
+          "inverse-on-surface": "#eef0ff",
+          "secondary-container": "#57dffe",
+          "primary-fixed": "#e0e0ff",
+          "outline-variant": "#c6c5d8",
+          "surface-container": "#eaedff",
+          "tertiary": "#643e00",
+          "on-primary-fixed": "#000668",
+          "on-secondary-container": "#006172",
+          "primary-fixed-dim": "#bdc2ff",
+          "secondary": "#00687a",
+          "on-error": "#ffffff",
+          "on-primary": "#ffffff",
+          "primary": "#1c2ac8",
+          "on-tertiary-fixed-variant": "#653e00",
+          "background": "#faf8ff",
+          "on-surface-variant": "#454655"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "1.5rem",
+          "space-sm": "0.5rem",
+          "space-xl": "2.5rem",
+          "space-xs": "0.25rem",
+          "gutter-sm": "1rem",
+          "margin-sm": "1rem",
+          "space-md": "1rem",
+          "space-lg": "1.5rem",
+          "gutter-lg": "2rem",
+          "margin": "1.5rem",
+          "margin-lg": "3rem"
+        },
+        "fontFamily": {
+          "display-hero-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "display-hero": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md-mobile": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ]
+        },
+        "fontSize": {
+          "display-hero-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "800"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "22px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "title-md": [
+            "17px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ],
+          "body-lg": [
+            "17px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "700"
+            }
+          ],
+          "display-hero": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.03em",
+              "fontWeight": "800"
+            }
+          ],
+          "headline-md-mobile": [
+            "22px",
+            {
+              "lineHeight": "30px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "700"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(15,23,42,0.06)]"><div class="h-20 max-w-[1440px] mx-auto px-margin lg:px-margin-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" data-path="accueil" href="#"><img alt="Modern luxury geometric print shop logo icon, minimalist overlapping cyan, magenta, and deep navy printing color layers or folded stylized letter P with precise geometric lines, vector style on clean background. Design context: - Primary color: #3b49df
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+. The logo should be visually consistent with these brand tokens." class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vpv6nsr3_nsS7COjiZYvsfnWDi4AyCLAAL3qdfnTnCXx6L36narV3WIHcWzy_hUeS7BosaBz1FFWoMPYHZluffaCgdx36nuEBqSX4-S_lGfDTFRGdG_IMhIaK2bASbS3M58zdVBSLFJbvD6NBPaXvGXdYIOepvV-r4-J_a6uW8nMZ6M1V0VWlkLuX04cPAVct8ktskKJqGod4gU2MVcJGRoNWo15oJhfugypHUcMBXYmLFgVbIvAcmW7dG"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">GS Imprim</span><span class="font-label-sm text-label-sm text-outline tracking-wider uppercase leading-none mt-1">Atelier Print Studio</span></div></a></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-title-md"><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="accueil" href="#">Accueil</a><a aria-current="page" class="transition-colors py-space-xs text-primary font-title-md" data-path="catalogue-produits" href="#">Catalogue Produits</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="services-finitions" href="#">Services &amp; Finitions</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="realisations" href="#">Réalisations</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="devis-express" href="#">Devis Express</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors py-space-xs" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><div class="relative hidden lg:flex items-center w-64 h-10 px-space-sm bg-surface-container-low rounded-lg"><span class="material-symbols-outlined text-outline mr-2 text-[20px]">search</span><input class="w-full bg-transparent border-none outline-none font-body-sm text-body-sm text-on-surface placeholder:text-outline" placeholder="Flyer, packaging, dorure..." type="text"/></div><a class="hidden sm:inline-flex items-center justify-center h-10 px-space-md rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md transition-all shadow-[0_1px_3px_rgba(15,23,42,0.08)]" data-path="devis-express" href="#"><span class="material-symbols-outlined text-[18px] mr-1.5">calculate</span>Devis Instantané</a><div class="flex items-center gap-space-xs"><button aria-label="Panier" class="relative flex items-center justify-center w-10 h-10 rounded-lg hover:bg-surface-container-high transition-colors text-on-surface-variant" type="button"><span class="material-symbols-outlined">shopping_bag</span><span class="absolute top-1.5 right-1.5 flex items-center justify-center w-4 h-4 rounded-full bg-primary text-on-primary font-label-sm text-[10px]">3</span></button><button aria-label="Espace Client" class="flex items-center justify-center p-1 rounded-full hover:ring-2 hover:ring-primary-container transition-all" type="button"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UgPDHvQ6tB0nAqJwKlB3Xq3mot0sifC0s7on-IJk0J-i9XPz7LEpm7L5Ia4-jQR06lov-Y-HMQAdSby32C3IlyskiWVdhmfmZvbeYllABoLQkxVmErxb7Ll1MtnR4k-F4da3u6XIAS9PT49NfqgkAfFz-29MKZ1GZkBU1XrMxkhAH_kCc-MEBidKFmeZAyFIFW9zN_2K8acgKvEXPCn9Y6nUSNRgQIPqtRCnvvEdiODZml-puN6tZU-4jT"/></button></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Fil d'Ariane & Status Bar -->
+<section class="w-full bg-surface-container-low py-space-sm">
+<div class="max-w-[1440px] mx-auto px-margin lg:px-margin-lg flex flex-wrap items-center justify-between gap-space-sm text-body-sm font-body-sm text-on-surface-variant">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-body-sm font-body-sm">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>Accueil
+        </a>
+<span class="text-outline">/</span>
+<a class="hover:text-primary transition-colors" href="#">Catalogue</a>
+<span class="text-outline">/</span>
+<a class="hover:text-primary transition-colors" href="#">Autocollants &amp; Adhésifs</a>
+<span class="text-outline">/</span>
+<span class="text-on-surface font-title-md text-body-sm">Stickers Vinyle Découpés Haute Résistance</span>
+</nav>
+<div class="flex items-center gap-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container-lowest text-secondary font-label-sm text-label-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+          Atelier Tunis : Découpe Numérique Laser Opérationnelle
+        </span>
+<span class="text-outline hidden md:inline">•</span>
+<span class="hidden md:inline-flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">bolt</span>Expédition standard 48h
+        </span>
+</div>
+</div>
+</section>
+<!-- En-tête Titre Produit & Badges -->
+<section class="w-full bg-surface-container-lowest pt-space-lg pb-space-md shadow-sm">
+<div class="max-w-[1440px] mx-auto px-margin lg:px-margin-lg flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<div class="flex flex-wrap items-center gap-space-xs mb-2">
+<span class="px-space-sm py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase tracking-wider">Norme Industrie &amp; Packaging</span>
+<span class="px-space-sm py-1 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm uppercase tracking-wider">Étanche 100% Éco-solvant</span>
+<span class="px-space-sm py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase tracking-wider">Échenillage Facile</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Stickers &amp; Étiquettes Vinyle Découpées Sur-Mesure</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-3xl">
+          Découpe ultra-précise pleine chair (Die-Cut) ou mi-chair (Kiss-Cut). Vinyle polymère haute densité 100μ résistant aux UV, lavages intensifs, huiles et intempéries.
+        </p>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<div class="text-right">
+<div class="flex items-baseline justify-end gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">À partir de</span>
+<span class="font-headline-md text-headline-md text-primary font-bold">0.13 <span class="font-label-md text-title-md">DT / pièce</span></span>
+</div>
+<p class="font-label-sm text-label-sm text-outline">Minimum 50 ex • TVA comprise</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Workspace Principal 2 Colonnes -->
+<section class="w-full py-space-xl">
+<div class="max-w-[1440px] mx-auto px-margin lg:px-margin-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start">
+<!-- ================= COLONNE GAUCHE (Galerie HD, Macro-détails, Spécifications PAO) ================= -->
+<div class="lg:col-span-6 flex flex-col gap-space-lg">
+<!-- Vitrine Galerie HD Principale -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden group">
+<div class="relative w-full h-[460px] rounded-lg overflow-hidden bg-surface-container-low flex items-center justify-center">
+<img alt="Stickers Vinyle Haute Résistance Découpés" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Close-up shot of custom cut die-cut vinyl stickers applied on premium matte amber cosmetics bottle, an open sleek metallic laptop, and a branded craft packaging box on a modern architectural studio table, showcasing vibrant cyan and deep indigo colors, sharp edge contour cut with gloss finish and tactile reflection, soft diffuse natural studio lighting, ultra high resolution product photography" id="main-product-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtYQbeLYWspdKFfux36ZuzA2AUXfY8Dvxg4byIdBXMZckPOzaDSHGJ5EVJafBCJUluPo8W71_E6JSvO9rxuaoa19KSd0IKaDcYz2HdoeZkEnubx71MbOvqy4UWPjJ7wyaGCAo6YAWKflMKyGyqog0CcK1MG3g67o9ZEG9ukPDWd_tzXGgk-VTAnbBxRMla6xtdXcR9xbmDU1F-Apn0rE5LnMLazRfIwWjazZ3V1m6OiwEaXhlEQ2a9_A"/>
+<div class="absolute top-4 left-4 flex flex-col gap-2">
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-md text-label-md shadow-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>Vinyle 100 Microns
+                </span>
+<span class="px-3 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-on-surface font-label-md text-label-md shadow-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">water_drop</span>Waterproof &amp; Anti-rayures
+                </span>
+</div>
+<div class="absolute bottom-4 right-4 px-3 py-1.5 rounded-lg bg-inverse-surface/85 backdrop-blur-md text-inverse-on-surface font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span>Zoom 100% Macro Découpe
+              </div>
+</div>
+<!-- Miniatures interactives -->
+<div class="grid grid-cols-4 gap-space-sm mt-space-sm">
+<button class="gallery-thumb active-thumb relative h-20 rounded-lg overflow-hidden bg-surface-container-high transition-all shadow-sm" onclick="selectGallery(0)" type="button">
+<img alt="Découpe Kiss-Cut pelable" class="w-full h-full object-cover" data-alt="Detailed macro photo of precision laser kiss-cut vinyl sticker being gently peeled by human fingers from the backing paper, showcasing white adhesive vinyl layer, razor thin magenta cut line and pristine separation, studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF4DWJDt8E2lsrQ6qJf5SXySZlEFSJeFTT7-RkgH0-6Krz0JIcWo1Sv_LVGUnnPog-EANLFpztnUz9KuoyLknoc3_tfUuCynTGpiWD8TMt832K-IkdZj9Sw5xeNp1Dn3bj6S_l4q8PUX2hhwKwl0BxK78eiU01OG8sYib7CSbifm094TWJ1gur1LwA7nyplGbdLaVH_LpTTIZNcFfRlaiz7WxJ9LLukn_0rGgLZxjMHh0udKL2P6L18w"/>
+<span class="absolute inset-0 bg-primary/20 pointer-events-none thumb-border"></span>
+</button>
+<button class="gallery-thumb relative h-20 rounded-lg overflow-hidden bg-surface-container-high transition-all shadow-sm" onclick="selectGallery(1)" type="button">
+<img alt="Comparaison Brillant vs Mat Velours" class="w-full h-full object-cover" data-alt="High resolution photo of glossy vs ultra matte vinyl surface contrast side by side on luxury craft packaging, soft touch velvet texture and reflective lacquer sheen under sharp directional light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZRZCMJu0FVq1OOxmpz9Odu9FRx_gNTbjdhT8EB3r2a0i3p5dGjh6qr37GkmGIsoCexWrVk3zadJZoskpjZaHiuleVARXlmUfP_9StqVuMO6kTbIC1aeTChiTBr0WPm57B5wenyiUk6TwHBMBuITVPgYi9DoMTIMo4Xz2Hy_TscTPvE5CPiiya_ua-fxm5u8Np_Pz6A4vS0awc4lMC4WjvIY1sKNdn1jT-Co2WXaA2czusC_DkxmyJmw"/>
+</button>
+<button class="gallery-thumb relative h-20 rounded-lg overflow-hidden bg-surface-container-high transition-all shadow-sm" onclick="selectGallery(2)" type="button">
+<img alt="Effet Holographique et Transparent" class="w-full h-full object-cover" data-alt="Overhead flatlay shot of holographic iridescent stickers reflecting rainbow cyan and magenta highlights next to clear transparent stickers applied on clear glass bottle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzTChaFABxiG6q_rJ3uRDPF_EGk7NzcpA2G3obMMDnawAL0WSfVBN6isLo95VzZH7oUm6RIzTBZRPaLwHi8eCDOhG5-UQ5FD3bdv8okHDwN42ZT_Z4O1XoV4do-k9MqneXSLlRS2YO-CZj4aHVc2pGvoRQNnaW6VLeEkMkpg-0tIpHyYR4GpMJQqMv44FftN-M8qFoiCn8GZIw01WApJ0DE6Dxhc9PR7ljgTBBb9m8Zhz_s7YtgMqVXw"/>
+</button>
+<button class="gallery-thumb relative h-20 rounded-lg overflow-hidden bg-surface-container-high transition-all shadow-sm" onclick="selectGallery(3)" type="button">
+<img alt="Planche A4 stickers promo" class="w-full h-full object-cover" data-alt="A4 sticker sheet layout with multiple assorted promotional branded stickers cleanly arranged and kiss-cut on single smooth backing sheet with register marks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_z712JLSYAMi32Wh3FSG6KrMtffnKUsh6lKaZgjgJPsYmJeEQ_Vg5gsw3K2gp_xivEy1Mw-lyC47Z7TySFvXo3q6RmCnEr0bh0Rr_lE0LJH17F5icnWSmeshSyg9LoC_uBYXtjlmLdJA71jP2rEs7ZSKSF26tE8Jl9Dmgh094Bveg0x3xI0AQPWf2zHmRQurdpHtPqTto157--RcZ2KVipqkonx08THsZ0LYS2UMHol6NzfaVLIHK5w"/>
+</button>
+</div>
+</div>
+<!-- Zoom Matières & Échantillonnage Tactile -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<h2 class="font-title-md text-title-md text-on-surface mb-space-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">layers</span>
+              Anatomie &amp; Résistance du Vinyle GS Imprim
+            </h2>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md mt-space-md">
+<div class="p-space-md bg-surface rounded-lg">
+<div class="w-8 h-8 rounded bg-primary/10 text-primary flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[20px]">content_cut</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Précision Laser 0.1mm</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lame tangentielle Summa S2 Class garantissant des courbes complexes et angles sans effilochage.</p>
+</div>
+<div class="p-space-md bg-surface rounded-lg">
+<div class="w-8 h-8 rounded bg-secondary/10 text-secondary flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[20px]">wb_sunny</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Protection UV 5 Ans</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Encres éco-solvant haute saturation imperméables, résistantes aux rayonnements solaires et aux lavages haute pression.</p>
+</div>
+<div class="p-space-md bg-surface rounded-lg">
+<div class="w-8 h-8 rounded bg-tertiary-container/20 text-tertiary flex items-center justify-center mb-2">
+<span class="material-symbols-outlined text-[20px]">auto_fix_high</span>
+</div>
+<h3 class="font-label-md text-label-md text-on-surface mb-1">Colle Acrylique Extra</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Adhérence forte sur verre, plastique, métal, carton, bois verni sans laisser de résidus au décollage propre.</p>
+</div>
+</div>
+</div>
+<!-- Normes Prépresse PAO & Téléchargement Guide -->
+<div class="bg-surface-container-high/60 rounded-xl p-space-lg shadow-sm">
+<div class="flex items-start justify-between gap-space-md mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Normes &amp; Prépresse Atelier</span>
+<h3 class="font-title-md text-title-md text-on-surface mt-1">Préparation du Fichier de Découpe</h3>
+</div>
+<span class="px-2.5 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm">BAT Offert</span>
+</div>
+<!-- Matrice des exigences PAO -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm mb-space-md text-center">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg">
+<p class="font-label-sm text-label-sm text-outline">Trait de coupe</p>
+<p class="font-label-md text-label-md text-primary mt-1 font-bold">CutContour</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Ton direct 100% M</p>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg">
+<p class="font-label-sm text-label-sm text-outline">Fonds perdus</p>
+<p class="font-label-md text-label-md text-on-surface mt-1 font-bold">2.0 mm</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Au-delà du filet</p>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg">
+<p class="font-label-sm text-label-sm text-outline">Zone Sécurisée</p>
+<p class="font-label-md text-label-md text-on-surface mt-1 font-bold">1.5 mm</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">Marge intérieure</p>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg">
+<p class="font-label-sm text-label-sm text-outline">Résolution</p>
+<p class="font-label-md text-label-md text-on-surface mt-1 font-bold">300 DPI</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">CMJN vectorisé</p>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-lowest rounded-lg flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[28px]">download_for_offline</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Guide PDF Gabarit Découpe &amp; Swatches Illustrator</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Inclus : Nuancier CutContour et gabarits prêts à l'emploi (AI, EPS, PDF)</p>
+</div>
+</div>
+<a class="px-space-md py-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md shrink-0 transition-colors flex items-center gap-1 shadow-sm" href="#">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+                Télécharger (.ZIP)
+              </a>
+</div>
+</div>
+<!-- Avis Clients Certifiés Print -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="flex text-tertiary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<span class="font-title-md text-title-md text-on-surface">4.9 / 5</span>
+<span class="font-body-sm text-body-sm text-outline">(184 retours d'entreprises tunisiennes)</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Avis Vérifiés</span>
+</div>
+<div class="border-t border-transparent space-y-space-sm">
+<div class="bg-surface p-space-md rounded-lg">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-md text-label-md text-on-surface">Atelier Botanical Tunis (Cosmétique Bio)</span>
+<span class="font-label-sm text-label-sm text-outline">Il y a 3 jours</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  « La lamination soft-touch et la découpe à la forme sur nos flacons d'huile sont remarquables. Zéro bulle, le tracé CutContour a été parfaitement ajusté par le PAO GS Imprim. Livraison à Sfax sous 48h comme promis. »
+                </p>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= COLONNE DROITE (Configurateur Haute Densité & Devis Dynamique) ================= -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md">
+<div class="flex items-center justify-between pb-space-sm mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Atelier de Découpe Sur-Mesure</span>
+<h2 class="font-headline-md text-headline-md text-on-surface mt-0.5">Configurez vos Stickers</h2>
+</div>
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-primary font-label-md text-label-md">Étape par étape</span>
+</div>
+<form class="space-y-space-lg" id="sticker-form" onsubmit="event.preventDefault();">
+<!-- ÉTAPE 1 : Type de Découpe & Format de Présentation -->
+<div>
+<label class="block font-title-md text-title-md text-on-surface mb-1 flex items-center justify-between">
+<span>1. Type de Découpe &amp; Présentation</span>
+<span class="font-label-sm text-label-sm text-primary font-normal">Recommandé : Die-Cut</span>
+</label>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">Définissez la méthode de découpe et le conditionnement de vos adhésifs.</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm" id="decoupe-group">
+<!-- Option 1: Die Cut -->
+<div class="opt-card active-card cursor-pointer p-space-sm rounded-lg bg-surface hover:bg-surface-container-low transition-all" onclick="setOption('decoupe', 'diecut', this)">
+<div class="flex items-start justify-between mb-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">shape_line</span>
+<p class="font-label-md text-label-md text-on-surface">Pleine Chair (Die-Cut)</p>
+</div>
+<span class="w-4 h-4 rounded-full bg-primary flex items-center justify-center check-dot">
+<span class="material-symbols-outlined text-[12px] text-on-primary">check</span>
+</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Découpe totale à la silhouette exacte du logo. Idéal pour goodies, merchandising et distribution individuelle.</p>
+</div>
+<!-- Option 2: Kiss Cut -->
+<div class="opt-card cursor-pointer p-space-sm rounded-lg bg-surface hover:bg-surface-container-low transition-all" onclick="setOption('decoupe', 'kisscut', this)">
+<div class="flex items-start justify-between mb-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">crop_free</span>
+<p class="font-label-md text-label-md text-on-surface">Mi-Chair (Kiss-Cut)</p>
+</div>
+<span class="w-4 h-4 rounded-full bg-surface-container-highest flex items-center justify-center check-dot"></span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Sticker découpé sur un support rectangulaire plus large. Décollage ultra-rapide sans forcer sur les coins.</p>
+</div>
+<!-- Option 3: Sticker Sheet -->
+<div class="opt-card cursor-pointer p-space-sm rounded-lg bg-surface hover:bg-surface-container-low transition-all" onclick="setOption('decoupe', 'sheet', this)">
+<div class="flex items-start justify-between mb-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">grid_view</span>
+<p class="font-label-md text-label-md text-on-surface">Planche Promo (Sheet)</p>
+</div>
+<span class="w-4 h-4 rounded-full bg-surface-container-highest flex items-center justify-center check-dot"></span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Multiples designs et tailles panachés sur feuille A4/A5. Pratique pour kits d'événements et packs de stickers.</p>
+</div>
+<!-- Option 4: Rouleau -->
+<div class="opt-card cursor-pointer p-space-sm rounded-lg bg-surface hover:bg-surface-container-low transition-all" onclick="setOption('decoupe', 'roll', this)">
+<div class="flex items-start justify-between mb-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">adjust</span>
+<p class="font-label-md text-label-md text-on-surface">Rouleaux / Bobines</p>
+</div>
+<span class="w-4 h-4 rounded-full bg-surface-container-highest flex items-center justify-center check-dot"></span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Conditionnement en mandrin 40 ou 76mm pour pose manuelle express ou étiqueteuse automatique industrielle.</p>
+</div>
+</div>
+</div>
+<!-- ÉTAPE 2 : Support & Matière Vinyle -->
+<div>
+<label class="block font-title-md text-title-md text-on-surface mb-1">2. Support &amp; Matière Vinyle</label>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">Sélectionnez la texture et le substrat adhésif selon l'usage.</p>
+<div class="space-y-space-xs" id="matiere-group">
+<!-- Matière 1 -->
+<div class="opt-card active-card cursor-pointer p-space-sm rounded-lg bg-surface hover:bg-surface-container-low flex items-center justify-between transition-all" onclick="setOption('matiere', 'blanc-brillant', this)">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-full bg-surface-container-lowest shadow-sm flex items-center justify-center">
+<span class="w-4 h-4 rounded-full bg-white shadow-inner"></span>
+</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Vinyle Blanc Brillant Premium 100μ</p>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Haute opacité, couleurs saturées, blanc éclatant, le standard absolu.</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Standard</span>
+</div>
+<!-- Matière 2 -->
+<div class="opt-card cursor-pointer p-space-sm rounded-lg bg-surface hover:bg-surface-container-low flex items-center justify-between transition-all" onclick="setOption('matiere', 'blanc-mat', this)">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-full bg-surface-container-lowest shadow-sm flex items-center justify-center">
+<span class="w-4 h-4 rounded-full bg-surface-container-high"></span>
+</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Vinyle Blanc Mat Velouté</p>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Aspect contemporain épuré, zéro reflet lumineux gênant, rendu sobre.</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">+0.02 DT/u</span>
+</div>
+<!-- Matière 3 -->
+<div class="opt-card cursor-pointer p-space-sm rounded-lg bg-surface hover:bg-surface-container-low flex items-center justify-between transition-all" onclick="setOption('matiere', 'transparent', this)">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-full bg-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-secondary">opacity</span>
+</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Vinyle Ultra-Transparent (Effet No-Label)</p>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Inclus blanc de soutien sélectif sous le graphisme pour une opacité parfaite.</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm">+0.05 DT/u</span>
+</div>
+<!-- Matière 4 -->
+<div class="opt-card cursor-pointer p-space-sm rounded-lg bg-surface hover:bg-surface-container-low flex items-center justify-between transition-all" onclick="setOption('matiere', 'holographique', this)">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-full bg-gradient-to-tr from-pink-300 via-purple-300 to-cyan-300 flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-on-surface">flare</span>
+</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Vinyle Holographique Arc-en-Ciel</p>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Reflets métallisés multicolores changeants selon l'angle de vue.</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">+0.08 DT/u</span>
+</div>
+<!-- Matière 5 -->
+<div class="opt-card cursor-pointer p-space-sm rounded-lg bg-surface hover:bg-surface-container-low flex items-center justify-between transition-all" onclick="setOption('matiere', 'kraft', this)">
+<div class="flex items-center gap-3">
+<span class="w-7 h-7 rounded-full bg-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-tertiary">eco</span>
+</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Papier Kraft Brun Recyclé Éco-Responsable</p>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Fibres visibles naturelles, look artisanal vintage pour bocaux et cafés.</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Écologique</span>
+</div>
+</div>
+</div>
+<!-- ÉTAPE 3 : Finition / Lamination Protectrice -->
+<div>
+<label class="block font-title-md text-title-md text-on-surface mb-1">3. Finition / Lamination de Protection</label>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">La lamination forme un bouclier anti-rayures, anti-frottements et anti-UV.</p>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm" id="finition-group">
+<div class="opt-card active-card cursor-pointer p-space-sm rounded-lg bg-surface hover:bg-surface-container-low text-center transition-all" onclick="setOption('finition', 'brillant', this)">
+<span class="material-symbols-outlined text-primary text-[24px] mb-1">flare</span>
+<p class="font-label-md text-label-md text-on-surface">Pelliculage Brillant</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-1">Éclat miroir, usage extérieur intensif.</p>
+</div>
+<div class="opt-card cursor-pointer p-space-sm rounded-lg bg-surface hover:bg-surface-container-low text-center transition-all" onclick="setOption('finition', 'softtouch', this)">
+<span class="material-symbols-outlined text-on-surface-variant text-[24px] mb-1">touch_app</span>
+<p class="font-label-md text-label-md text-on-surface">Soft-Touch Velours</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-1">Toucher peau de pêche ultra-haut de gamme.</p>
+</div>
+<div class="opt-card cursor-pointer p-space-sm rounded-lg bg-surface hover:bg-surface-container-low text-center transition-all" onclick="setOption('finition', 'none', this)">
+<span class="material-symbols-outlined text-on-surface-variant text-[24px] mb-1">block</span>
+<p class="font-label-md text-label-md text-on-surface">Sans Lamination</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-1">Intérieur économique &amp; étiquetage carton.</p>
+</div>
+</div>
+</div>
+<!-- ÉTAPE 4 : Dimensions & Formats -->
+<div>
+<label class="block font-title-md text-title-md text-on-surface mb-1">4. Format &amp; Dimensions</label>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">Choisissez un format express pré-calibré ou entrez vos mesures au millimètre.</p>
+<!-- Boutons formats pré-définis -->
+<div class="grid grid-cols-3 gap-space-sm mb-space-sm" id="preset-format-group">
+<button class="format-btn py-2 px-space-sm rounded-lg bg-surface hover:bg-surface-container-low text-on-surface font-label-md text-label-md transition-all" onclick="setPresetSize(5, 5, this)" type="button">5 x 5 cm</button>
+<button class="format-btn active-format py-2 px-space-sm rounded-lg bg-primary-fixed text-primary font-label-md text-label-md transition-all" onclick="setPresetSize(7, 7, this)" type="button">7 x 7 cm (Best)</button>
+<button class="format-btn py-2 px-space-sm rounded-lg bg-surface hover:bg-surface-container-low text-on-surface font-label-md text-label-md transition-all" onclick="setPresetSize(10, 10, this)" type="button">10 x 10 cm</button>
+</div>
+<!-- Custom inputs -->
+<div class="p-space-sm bg-surface rounded-lg flex items-center gap-space-md">
+<div class="flex-1">
+<label class="block font-label-sm text-label-sm text-outline mb-1">Largeur (cm)</label>
+<div class="relative flex items-center">
+<input class="w-full h-11 px-3 bg-surface-container-lowest rounded-lg font-title-md text-title-md text-on-surface outline-none focus:bg-surface-container-low" id="dim-w" max="120" min="2" onchange="calculatePrice()" step="0.5" type="number" value="7"/>
+<span class="absolute right-3 font-label-sm text-label-sm text-outline">cm</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[20px] mt-4">close</span>
+<div class="flex-1">
+<label class="block font-label-sm text-label-sm text-outline mb-1">Hauteur (cm)</label>
+<div class="relative flex items-center">
+<input class="w-full h-11 px-3 bg-surface-container-lowest rounded-lg font-title-md text-title-md text-on-surface outline-none focus:bg-surface-container-low" id="dim-h" max="120" min="2" onchange="calculatePrice()" step="0.5" type="number" value="7"/>
+<span class="absolute right-3 font-label-sm text-label-sm text-outline">cm</span>
+</div>
+</div>
+<div class="hidden sm:block shrink-0 mt-4 text-right">
+<span class="font-label-sm text-label-sm text-outline block">Surface :</span>
+<span class="font-label-md text-label-md text-primary" id="surface-calc">49 cm²</span>
+</div>
+</div>
+</div>
+<!-- ÉTAPE 5 : Quantité et Grille Tarifaire Dégressive -->
+<div>
+<label class="block font-title-md text-title-md text-on-surface mb-1 flex items-center justify-between">
+<span>5. Quantité &amp; Tarifs Dégressifs</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Jusqu'à -68% d'économie</span>
+</label>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-3">Plus le tirage est élevé, plus le coût unitaire diminue.</p>
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-2" id="tier-container">
+<!-- 50 ex -->
+<div class="qty-pill cursor-pointer p-space-sm rounded-lg bg-surface text-center hover:bg-surface-container-low transition-all" onclick="selectQuantity(50, 20, 0.40, this)">
+<p class="font-title-md text-title-md text-on-surface font-bold">50</p>
+<p class="font-label-sm text-[11px] text-outline">ex</p>
+<p class="font-label-md text-label-md text-on-surface mt-1 font-semibold">20 DT</p>
+<p class="font-body-sm text-[10px] text-on-surface-variant">0.40 DT/u</p>
+</div>
+<!-- 100 ex -->
+<div class="qty-pill cursor-pointer p-space-sm rounded-lg bg-surface text-center hover:bg-surface-container-low transition-all" onclick="selectQuantity(100, 32, 0.32, this)">
+<p class="font-title-md text-title-md text-on-surface font-bold">100</p>
+<p class="font-label-sm text-[11px] text-outline">ex</p>
+<p class="font-label-md text-label-md text-on-surface mt-1 font-semibold">32 DT</p>
+<p class="font-body-sm text-[10px] text-on-surface-variant">0.32 DT/u</p>
+</div>
+<!-- 250 ex (Selected par défaut) -->
+<div class="qty-pill active-qty cursor-pointer p-space-sm rounded-lg bg-primary text-on-primary text-center shadow-md relative overflow-hidden transition-all" onclick="selectQuantity(250, 55, 0.22, this)">
+<span class="absolute top-0 right-0 left-0 bg-secondary text-on-secondary font-label-sm text-[9px] uppercase tracking-tighter py-0.5">Top Choix</span>
+<p class="font-title-md text-title-md font-bold mt-2">250</p>
+<p class="font-label-sm text-[11px] opacity-80">ex</p>
+<p class="font-label-md text-label-md mt-1 font-bold">55 DT</p>
+<p class="font-body-sm text-[10px] opacity-90">0.22 DT/u</p>
+</div>
+<!-- 500 ex -->
+<div class="qty-pill cursor-pointer p-space-sm rounded-lg bg-surface text-center hover:bg-surface-container-low transition-all" onclick="selectQuantity(500, 85, 0.17, this)">
+<p class="font-title-md text-title-md text-on-surface font-bold">500</p>
+<p class="font-label-sm text-[11px] text-outline">ex</p>
+<p class="font-label-md text-label-md text-on-surface mt-1 font-semibold">85 DT</p>
+<p class="font-body-sm text-[10px] text-on-surface-variant">0.17 DT/u</p>
+</div>
+<!-- 1000 ex -->
+<div class="qty-pill cursor-pointer p-space-sm rounded-lg bg-surface text-center hover:bg-surface-container-low transition-all" onclick="selectQuantity(1000, 130, 0.13, this)">
+<p class="font-title-md text-title-md text-on-surface font-bold">1 000</p>
+<p class="font-label-sm text-[11px] text-outline">ex</p>
+<p class="font-label-md text-label-md text-primary mt-1 font-bold">130 DT</p>
+<p class="font-body-sm text-[10px] text-secondary font-bold">0.13 DT/u</p>
+</div>
+</div>
+</div>
+<!-- ÉTAPE 6 : Téléversement du Fichier PAO & Option Tracé Gratuit -->
+<div>
+<label class="block font-title-md text-title-md text-on-surface mb-1">6. Fichier &amp; Contrôle Prépresse</label>
+<div class="p-space-lg rounded-xl bg-surface-container-low text-center transition-all hover:bg-surface-container flex flex-col items-center justify-center cursor-pointer" id="dropzone">
+<input accept=".pdf,.ai,.eps,.png,.tiff,.svg" class="hidden" id="file-input" onchange="handleFileSelected(this)" type="file"/>
+<div class="w-12 h-12 rounded-full bg-primary-fixed text-primary flex items-center justify-center mb-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[28px]">cloud_upload</span>
+</div>
+<p class="font-title-md text-title-md text-on-surface" id="upload-status-text">Glissez-déposez votre visuel ou <span class="text-primary underline">Parcourir</span></p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Formats acceptés : PDF vectoriel, Adobe Illustrator (.AI), EPS, TIFF ou PNG HD (300 DPI min)</p>
+<div class="mt-space-md p-space-sm bg-surface-container-lowest rounded-lg max-w-md w-full flex items-center gap-space-sm text-left">
+<span class="material-symbols-outlined text-secondary text-[24px]">auto_awesome</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Vous n'avez pas de contour CutContour ?</p>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Envoyez juste votre logo : notre studio graphique génère votre tracé de découpe <strong>gratuitement</strong> et vous envoie un BAT 3D avant tirage.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- RÉCAPITULATIF COMMANDE & PRIX INSTANTANÉ DÉTAILLÉ -->
+<div class="p-space-lg rounded-xl bg-surface-container text-on-surface shadow-inner">
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-highest">
+<span class="font-label-md text-label-md text-on-surface">Récapitulatif de votre configuration :</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-label-sm text-label-sm font-bold">Prêt pour production</span>
+</div>
+<div class="grid grid-cols-2 gap-2 my-space-md text-body-sm font-body-sm text-on-surface-variant">
+<div>Type : <strong class="text-on-surface" id="summary-cut">Die-Cut (Pleine Chair)</strong></div>
+<div>Matière : <strong class="text-on-surface" id="summary-mat">Vinyle Blanc Brillant</strong></div>
+<div>Finition : <strong class="text-on-surface" id="summary-finish">Pelliculage Brillant</strong></div>
+<div>Dimensions : <strong class="text-on-surface" id="summary-dim">7 x 7 cm</strong></div>
+<div>Délai départ atelier : <strong class="text-secondary font-bold">48h (Tunisie)</strong></div>
+<div>Contrôle PAO + BAT : <strong class="text-on-surface font-semibold text-primary">Inclus Gratuit</strong></div>
+</div>
+<div class="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-space-md pt-space-sm border-t border-surface-container-highest">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Total Net TTC</span>
+<div class="flex items-baseline gap-2">
+<span class="font-display-hero text-headline-lg text-primary font-extrabold" id="total-price-display">55.00</span>
+<span class="font-title-md text-title-md text-on-surface font-bold">DT TTC</span>
+</div>
+<span class="font-body-sm text-[12px] text-on-surface-variant" id="unit-price-display">Soit 0.22 DT l'unité (250 exemplaires)</span>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<button class="w-full sm:w-auto flex-1 h-12 px-space-xl rounded-lg bg-primary hover:bg-primary-container text-on-primary font-title-md text-title-md font-bold shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2" onclick="addToQuoteCart()" type="button">
+<span class="material-symbols-outlined text-[22px]">add_shopping_cart</span>
+                      Ajouter au Panier
+                    </button>
+</div>
+</div>
+</div>
+<!-- Rassurance de commande -->
+<div class="grid grid-cols-3 gap-space-sm text-center text-on-surface-variant font-body-sm text-[12px]">
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[20px]">local_shipping</span>
+<span>Livraison express toute la Tunisie</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[20px]">thumb_up</span>
+<span>Validation BAT par e-mail avant tirage</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-secondary text-[20px]">security</span>
+<span>Paiement sécurisé ou à la livraison</span>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Galerie d'Inspiration et Usages Packaging / Goodies -->
+<section class="w-full bg-surface-container-lowest py-space-xl">
+<div class="max-w-[1440px] mx-auto px-margin lg:px-margin-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-wider">Inspirations Réalisées</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Exemples d'Applications Métier</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Découvrez comment marques, créateurs et industriels utilisent nos adhésifs grand teint pour sublimer leur identité.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Inspiration 1 -->
+<div class="group rounded-xl overflow-hidden bg-surface-container-low shadow-sm hover:shadow-md transition-all">
+<div class="h-56 overflow-hidden">
+<img alt="Packaging Cosmétique &amp; Soins" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Bespoke vinyl labels on matte amber glass dropper bottles for organic cosmetic brand, high opacity white printing with metallic copper foil details, bright clean studio photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvhOBsd5GOSfp7LdUIJF5etj8QiU-CYRgAeoLRv7MM62LbtypcZd7HMczuFWWeoNwKcs57Jhyd-mctNgDbKDG44QIGM75gM77oYiItEZclCuphYmZ7JBIMsNVDQD8mGUe_HT2N4XYFCvCh5D6NcGp3cpzEGePIlzI6ghde2pynnGM4RfVpQ7e98DoigIp5_A-wcKSlaUMq9jQfg_fhcrb1fjBrkM7F_w4gOtBJpklt89BFZG7K__btJg"/>
+</div>
+<div class="p-space-md">
+<span class="font-label-sm text-label-sm text-primary font-bold">Packaging Bouteilles &amp; Cosmétique</span>
+<p class="font-title-md text-title-md text-on-surface mt-1">Étiquettes Bouteilles Bio</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Résistance intégrale aux corps gras, huiles et humidité de salle de bain.</p>
+</div>
+</div>
+<!-- Inspiration 2 -->
+<div class="group rounded-xl overflow-hidden bg-surface-container-low shadow-sm hover:shadow-md transition-all">
+<div class="h-56 overflow-hidden">
+<img alt="Stickers Goodies Merch IT" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Die cut laptop stickers in bright cyber blues and magenta colors slapped cleanly on space grey anodized aluminum laptop lid, urban tech agency branding, natural daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI36eD--s2EEt94gDqmQA3IazSgnBg1jWohKn33Pvc7C9HobOI4EcG6TBGqMzW_MWQ9ozrJoWJuU53Pe9snhe8p7ZgMiLugebS1msyMQRDK9HEA5gmTQoIcyxE2ZKdqn_juYUheas5YdfD7SQ-rE_c8KgiNhIzAGxZpb4CjGn6tZ9Bz67vzZMt6FCiYAMCfD2WrMLHVM6obgEA28_fViBwiuFEglxwkk1Esd5KUVp1YNXH3brMKfK6lA"/>
+</div>
+<div class="p-space-md">
+<span class="font-label-sm text-label-sm text-secondary font-bold">Tech &amp; Goodies Entreprise</span>
+<p class="font-title-md text-title-md text-on-surface mt-1">Stickers Laptops &amp; Swag</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Pelliculage soft-touch anti-frottements pour ordinateurs et coques de smartphones.</p>
+</div>
+</div>
+<!-- Inspiration 3 -->
+<div class="group rounded-xl overflow-hidden bg-surface-container-low shadow-sm hover:shadow-md transition-all">
+<div class="h-56 overflow-hidden">
+<img alt="Signalétique Vitrine &amp; Miroir" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Clear storefront glass window sticker with opaque white backing contour showing coffee shop logo and hours in clean modern typography, illuminated by warm cafe interior lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo8apGHadrkeQgpFIXAbOJl6u4i9YMyZuFMdPosHIJICHmW0Zl-AG2oXm0nH2bU-SWRRw_UNdO60D07CBOJ2lq9DglFzEuxwrensvwBWwhCZBhh3i7rQiVvhHD7oQarlDbBoxW0cKbTXwCMM9WfldQacqud99Djrs7R8yJSZ62aEgQYiMHKNOUhmrIlcud7_y57XV41G9WdG9hTpE_tVdgGKgs3GA_m6Uyxkd7eDAq3yV1k-XD6aHNXA"/>
+</div>
+<div class="p-space-md">
+<span class="font-label-sm text-label-sm text-primary font-bold">Boutique &amp; Commerce</span>
+<p class="font-title-md text-title-md text-on-surface mt-1">Adhésifs Vitrine &amp; Packaging Cadeaux</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Vinyle transparent haute clarté optique avec blanc de soutien de blocage.</p>
+</div>
+</div>
+<!-- Inspiration 4 -->
+<div class="group rounded-xl overflow-hidden bg-surface-container-low shadow-sm hover:shadow-md transition-all">
+<div class="h-56 overflow-hidden">
+<img alt="Planches de Stickers A4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Multiple creative illustrative die cut sticker sheets neatly stacked with vibrant cartoon stickers, smooth kiss cut edges and branded company header card, professional print studio setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvNgyTvmH2XwkTI-34ugjc4iFecyGT8Qu3xu3iQDo_TJsr28ruIa0f8BLMLYiTT28H7RNYFgQzhdIe7EkPEq9VFhoDEL4jHAkizyvZZsOXfTESVcMct0sQlTxm0TgJ7gjXVPXk5urU-0AUgTm7XOP975CHMZxG6VHNIwxIwcQ6PpxoSsV7fbTIYczRVSqciiI4iLCMdMOL_LBc_dINSypWz7u92gmIV9yESBt-YY4EaCPGaimPDfvVLg"/>
+</div>
+<div class="p-space-md">
+<span class="font-label-sm text-label-sm text-tertiary font-bold">Illustration &amp; Créateurs</span>
+<p class="font-title-md text-title-md text-on-surface mt-1">Planches A5 Échenillées</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Regroupez 10 à 25 mini-stickers sur une seule feuille pour vos lancements créatifs.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Modale Feedback d'ajout au panier -->
+<div class="fixed bottom-6 right-6 max-w-md bg-inverse-surface text-inverse-on-surface p-space-md rounded-xl shadow-xl z-50 flex items-center gap-space-md transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="cart-toast">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-primary text-[22px]">check_circle</span>
+</div>
+<div class="flex-1">
+<p class="font-title-md text-title-md font-bold">Configuration Ajoutée au Panier !</p>
+<p class="font-body-sm text-[13px] text-inverse-on-surface/80" id="toast-summary">250 ex Stickers Die-Cut Vinyle Blanc Brillant</p>
+</div>
+<button class="text-inverse-on-surface hover:text-surface-tint" onclick="hideToast()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Script Interactif du Configurateur Dynamique -->
+<script>
+    const configState = {
+      decoupe: 'diecut',
+      decoupeLabel: 'Pleine Chair (Die-Cut)',
+      matiere: 'blanc-brillant',
+      matiereLabel: 'Vinyle Blanc Brillant',
+      matiereExtra: 0,
+      finition: 'brillant',
+      finitionLabel: 'Pelliculage Brillant',
+      width: 7,
+      height: 7,
+      quantity: 250,
+      basePrice: 55,
+      unitPrice: 0.22,
+      fileName: null
+    };
+
+    function setOption(category, value, el) {
+      configState[category] = value;
+      const parent = el.parentElement;
+      parent.querySelectorAll('.opt-card').forEach(card => {
+        card.classList.remove('bg-surface-container-high', 'shadow-sm');
+        card.classList.add('bg-surface');
+        const dot = card.querySelector('.check-dot');
+        if (dot) {
+          dot.innerHTML = '';
+          dot.className = 'w-4 h-4 rounded-full bg-surface-container-highest flex items-center justify-center check-dot';
+        }
+      });
+      el.classList.remove('bg-surface');
+      el.classList.add('bg-surface-container-high', 'shadow-sm');
+      const dot = el.querySelector('.check-dot');
+      if (dot) {
+        dot.className = 'w-4 h-4 rounded-full bg-primary flex items-center justify-center check-dot';
+        dot.innerHTML = '<span class="material-symbols-outlined text-[12px] text-on-primary">check</span>';
+      }
+
+      // Labels mapping
+      if (category === 'decoupe') {
+        const labels = {
+          'diecut': 'Pleine Chair (Die-Cut)',
+          'kisscut': 'Mi-Chair (Kiss-Cut)',
+          'sheet': 'Planche Promo A4/A5',
+          'roll': 'Rouleaux d\'étiquettes'
+        };
+        configState.decoupeLabel = labels[value];
+        document.getElementById('summary-cut').textContent = configState.decoupeLabel;
+      }
+
+      if (category === 'matiere') {
+        const labels = {
+          'blanc-brillant': 'Vinyle Blanc Brillant',
+          'blanc-mat': 'Vinyle Blanc Mat',
+          'transparent': 'Vinyle Transparent + Blanc',
+          'holographique': 'Vinyle Holographique',
+          'kraft': 'Papier Kraft Brun'
+        };
+        const extras = {
+          'blanc-brillant': 0,
+          'blanc-mat': 0.02,
+          'transparent': 0.05,
+          'holographique': 0.08,
+          'kraft': 0.01
+        };
+        configState.matiereLabel = labels[value];
+        configState.matiereExtra = extras[value];
+        document.getElementById('summary-mat').textContent = configState.matiereLabel;
+      }
+
+      if (category === 'finition') {
+        const labels = {
+          'brillant': 'Pelliculage Brillant',
+          'softtouch': 'Lamination Soft-Touch',
+          'none': 'Sans lamination'
+        };
+        configState.finitionLabel = labels[value];
+        document.getElementById('summary-finish').textContent = configState.finitionLabel;
+      }
+
+      calculatePrice();
+    }
+
+    function setPresetSize(w, h, btn) {
+      document.querySelectorAll('.format-btn').forEach(b => {
+        b.className = 'format-btn py-2 px-space-sm rounded-lg bg-surface hover:bg-surface-container-low text-on-surface font-label-md text-label-md transition-all';
+      });
+      btn.className = 'format-btn active-format py-2 px-space-sm rounded-lg bg-primary-fixed text-primary font-label-md text-label-md transition-all';
+      
+      document.getElementById('dim-w').value = w;
+      document.getElementById('dim-h').value = h;
+      calculatePrice();
+    }
+
+    function selectQuantity(qty, baseTotal, baseUnit, el) {
+      document.querySelectorAll('.qty-pill').forEach(pill => {
+        pill.className = 'qty-pill cursor-pointer p-space-sm rounded-lg bg-surface text-center hover:bg-surface-container-low transition-all';
+        const txt = pill.querySelectorAll('p');
+        txt.forEach(t => t.classList.remove('text-on-primary'));
+      });
+
+      el.className = 'qty-pill active-qty cursor-pointer p-space-sm rounded-lg bg-primary text-on-primary text-center shadow-md relative overflow-hidden transition-all';
+      
+      configState.quantity = qty;
+      configState.basePrice = baseTotal;
+      configState.unitPrice = baseUnit;
+      calculatePrice();
+    }
+
+    function calculatePrice() {
+      const w = parseFloat(document.getElementById('dim-w').value) || 7;
+      const h = parseFloat(document.getElementById('dim-h').value) || 7;
+      configState.width = w;
+      configState.height = h;
+
+      const surface = w * h;
+      document.getElementById('surface-calc').textContent = `${surface.toFixed(1)} cm²`;
+      document.getElementById('summary-dim').textContent = `${w} x ${h} cm`;
+
+      // Surface factor relative to standard 7x7 (49 cm²)
+      const areaRatio = Math.max(0.6, Math.sqrt(surface / 49));
+      
+      // Finishing factor
+      let finishMultiplier = 1;
+      if (configState.finition === 'softtouch') finishMultiplier = 1.15;
+      if (configState.finition === 'none') finishMultiplier = 0.92;
+
+      // Base unitaire ajustée
+      let dynamicUnitPrice = (configState.unitPrice + configState.matiereExtra) * areaRatio * finishMultiplier;
+      let calculatedTotal = dynamicUnitPrice * configState.quantity;
+
+      // Arrondi propre
+      calculatedTotal = Math.max(18, Math.round(calculatedTotal));
+      dynamicUnitPrice = (calculatedTotal / configState.quantity).toFixed(2);
+
+      document.getElementById('total-price-display').textContent = calculatedTotal.toFixed(2);
+      document.getElementById('unit-price-display').textContent = `Soit ${dynamicUnitPrice} DT l'unité (${configState.quantity} exemplaires)`;
+    }
+
+    function handleFileSelected(input) {
+      if (input.files && input.files[0]) {
+        const file = input.files[0];
+        configState.fileName = file.name;
+        document.getElementById('upload-status-text').innerHTML = `Fichier prêt : <strong class="text-primary">${file.name}</strong> (${(file.size / (1024*1024)).toFixed(2)} MB)`;
+        const dropzone = document.getElementById('dropzone');
+        dropzone.classList.add('bg-surface-container-high');
+      }
+    }
+
+    // Interactive Dropzone click
+    document.getElementById('dropzone').addEventListener('click', function(e) {
+      if (e.target.tagName !== 'INPUT') {
+        document.getElementById('file-input').click();
+      }
+    });
+
+    function selectGallery(index) {
+      const thumbs = document.querySelectorAll('.gallery-thumb');
+      thumbs.forEach((t, i) => {
+        const border = t.querySelector('.thumb-border');
+        if (i === index) {
+          t.classList.add('active-thumb');
+          if (!border) {
+            const span = document.createElement('span');
+            span.className = 'absolute inset-0 bg-primary/20 pointer-events-none thumb-border';
+            t.appendChild(span);
+          }
+        } else {
+          t.classList.remove('active-thumb');
+          if (border) border.remove();
+        }
+      });
+    }
+
+    function addToQuoteCart() {
+      const toast = document.getElementById('cart-toast');
+      const summaryText = `${configState.quantity} ex Stickers ${configState.decoupeLabel} - ${configState.width}x${configState.height}cm (${document.getElementById('total-price-display').textContent} DT)`;
+      document.getElementById('toast-summary').textContent = summaryText;
+      
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        hideToast();
+      }, 4000);
+    }
+
+    function hideToast() {
+      const toast = document.getElementById('cart-toast');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-24', 'opacity-0');
+    }
+
+    // Init
+    calculatePrice();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest shadow-[0_-1px_6px_rgba(15,23,42,0.03)] mt-space-xl"><div class="w-full bg-surface-container-low py-space-lg"><div class="max-w-[1440px] mx-auto px-margin lg:px-margin-lg grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg items-center"><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-primary text-[32px]">precision_manufacturing</span><div><p class="font-title-md text-title-md text-on-surface">Atelier Haute Précision</p><p class="font-body-sm text-body-sm text-on-surface-variant">Parc offset Heidelberg &amp; numérique HP Indigo</p></div></div><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-primary text-[32px]">verified</span><div><p class="font-title-md text-title-md text-on-surface">Normes ISO &amp; FSC®</p><p class="font-body-sm text-body-sm text-on-surface-variant">Papiers écoresponsables tracés &amp; encres végétales</p></div></div><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-primary text-[32px]">local_shipping</span><div><p class="font-title-md text-title-md text-on-surface">Livraison Express</p><p class="font-body-sm text-body-sm text-on-surface-variant">Partout en Tunisie sous 24h à 48h</p></div></div><div class="flex items-center gap-space-md"><span class="material-symbols-outlined text-primary text-[32px]">support_agent</span><div><p class="font-title-md text-title-md text-on-surface">Support PAO Dédié</p><p class="font-body-sm text-body-sm text-on-surface-variant">Contrôle prépresse &amp; vérification de fichiers</p></div></div></div></div><div class="max-w-[1440px] mx-auto px-margin lg:px-margin-lg py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-lg"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="GS Imprim Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vpv6nsr3_nsS7COjiZYvsfnWDi4AyCLAAL3qdfnTnCXx6L36narV3WIHcWzy_hUeS7BosaBz1FFWoMPYHZluffaCgdx36nuEBqSX4-S_lGfDTFRGdG_IMhIaK2bASbS3M58zdVBSLFJbvD6NBPaXvGXdYIOepvV-r4-J_a6uW8nMZ6M1V0VWlkLuX04cPAVct8ktskKJqGod4gU2MVcJGRoNWo15oJhfugypHUcMBXYmLFgVbIvAcmW7dG"/><span class="font-headline-sm text-headline-sm text-primary">GS Imprim</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Référence de l'impression haut de gamme en Tunisie (ex Atelier Print). Spécialiste du façonnage minutieux, de la dorure à chaud galbée, du gaufrage et des finitions d'exception pour professionnels et créatifs exigeants.</p><div class="pt-space-xs"><p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px]">location_on</span>Zone Industrielle La Charguia II, Tunis, Tunisie</p><p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2 mt-1"><span class="material-symbols-outlined text-primary text-[18px]">call</span>+216 71 800 000 | +216 29 000 000</p><p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2 mt-1"><span class="material-symbols-outlined text-primary text-[18px]">mail</span>contact@gsimprim.com.tn</p></div></div><div><p class="font-title-md text-title-md text-on-surface mb-space-md">Catalogue Print</p><ul class="space-y-space-sm"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Cartes de visite de prestige</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Packaging &amp; Boîtes sur-mesure</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Catalogues, Dépliants &amp; Brochures</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Étiquettes adhésives en rouleaux</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Signalétique &amp; Grand Format</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Goodies &amp; Objets publicitaires</li></ul></div><div><p class="font-title-md text-title-md text-on-surface mb-space-md">Ressources PAO</p><ul class="space-y-space-sm"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Guides techniques &amp; Fonds perdus</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Profils colorimétriques Fogra39</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Gabarits InDesign &amp; Illustrator</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Nuancier papiers &amp; Échantillons</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">Validation Bon à Tirer (BAT)</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors cursor-pointer">FAQ &amp; Assistance technique</li></ul></div><div><p class="font-title-md text-title-md text-on-surface mb-space-md">Certifications &amp; Engagements</p><div class="space-y-space-sm"><div class="p-space-sm rounded-lg bg-surface-container-low"><p class="font-label-md text-label-md text-on-surface">ISO 9001 &amp; ISO 14001</p><p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Management qualité &amp; respect de l'environnement certifié.</p></div><div class="p-space-sm rounded-lg bg-surface-container-low"><p class="font-label-md text-label-md text-on-surface">FSC® Mixte &amp; Recyclé</p><p class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Gestion forestière durable et traçabilité matière.</p></div></div></div></div><div class="mt-space-xl pt-space-md flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><p>© 2024 GS Imprim (ex Atelier Print Tunisie). Tous droits réservés.</p><div class="flex items-center gap-space-lg"><a class="hover:text-primary transition-colors" href="#">Mentions Légales</a><a class="hover:text-primary transition-colors" href="#">Conditions Générales de Vente</a><a class="hover:text-primary transition-colors" href="#">Politique de Confidentialité</a></div></div></div></footer></body></html>
