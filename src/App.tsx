@@ -16,6 +16,7 @@ import { EspaceProModal } from './components/EspaceProModal';
 import { AuthModal } from './components/AuthModal';
 import { WhatsAppFloating } from './components/WhatsAppFloating';
 import { TouchInkLayer } from './components/TouchInkLayer';
+import { StudioConfiguratorView } from './views/StudioConfiguratorView';
 
 // Views are split by route so the initial catalogue shell stays small.
 const HomeView = lazy(() => import('./views/HomeView').then((module) => ({ default: module.HomeView })));
@@ -171,7 +172,7 @@ export default function App() {
       {/* Main View Container (offset by header height) */}
       <main className="flex-1 pt-[4.5rem]">
         <Suspense fallback={loadingFallback}>
-          {currentView === 'home' && <HomeView onNavigate={handleNavigate} />}
+          {currentView === 'home' && <StudioConfiguratorView />}
           {currentView === 'catalog' && selectedProductId ? (
             (() => {
               const product = CATALOG_PRODUCTS.find((item) => item.id === selectedProductId);
